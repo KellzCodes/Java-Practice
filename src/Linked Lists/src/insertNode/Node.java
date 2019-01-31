@@ -32,4 +32,11 @@ public class Node {
     public Node getNextNode() {
         return nextNode;
     }
+
+    // override the toString method and return the data of the current node
+    @Override
+    public String toString(){
+        return "Data: " + this.data;
+    }
+
 }
