@@ -25,4 +25,27 @@ public class LinkedList {
         this.head = newNode;
     }
 
+    /* Print the data for all the nodes contained in the linked list,
+    starting from the head element. */
+    @Override
+    public String toString(){
+        String result = "{";
+        // Declare a variable called current, which points to the head
+        Node current = this.head;
+
+        /* Go through all the nodes of the list, until the current node
+        points to a null.*/
+        while (current != null){
+            /* get the string created from the Node object and append it
+            to the result variable and separate them by using a comma. */
+            result += current.toString() + ",";
+            // go to the next node
+            current = current.getNextNode();
+        }
+
+        // Return the result
+        result += "}";
+        return result;
+
+    }
 }
