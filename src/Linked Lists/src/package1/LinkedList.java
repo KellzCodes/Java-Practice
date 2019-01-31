@@ -1,4 +1,4 @@
-package insertNode;
+package package1;
 /*
  * A linked list in simple terms is an ordered set of data elements.
  * Each element contains a link to its successor.

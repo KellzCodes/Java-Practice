@@ -1,4 +1,4 @@
-package insertNode;
+package package1;
 
 /*
  * A node in a linked list can be thought of as divided into two parts.
