@@ -44,6 +44,17 @@ public class LinkedList {
         return length;
     }
 
+    /*
+    * To delete the node at the head, all we need to do is to make the head reference
+    * of a link list object point to the next node of the head object. If nothing points
+    * to a node, it is not connected to the link list in any way and is ready for
+    * garbage collection. So it gets deleted.
+    * */
+    public void deleteFromHead(){
+        // Make the head reference point to the next node of the current head
+        this.head = this.head.getNextNode();
+    }
+
     /* Print the data for all the nodes contained in the linked list,
     starting from the head element. */
     @Override
