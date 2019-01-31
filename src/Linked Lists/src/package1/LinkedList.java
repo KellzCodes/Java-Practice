@@ -55,6 +55,31 @@ public class LinkedList {
         this.head = this.head.getNextNode();
     }
 
+    /*
+    *  To search for an item in a linked list, we have to go through all the elements
+    *  or the nodes of the list until we find the element we are searching for,
+    *  or it may so happen that the data we are searching for is not there in the list.
+    *  Searching for an item in a linked list is a linear time operation O(n)
+    *  */
+    public Node find (int data){
+        // initialize the current node to the head element
+        Node current = this.head;
+
+        // go through all the nodes
+        while (current != null){
+            /* And when the data is equal to the data held in the current node,
+            we'll return that node, which will also break the while loop. */
+            if (current.getData() == data){
+                return current;
+            }
+            current = current.getNextNode();
+        }
+        /* If the whole loop is executed without the data being found,
+        we just return null, which would mean that no node has been found
+        to contain this data value. */
+        return null;
+    }
+
     /* Print the data for all the nodes contained in the linked list,
     starting from the head element. */
     @Override

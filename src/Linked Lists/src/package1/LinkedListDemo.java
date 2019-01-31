@@ -15,7 +15,8 @@ public class LinkedListDemo {
 
         list.deleteFromHead();
 
-        System.out.println(list);
-        System.out.println("Length: " + list.length());
+//        System.out.println(list);
+//        System.out.println("Length: " + list.length());
+        System.out.println("Found: " + list.find(12));
     }
 }
