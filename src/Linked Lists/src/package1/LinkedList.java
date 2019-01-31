@@ -25,6 +25,25 @@ public class LinkedList {
         this.head = newNode;
     }
 
+    /* The length of the link list is defined by the number of nodes that are
+    present in the link list */
+    public int length(){
+        // declare a variable called length and initialize it to zero
+        int length = 0;
+
+        // Make the current node point to the head
+        Node current = this.head;
+
+        // Traverse through all the nodes on the list.
+        while (current != null){
+            //  Increment the value of the length and move the current node to the next one
+            length ++;
+            current = current.getNextNode();
+        }
+        // Return the length
+        return length;
+    }
+
     /* Print the data for all the nodes contained in the linked list,
     starting from the head element. */
     @Override
