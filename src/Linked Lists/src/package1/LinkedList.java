@@ -93,7 +93,7 @@ public class LinkedList {
         while (current != null){
             /* get the string created from the Node object and append it
             to the result variable and separate them by using a comma. */
-            result += current.toString() + ",";
+            result += current.toString() + ", ";
             // go to the next node
             current = current.getNextNode();
         }
