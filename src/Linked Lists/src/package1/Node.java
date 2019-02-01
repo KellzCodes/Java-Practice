@@ -11,7 +11,8 @@ package package1;
 
 public class Node {
     private int data;
-    private Node nextNode;
+    public Node nextNode;
+    public Node previousNode;
 
     public Node(int data){
         this.data = data;
@@ -31,6 +32,14 @@ public class Node {
 
     public Node getNextNode() {
         return nextNode;
+    }
+
+    public void setPreviousNode(Node previousNode) {
+        this.previousNode = previousNode;
+    }
+
+    public Node getPreviousNode() {
+        return previousNode;
     }
 
     // override the toString method and return the data of the current node
