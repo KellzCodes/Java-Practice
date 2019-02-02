@@ -19,5 +19,9 @@ public class Main {
         Solution1 solution1 = new Solution1();
         int solve1 = solution1.repeatedStringMatch1(a, b);
         System.out.println(solve1);
+
+        Solution2 solution2 = new Solution2();
+        int solve2 = solution2.repeatedStringMatch2(a, b);
+        System.out.println(solve2);
     }
 }
