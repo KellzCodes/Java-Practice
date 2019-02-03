@@ -18,6 +18,9 @@ public class Node {
         this.data = data;
     }
 
+    public void setPreviousNode(Node previousNode) {
+        this.previousNode = previousNode;
+    }
 
     public int getData() {
         return data;
@@ -30,7 +33,7 @@ public class Node {
     public Node getNextNode() {
         return nextNode;
     }
-    
+
     // override the toString method and return the data of the current node
     @Override
     public String toString(){
