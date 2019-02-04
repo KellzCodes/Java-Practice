@@ -15,7 +15,7 @@ package repeatedStringMatch;
 public class Main {
     public static void main (String[] args){
         String a = "abcd";
-        String b = "cdabcdab";
+        String b = "cdabcdababcd";
         Solution1 solution1 = new Solution1();
         int solve1 = solution1.repeatedStringMatch1(a, b);
         System.out.println(solve1);
