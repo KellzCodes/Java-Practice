@@ -8,7 +8,7 @@ import java.util.Arrays;
 * identified by an array index.
 * */
 
-public class Main {
+public class IntroArray {
     public static void main(String[] args) {
         // 1. Initialize
         int[] a0 = new int[5];
