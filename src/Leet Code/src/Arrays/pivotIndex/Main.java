@@ -26,18 +26,15 @@ public class Main {
         }
 
         // The left side of the array
-        int leftSum = 0;
+        int leftsum = 0;
 
         // go through the entire array and check if the left side equals the right side
         for (int i = 0; i < nums.length; i++) {
-            // the right sum is the sum minus the left sum minus the index
-            // if the left side of the current index is equal to the right side, return it
-            if (leftSum == sum - leftSum - nums[i]) {
+            // the right sum is the sum minus the leftsum minus the current index
+            if (leftsum == sum - leftsum - nums[i]) {
                 return i;
-            }
-            // if not, add the number at the current index to the left sum
-            else {
-                leftSum += nums[i];
+            } else {
+                leftsum+=nums[i];
             }
         }
         return -1;
