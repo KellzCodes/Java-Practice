@@ -50,7 +50,7 @@ public class DiagonalTraverse {
             // if the sum of current row and column is an even number
             if ((row + column) % 2 == 0) { // moving up
                 // If the current column is the last column in the matrix, move to the next row
-                if      (column == nColumn - 1) {
+                if (column == nColumn - 1) {
                     row++;
                 }
                 // If the the current row is the first row, go to the next column
