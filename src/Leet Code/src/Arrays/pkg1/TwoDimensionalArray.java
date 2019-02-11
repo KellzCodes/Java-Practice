@@ -3,7 +3,7 @@ package Arrays.pkg1;
 public class TwoDimensionalArray {
     public static void main (String[] args){
         System.out.println("Example I:");
-        int[][] a = new int [2][5];
+        int[][] a = new int [3][3];
         printArray(a);
 
         System.out.println("Example II:");
