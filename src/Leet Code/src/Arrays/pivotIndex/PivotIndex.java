@@ -46,10 +46,7 @@ public class PivotIndex {
 
         // Go through the array, starting at index 1
         for (int i = 1; i < nums.length; i++) {
-            /*
-            * If the number at the last index minus the number at the current index is
-            * equal to the number at the previous index, return the number at the current index
-            * */
+
             if (nums[last] - nums[i] == nums[i - 1]) {
                 return i;
             }
