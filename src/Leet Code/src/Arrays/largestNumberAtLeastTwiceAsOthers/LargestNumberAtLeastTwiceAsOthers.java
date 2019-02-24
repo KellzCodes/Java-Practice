@@ -23,14 +23,15 @@ public class LargestNumberAtLeastTwiceAsOthers {
             return 0;
         }
 
-
         else {
             // The largest number in the array starts at index 0
             int largestNumber = nums[0];
             // This is a number that will be compared to the largest number, its current value is a placeholder
-            int secondNumber = Integer.MIN_VALUE; // This is a constant holding the minimum value an int can have, -2^31.
-            // Compare the numbers in the array, starting with the first index
-            int compareIndex = 0;
+            
+            int secondLargestNumber = Integer.MIN_VALUE;// This is a constant holding the minimum value an int can have, -2^31.
+            
+            // The dominant index contains the largest number in the array
+            int dominantIndex = 0;
 
             // Traverse through the array starting at index 1,
             for (int currentIndex = 1; currentIndex < nums.length; currentIndex++) {
@@ -39,29 +40,35 @@ public class LargestNumberAtLeastTwiceAsOthers {
 
                 /* If the current number is greater than the largest number*/
                 if (currentNumber > largestNumber) {
-                    // The second number becomes the largest number
-                    secondNumber = largestNumber;
-                    // The largest number becomes the current number
+                    // The largest number becomes the second largest number
+                    secondLargestNumber = largestNumber;
+                    // The current number becomes the largest number
                     largestNumber = currentNumber;
-                    // The compare index becomes the current index
-                    compareIndex = currentIndex;
+                    // The current index becomes the dominant index
+                    dominantIndex = currentIndex;
                 }
 
-                /* If the current number is greater than the second number */
-                else if (currentNumber > secondNumber) {
-                    // The second number becomes the current number
-                    secondNumber = currentNumber;
+                /* If the current number is greater than the second largest number */
+                else if (currentNumber > secondLargestNumber) {
+                    // The current number becomes the second largest number
+                    secondLargestNumber = currentNumber;
                 }
             }
 
-            /* Return the compare index if the largest number is greater than
-            * or equal to twice the second number */
-            if (largestNumber >= secondNumber * 2) {
-                return compareIndex;
+            /* Return the dominant index if the largest number is greater than
+            * or equal to twice the second largest number */
+            if (largestNumber >= secondLargestNumber * 2) {
+                return dominantIndex;
             }
         }
 
-        // otherwise, return -1
+        
         return -1;
     }
 }
+
+/*
+* Complexity Analysis
+*
+* Time Complexity: O(N) where N is the number of integers
+* Space Complexity: O(1), the space used by the int variables*/
