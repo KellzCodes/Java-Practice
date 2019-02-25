@@ -7,12 +7,80 @@
     <Snap>true</Snap>
     <Show>false</Show>
   </Grid>
+  <Scope id="0">
+    <Name>plusOne</Name>
+    <Signature>([I)[I</Signature>
+    <DeclaringType>Arrays.plusOne.PlusOne</DeclaringType>
+    <Depth>1</Depth>
+  </Scope>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>50</X>
+      <Y>520</Y>
+      <W>263</W>
+      <H>94</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int[]` newDigits</Expression>
+      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>80</X>
+      <Y>240</Y>
+      <W>106</W>
+      <H>50</H>
+    </Bounds>
+    <LabelLoc>
+      <WO>false</WO>
+    </LabelLoc>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int` currentIndex</Expression>
+      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>380</X>
+      <Y>70</Y>
+      <W>106</W>
+      <H>50</H>
+    </Bounds>
+    <LabelLoc>
+      <WO>false</WO>
+    </LabelLoc>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int` arrayLength</Expression>
+      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>50</X>
+      <Y>100</Y>
+      <W>176</W>
+      <H>91</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int[]` digits</Expression>
+      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
+    </Viewer>
+  </Frame>
   <Size>
-    <W>960</W>
-    <H>540</H>
+    <W>540</W>
+    <H>830</H>
   </Size>
   <ESize>
-    <W>960</W>
-    <H>540</H>
+    <W>540</W>
+    <H>830</H>
   </ESize>
 </Canvas>
