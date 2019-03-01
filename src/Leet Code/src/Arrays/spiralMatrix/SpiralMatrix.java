@@ -23,27 +23,59 @@ public class SpiralMatrix {
     }
 
     public static List<Integer> spiralOrder(int[][] matrix) {
-        List arrayList = new ArrayList();
-        if (matrix.length == 0) return arrayList;
-        int row = matrix.length, column = matrix[0].length;
-        boolean[][] seen = new boolean[row][column];
-        int[] rowDirection = {0, 1, 0, -1};
-        int[] columnDirection = {1, 0, -1, 0};
-        int seenRow = 0, seenColumn = 0, direction = 0;
-        for (int i = 0; i < row * column; i++) {
-            arrayList.add(matrix[seenRow][seenColumn]);
-            seen[seenRow][seenColumn] = true;
-            int currentRow = seenRow + rowDirection[direction];
-            int currentColumn = seenColumn + columnDirection[direction];
-            if (0 <= currentRow && currentRow < row && 0 <= currentColumn && currentColumn < column && !seen[currentRow][currentColumn]){
-                seenRow = currentRow;
-                seenColumn = currentColumn;
-            } else {
-                direction = (direction + 1) % 4;
-                seenRow += rowDirection[direction];
-                seenColumn += columnDirection[direction];
-            }
+        // Initialize a new array list
+        List<Integer> arrayList = new ArrayList<>();
+
+        // If the matrix is empty, return it
+        if (matrix.length == 0) {
+            return arrayList;
         }
+
+        // Sets the beginning of a row, default is index 0
+        int rowStart = 0;
+        // Sets the ending of a row, default is the final index of the row
+        int rowEnd = matrix.length-1;
+        // Sets the beginning of a column, default is index 0
+        int columnStart = 0;
+        // Sets the end of a column, default is the last index in the column
+        int columnEnd = matrix[0].length - 1;
+
+        // Traverse through the entire matrix
+        while (rowStart <= rowEnd && columnStart <= columnEnd) {
+            // Traverse through the current row
+            for (int currentIndex = columnStart; currentIndex <= columnEnd; currentIndex++) {
+                arrayList.add(matrix[rowStart][currentIndex]);
+            }
+            // Move the beginning of the the row to the next index
+            rowStart++;
+
+            // Traverse Down the current column
+            for (int currentIndex = rowStart; currentIndex <= rowEnd; currentIndex++) {
+                arrayList.add(matrix[currentIndex][columnEnd]);
+            }
+            // Move the end of the column to the previous index
+            columnEnd--;
+
+            // Start at the beginning of the row
+            if (rowStart <= rowEnd) {
+                // Traverse Left
+                for (int currentIndex = columnEnd; currentIndex >= columnStart; currentIndex --) {
+                    arrayList.add(matrix[rowEnd][currentIndex]);
+                }
+            }
+            // End at the previous row
+            rowEnd--;
+
+            // Start at the beginning of the column
+            if (columnStart <= columnEnd) {
+                // Traverse Up
+                for (int currentIndex = rowEnd; currentIndex >= rowStart; currentIndex --) {
+                    arrayList.add(matrix[currentIndex][columnStart]);
+                }
+            }
+            columnStart++;
+        }
+
         return arrayList;
     }
 }
