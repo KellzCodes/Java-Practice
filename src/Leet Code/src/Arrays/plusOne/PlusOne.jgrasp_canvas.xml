@@ -16,10 +16,10 @@
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>50</X>
-      <Y>520</Y>
-      <W>263</W>
-      <H>94</H>
+      <X>260</X>
+      <Y>430</Y>
+      <W>176</W>
+      <H>91</H>
     </Bounds>
     <Viewer>
       <ScopeID>0</ScopeID>
@@ -30,8 +30,8 @@
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>80</X>
-      <Y>240</Y>
+      <X>100</X>
+      <Y>250</Y>
       <W>106</W>
       <H>50</H>
     </Bounds>
@@ -47,8 +47,22 @@
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>380</X>
-      <Y>70</Y>
+      <X>250</X>
+      <Y>550</Y>
+      <W>134</W>
+      <H>91</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int[]` digits</Expression>
+      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>420</X>
+      <Y>560</Y>
       <W>106</W>
       <H>50</H>
     </Bounds>
@@ -61,26 +75,12 @@
       <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
     </Viewer>
   </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>50</X>
-      <Y>100</Y>
-      <W>176</W>
-      <H>91</H>
-    </Bounds>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int[]` digits</Expression>
-      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
-    </Viewer>
-  </Frame>
   <Size>
-    <W>540</W>
-    <H>830</H>
+    <W>689</W>
+    <H>834</H>
   </Size>
   <ESize>
-    <W>540</W>
-    <H>830</H>
+    <W>689</W>
+    <H>834</H>
   </ESize>
 </Canvas>

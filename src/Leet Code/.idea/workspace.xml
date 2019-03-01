@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f32deda3-a03c-412d-aa70-609b1c443346" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Arrays/plusOne/PlusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arrays/plusOne/PlusOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Arrays/plusOne/PlusOne.jgrasp_canvas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arrays/plusOne/PlusOne.jgrasp_canvas.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,10 +15,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Arrays/plusOne/PlusOne.java">
+        <entry file="file://$PROJECT_DIR$/src/Arrays/spiralMatrix/SpiralMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+            <state relative-caret-position="289">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Arrays/diagonalTraverse/DiagonalTraverse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -55,6 +67,7 @@
         <option value="$PROJECT_DIR$/src/Arrays/pivotIndex/PivotIndex.java" />
         <option value="$PROJECT_DIR$/src/Arrays/largestNumberAtLeastTwiceAsOthers/LargestNumberAtLeastTwiceAsOthers.java" />
         <option value="$PROJECT_DIR$/src/Arrays/plusOne/PlusOne.java" />
+        <option value="$PROJECT_DIR$/src/Arrays/spiralMatrix/SpiralMatrix.java" />
       </list>
     </option>
   </component>
@@ -76,6 +89,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,18 +113,17 @@
               <item name="Leet Code" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Arrays" type="462c0819:PsiDirectoryNode" />
-              <item name="plusOne" type="462c0819:PsiDirectoryNode" />
+              <item name="diagonalTraverse" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551110429520" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551463774807" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunAnythingCache">
@@ -131,7 +144,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LargestNumberAtLeastTwiceAsOthers">
+  <component name="RunManager" selected="Application.SpiralMatrix">
     <configuration name="DiagonalTraverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Arrays.diagonalTraverse.DiagonalTraverse" />
       <module name="Leet Code" />
@@ -184,12 +197,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoDimensionalArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Arrays.pkg1.TwoDimensionalArray" />
+    <configuration name="SpiralMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Arrays.spiralMatrix.SpiralMatrix" />
       <module name="Leet Code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Arrays.pkg1.*" />
+          <option name="PATTERN" value="Arrays.spiralMatrix.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpiralMatrix" />
         <item itemvalue="Application.LargestNumberAtLeastTwiceAsOthers" />
         <item itemvalue="Application.PivotIndex" />
         <item itemvalue="Application.Lambda" />
         <item itemvalue="Application.DiagonalTraverse" />
-        <item itemvalue="Application.TwoDimensionalArray" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +244,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27651006" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27651006" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -299,13 +312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Arrays/diagonalTraverse/DiagonalTraverse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Arrays/pivotIndex/PivotIndex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -323,7 +329,24 @@
     <entry file="file://$PROJECT_DIR$/src/Arrays/plusOne/PlusOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Arrays/diagonalTraverse/DiagonalTraverse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Arrays/spiralMatrix/SpiralMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
