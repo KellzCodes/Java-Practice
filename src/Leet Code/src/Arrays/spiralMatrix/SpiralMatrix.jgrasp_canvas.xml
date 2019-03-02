@@ -22,22 +22,22 @@
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>478</X>
-      <Y>400</Y>
+      <X>58</X>
+      <Y>130</Y>
       <W>372</W>
       <H>138</H>
     </Bounds>
     <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local boolean[][]` seen</Expression>
+      <ScopeID>1</ScopeID>
+      <Expression>`local int[][]` matrix</Expression>
       <ViewerClass>jgrasp_viewers._X_A_A_ToStringView</ViewerClass>
     </Viewer>
   </Frame>
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>260</X>
-      <Y>370</Y>
+      <X>350</X>
+      <Y>300</Y>
       <W>106</W>
       <H>50</H>
     </Bounds>
@@ -46,7 +46,7 @@
     </LabelLoc>
     <Viewer>
       <ScopeID>0</ScopeID>
-      <Expression>`local int` direction</Expression>
+      <Expression>`local int` columnStart</Expression>
       <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
     </Viewer>
   </Frame>
@@ -67,8 +67,8 @@
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>30</X>
-      <Y>360</Y>
+      <X>510</X>
+      <Y>300</Y>
       <W>106</W>
       <H>50</H>
     </Bounds>
@@ -77,32 +77,15 @@
     </LabelLoc>
     <Viewer>
       <ScopeID>0</ScopeID>
-      <Expression>`local int` seenRow</Expression>
+      <Expression>`local int` columnEnd</Expression>
       <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
     </Viewer>
   </Frame>
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>30</X>
-      <Y>250</Y>
-      <W>106</W>
-      <H>50</H>
-    </Bounds>
-    <LabelLoc>
-      <WO>false</WO>
-    </LabelLoc>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int` rowLength</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>60</X>
-      <Y>440</Y>
+      <X>90</X>
+      <Y>390</Y>
       <W>106</W>
       <H>50</H>
     </Bounds>
@@ -118,8 +101,8 @@
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>140</X>
-      <Y>360</Y>
+      <X>210</X>
+      <Y>290</Y>
       <W>106</W>
       <H>50</H>
     </Bounds>
@@ -128,15 +111,15 @@
     </LabelLoc>
     <Viewer>
       <ScopeID>0</ScopeID>
-      <Expression>`local int` seenColumn</Expression>
+      <Expression>`local int` rowEnd</Expression>
       <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
     </Viewer>
   </Frame>
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>810</X>
-      <Y>260</Y>
+      <X>60</X>
+      <Y>290</Y>
       <W>106</W>
       <H>50</H>
     </Bounds>
@@ -145,92 +128,16 @@
     </LabelLoc>
     <Viewer>
       <ScopeID>0</ScopeID>
-      <Expression>`local int` currentColumn</Expression>
+      <Expression>`local int` rowStart</Expression>
       <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>250</X>
-      <Y>240</Y>
-      <W>218</W>
-      <H>91</H>
-    </Bounds>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int[]` rowDirection</Expression>
-      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>700</X>
-      <Y>260</Y>
-      <W>106</W>
-      <H>50</H>
-    </Bounds>
-    <LabelLoc>
-      <WO>false</WO>
-    </LabelLoc>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int` currentRow</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>140</X>
-      <Y>250</Y>
-      <W>106</W>
-      <H>50</H>
-    </Bounds>
-    <LabelLoc>
-      <WO>false</WO>
-    </LabelLoc>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int` columnLength</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>40</X>
-      <Y>100</Y>
-      <W>372</W>
-      <H>138</H>
-    </Bounds>
-    <Viewer>
-      <ScopeID>1</ScopeID>
-      <Expression>`local int[][]` matrix</Expression>
-      <ViewerClass>jgrasp_viewers._X_A_A_ToStringView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>460</X>
-      <Y>240</Y>
-      <W>218</W>
-      <H>91</H>
-    </Bounds>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int[]` columnDirection</Expression>
-      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
     </Viewer>
   </Frame>
   <Size>
-    <W>1112</W>
-    <H>666</H>
+    <W>978</W>
+    <H>1038</H>
   </Size>
   <ESize>
-    <W>1112</W>
-    <H>666</H>
+    <W>978</W>
+    <H>1038</H>
   </ESize>
 </Canvas>
