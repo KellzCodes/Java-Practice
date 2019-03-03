@@ -1,5 +1,30 @@
 package Arrays.spiralMatrix;
 
+/*
+* Given a matrix of m x n elements (m rows, n columns), return all
+* elements of the matrix in spiral order.
+*
+
+Example 1:
+
+Input:
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+Output: [1,2,3,6,9,8,7,4,5]
+Example 2:
+
+Input:
+[
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9,10,11,12]
+]
+Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+*/
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,42 +65,64 @@ public class SpiralMatrix {
         // Sets the end of a column, default is the last index in the column
         int columnEnd = matrix[0].length - 1;
 
-        // Traverse through the entire matrix
+        /*
+        * While the row Start index is less than or equal to the row end index
+        * AND the column start index is less than or equal to the column end index
+        *
+        * First we go around the outer edges of the matrix
+        * */
         while (rowStart <= rowEnd && columnStart <= columnEnd) {
-            // Traverse through the current row
+            /* Set the current index to the column start index and traverse right to the
+            * column end index*/
             for (int currentIndex = columnStart; currentIndex <= columnEnd; currentIndex++) {
+                // Add each integer from the current row to the array list
                 arrayList.add(matrix[rowStart][currentIndex]);
             }
             // Move the beginning of the the row to the next index
             rowStart++;
 
-            // Traverse Down the current column
+            /*
+            * Set the current index to the row start index and traverse down to the row end
+            * index */
             for (int currentIndex = rowStart; currentIndex <= rowEnd; currentIndex++) {
+                // Add each integer from the current column to the array list
                 arrayList.add(matrix[currentIndex][columnEnd]);
             }
-            // Move the end of the column to the previous index
+            // Move the end of the column to the previous column index
             columnEnd--;
 
-            // Start at the beginning of the row
+            /*
+            * Now we go around the inner parts of the matrix
+            * */
+
+            // If the row start index is less than or equal to the row end index
             if (rowStart <= rowEnd) {
-                // Traverse Left
+                /*
+                * Set the current index to the column end index and traverse left to the column
+                * start index */
                 for (int currentIndex = columnEnd; currentIndex >= columnStart; currentIndex --) {
+                    // Add each integer in the current row to the array list
                     arrayList.add(matrix[rowEnd][currentIndex]);
                 }
             }
-            // End at the previous row
+            // Set the row end index to the previous row
             rowEnd--;
 
-            // Start at the beginning of the column
+            // If the column start index is less than or equal to the column end index
             if (columnStart <= columnEnd) {
-                // Traverse Up
+                /*
+                * Set the current index to the row end index and traverse up to the row start
+                * index */
                 for (int currentIndex = rowEnd; currentIndex >= rowStart; currentIndex --) {
+                    // Add each integer from the current column to the array list
                     arrayList.add(matrix[currentIndex][columnStart]);
                 }
             }
+            // Set the column start index to the next column
             columnStart++;
         }
 
+        // Return the array list
         return arrayList;
     }
 }
