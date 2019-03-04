@@ -126,3 +126,8 @@ public class SpiralMatrix {
         return arrayList;
     }
 }
+
+/*
+* Complexity Analysis:
+* Time Complexity: O(N) where N is the number of integers
+* Space Complexity: O(N) space where N is the arrayList */
