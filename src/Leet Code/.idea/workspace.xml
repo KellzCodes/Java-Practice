@@ -14,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Strings/introStrings/IntroStrings.java">
+        <entry file="file://$PROJECT_DIR$/src/Strings/introStrings/ImmutableStrings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+            <state relative-caret-position="616">
+              <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -57,6 +57,7 @@
         <option value="$PROJECT_DIR$/src/Arrays/spiralMatrix/SpiralMatrix.java" />
         <option value="$PROJECT_DIR$/src/Arrays/pascalsTriangle/PascalsTriangle.java" />
         <option value="$PROJECT_DIR$/src/Strings/introStrings/IntroStrings.java" />
+        <option value="$PROJECT_DIR$/src/Strings/introStrings/ImmutableStrings.java" />
       </list>
     </option>
   </component>
@@ -95,6 +96,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Strings" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Leet Code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leet Code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Strings" type="462c0819:PsiDirectoryNode" />
+              <item name="introStrings" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -104,7 +112,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551843709237" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551845594360" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunAnythingCache">
@@ -125,7 +133,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IntroStrings">
+  <component name="RunManager" selected="Application.ImmutableStrings">
+    <configuration name="ImmutableStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Strings.introStrings.ImmutableStrings" />
+      <module name="Leet Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Strings.introStrings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IntroStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Strings.introStrings.IntroStrings" />
       <module name="Leet Code" />
@@ -165,19 +186,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PivotIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Arrays.pivotIndex.PivotIndex" />
-      <module name="Leet Code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Arrays.pivotIndex.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpiralMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Arrays.spiralMatrix.SpiralMatrix" />
       <module name="Leet Code" />
@@ -200,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ImmutableStrings" />
         <item itemvalue="Application.IntroStrings" />
         <item itemvalue="Application.PascalsTriangle" />
         <item itemvalue="Application.SpiralMatrix" />
         <item itemvalue="Application.LargestNumberAtLeastTwiceAsOthers" />
-        <item itemvalue="Application.PivotIndex" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +233,7 @@
     <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27423823" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27323163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -239,7 +247,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32331902" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32234958" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32808024" />
@@ -350,8 +358,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Strings/introStrings/IntroStrings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
+        <state relative-caret-position="275">
           <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Strings/introStrings/ImmutableStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
         </state>
       </provider>
     </entry>
