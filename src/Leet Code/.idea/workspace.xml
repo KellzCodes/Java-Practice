@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f32deda3-a03c-412d-aa70-609b1c443346" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f32deda3-a03c-412d-aa70-609b1c443346" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +12,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Strings/addBinary/AddBinary.java">
+        <entry file="file://$PROJECT_DIR$/src/Strings/implementStrStr/ImplementStrStr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+            <state relative-caret-position="493">
+              <caret line="31" column="10" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="69" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -59,6 +57,7 @@
         <option value="$PROJECT_DIR$/src/Strings/introStrings/IntroStrings.java" />
         <option value="$PROJECT_DIR$/src/Strings/introStrings/ImmutableStrings.java" />
         <option value="$PROJECT_DIR$/src/Strings/addBinary/AddBinary.java" />
+        <option value="$PROJECT_DIR$/src/Strings/implementStrStr/ImplementStrStr.java" />
       </list>
     </option>
   </component>
@@ -106,7 +105,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551908642039" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551927944461" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunAnythingCache">
@@ -227,7 +226,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27323163" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27315435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -241,7 +240,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32234958" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32152975" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32808024" />
@@ -366,8 +365,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Strings/addBinary/AddBinary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        <state relative-caret-position="340">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Strings/implementStrStr/ImplementStrStr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="69" selection-end-column="8" />
         </state>
       </provider>
     </entry>
