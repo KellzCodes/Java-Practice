@@ -22,8 +22,8 @@ package Strings.implementStrStr;
 public class ImplementStrStr {
 
     public static void main (String[] args){
-        String haystack = "aaaaa";
-        String needle = "bba";
+        String haystack = "Hello";
+        String needle = "lo";
         int strStr = strStr(haystack, needle);
         System.out.println(strStr);
     }
