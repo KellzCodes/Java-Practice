@@ -62,10 +62,10 @@ public class RepeatedStringMatch {
          * If they don't share a character set and B is not a substring of A + A,
          * B will never be a substring of A no matter how many times it is repeated.
          * */
-        int aUpperIndex;
-        int bUpperIndex;
-        int aLowerIndex;
-        int bLowerIndex;
+        int upperA;
+        int upperB;
+        int lowerA;
+        int lowerB;
         char upperCase;
         char lowerCase;
         /*
@@ -79,32 +79,32 @@ public class RepeatedStringMatch {
 
             /* check to see if the current uppercase letter is a substring of A
             * If it's not, the index will be equal to -1*/
-            aUpperIndex = A.indexOf(upperCase);
+            upperA = A.indexOf(upperCase);
             /* check to see if the current uppercase letter is a substring of B
             * If it's not, the index will be equal to -1*/
-            bUpperIndex = B.indexOf(upperCase);
+            upperB = B.indexOf(upperCase);
             /* check to see if the current lowercase letter is a substring of A
             * If it's not, the index will be equal to -1*/
-            aLowerIndex = A.indexOf(lowerCase);
+            lowerA = A.indexOf(lowerCase);
             /* check to see if the current lowercase letter is a substring of B
             * If it's not, the index will be equal to -1*/
-            bLowerIndex = B.indexOf(lowerCase);
+            lowerB = B.indexOf(lowerCase);
 
             /*
             * If the current uppercase letter isn't in String A or String B
             * AND
-            * If the aUpperIndex does not equal bUpperIndex
+            * If the upperA does not equal upperB
             * return -1
             * */
-            if(aUpperIndex == -1 || bUpperIndex == -1) if(aUpperIndex != bUpperIndex) return -1;
+            if(upperA == -1 || upperB == -1) if(upperA != upperB) return -1;
 
             /*
              * If the current lowercase letter isn't in String A or String B
              * AND
-             * If the aLowerIndex does not equal bLowerIndex
+             * If the lowerA does not equal lowerB
              * return -1
              * */
-            if(aLowerIndex == -1||bLowerIndex == -1) if(aLowerIndex != bLowerIndex) return -1;
+            if(lowerA == -1||lowerB == -1) if(lowerA != lowerB) return -1;
         }
 
         // Initialize a new string builder
