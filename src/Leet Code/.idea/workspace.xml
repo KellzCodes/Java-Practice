@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f32deda3-a03c-412d-aa70-609b1c443346" name="Default Changelist" comment="" />
+    <list default="true" id="f32deda3-a03c-412d-aa70-609b1c443346" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Leet Code/Strings/repeatedStringMatch/Main.jgrasp_canvas.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Strings/repeatedStringMatch/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Strings/repeatedStringMatch/Main.jgrasp_canvas.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Strings/repeatedStringMatch/Solution1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Strings/repeatedStringMatch/Solution2.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,10 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Strings/implementStrStr/ImplementStrStr.java">
+        <entry file="file://$PROJECT_DIR$/src/Strings/repeatedStringMatch/RepeatedStringMatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            <state relative-caret-position="564">
+              <caret line="144" column="6" selection-start-line="144" selection-start-column="6" selection-end-line="144" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -58,6 +65,8 @@
         <option value="$PROJECT_DIR$/src/Strings/introStrings/ImmutableStrings.java" />
         <option value="$PROJECT_DIR$/src/Strings/addBinary/AddBinary.java" />
         <option value="$PROJECT_DIR$/src/Strings/implementStrStr/ImplementStrStr.java" />
+        <option value="$PROJECT_DIR$/src/Strings/repeatedStringMatch/Solution1.java" />
+        <option value="$PROJECT_DIR$/src/Strings/repeatedStringMatch/RepeatedStringMatch.java" />
       </list>
     </option>
   </component>
@@ -68,7 +77,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
@@ -105,7 +114,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551928775106" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552023393722" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunAnythingCache">
@@ -126,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AddBinary">
+  <component name="RunManager" selected="Application.RepeatedStringMatch">
     <configuration name="AddBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Strings.addBinary.AddBinary" />
       <module name="Leet Code" />
@@ -179,12 +188,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpiralMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Arrays.spiralMatrix.SpiralMatrix" />
+    <configuration name="RepeatedStringMatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Strings.repeatedStringMatch.RepeatedStringMatch" />
       <module name="Leet Code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Arrays.spiralMatrix.*" />
+          <option name="PATTERN" value="Strings.repeatedStringMatch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -201,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RepeatedStringMatch" />
         <item itemvalue="Application.AddBinary" />
         <item itemvalue="Application.ImmutableStrings" />
         <item itemvalue="Application.IntroStrings" />
         <item itemvalue="Application.PascalsTriangle" />
-        <item itemvalue="Application.SpiralMatrix" />
       </list>
     </recent_temporary>
   </component>
@@ -224,8 +233,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27315435" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16308725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -234,15 +244,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31948423" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3186969" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32152975" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32152975" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32808024" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32719547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Maven" order="1" weight="0.3295302" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -371,8 +381,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Strings/implementStrStr/ImplementStrStr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        <state relative-caret-position="442">
+          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Strings/repeatedStringMatch/Solution1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Strings/repeatedStringMatch/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Strings/repeatedStringMatch/RepeatedStringMatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="144" column="6" selection-start-line="144" selection-start-column="6" selection-end-line="144" selection-end-column="6" />
         </state>
       </provider>
     </entry>
