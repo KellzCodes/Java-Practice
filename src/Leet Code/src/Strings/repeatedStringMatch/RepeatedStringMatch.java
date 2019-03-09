@@ -28,8 +28,8 @@ public class RepeatedStringMatch {
         }
 
         /*
-         * if A is longer than B, we only need to repeat A once
-         * if B is not already a substring of A.
+         * if A is longer than B,
+         * we only need to repeat A once if B is already a substring of A
          * */
 
         // If String A is at least twice the size of String B
@@ -44,14 +44,14 @@ public class RepeatedStringMatch {
             }
 
             // Make a string with two String A's
-            String C = new String(A + A);
+            //String C = new String(A + A);
 
             /*
-             * Check to see if String B is already in String A.
+             * Check to see if String B is in String A + A.
              * If it is, return 2.
              * NOTE: If B isn't in A, it will return -1 by default
              * */
-            if(C.indexOf(B) != -1){
+            if((A + A).indexOf(B) != -1){
                 return 2;
             }
 
