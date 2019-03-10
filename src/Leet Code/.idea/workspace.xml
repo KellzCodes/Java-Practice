@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f32deda3-a03c-412d-aa70-609b1c443346" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Strings/repeatedStringMatch/RepeatedStringMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Strings/repeatedStringMatch/RepeatedStringMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strings/repeatedStringMatch/RepeatedStringMatch.jgrasp_canvas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Strings/repeatedStringMatch/RepeatedStringMatch.jgrasp_canvas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Strings/repeatedStringMatch/RepeatedStringMatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="145" column="8" selection-start-line="145" selection-start-column="8" selection-end-line="147" selection-end-column="9" />
+            <state relative-caret-position="289">
+              <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -110,7 +109,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552092483399" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552178498094" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunAnythingCache">
@@ -398,8 +397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Strings/repeatedStringMatch/RepeatedStringMatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="145" column="8" selection-start-line="145" selection-start-column="8" selection-end-line="147" selection-end-column="9" />
+        <state relative-caret-position="289">
+          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>
