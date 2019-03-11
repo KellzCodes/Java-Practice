@@ -34,8 +34,8 @@ package Arrays.kEmptySlots;
 
 public class KemptySlots {
     public static void main(String[] args){
-        int[] flowers = new int[]{3, 2, 1, 4, 9, 7, 5, 8, 6};
-        System.out.println(kEmptySlots(flowers, 4));
+        int[] flowers = new int[]{3, 1, 7, 6, 9, 8, 5, 2, 4};
+        System.out.println(kEmptySlots(flowers, 3));
     }
     public static int kEmptySlots(int[] flowers, int k) {
         // Count the number of flowers
@@ -47,8 +47,8 @@ public class KemptySlots {
 
         // Traverse through flowers array
         for (int currentIndex = 0; currentIndex < numberOfFlowers; currentIndex++) {
-            int currentFlower = flowers[currentIndex] - 1;
             int currentDay = currentIndex + 1;
+            int currentFlower = flowers[currentIndex] - 1;
             // If current flower slot is ignored, start from the beginning of the loop
             if (ignored[currentFlower]) continue;
             // The current flower is now blooming
@@ -61,9 +61,9 @@ public class KemptySlots {
             // If the lower flower slot is less than the lowest index
             if (lowerFlower < 0) {
                 // Traverse from zero to the current flower slot
-                for (int j = 0; j < currentFlower; j++) {
+                for (int bud = 0; bud < currentFlower; bud++) {
                     // mark each flower as ignored
-                    ignored[j] = true;
+                    ignored[bud] = true;
                 }
             }
             else {
@@ -75,12 +75,12 @@ public class KemptySlots {
                     * Since the lower flower slot is bloomed, traverse from the next slot to
                     * the current flower slot
                     * */
-                    for (int j = lowerFlower + 1; j < currentFlower; j ++) {
+                    for (int bud = lowerFlower + 1; bud < currentFlower; bud ++) {
                         /*
-                        * Check to see if the j flower is bloomed.
+                        * Check to see if the bud flower is bloomed.
                         * If it is, break the for loop and mark nobloom as false
                         * */
-                        if (bloomed[j]) {
+                        if (bloomed[bud]) {
                             nobloom = false;
                             break;
                         }
@@ -98,8 +98,8 @@ public class KemptySlots {
                      * them as ignored in the ignored array
                      * */
                     else {
-                        for (int j = lowerFlower + 1; j < currentFlower; j ++) {
-                            ignored[j] = true;
+                        for (int bud = lowerFlower + 1; bud < currentFlower; bud ++) {
+                            ignored[bud] = true;
                         }
                     }
                 }
@@ -108,8 +108,8 @@ public class KemptySlots {
             // If the upper flower slot is greater than the highest index
             if (upperFlower > numberOfFlowers - 1) {
                 // Mark every flower between the current flower slot and the upper flower slot as ignored
-                for (int j = currentFlower + 1; j < numberOfFlowers; j++) {
-                    ignored[j] = true;
+                for (int bud = currentFlower + 1; bud < numberOfFlowers; bud++) {
+                    ignored[bud] = true;
                 }
             }
 
@@ -122,12 +122,12 @@ public class KemptySlots {
                     * Since the upper flower slot is bloomed, traverse between the
                     * current flower slot and the upper flower slot
                     * */
-                    for (int j = currentFlower + 1; j < upperFlower; j++) {
+                    for (int bud = currentFlower + 1; bud < upperFlower; bud++) {
                         /*
-                        * If the j flower is bloomed, nobloom is false.
+                        * If the bud flower is bloomed, nobloom is false.
                         * break the loop
                         * */
-                        if (bloomed[j]) {
+                        if (bloomed[bud]) {
                             nobloom = false;
                             break;
                         }
@@ -145,8 +145,8 @@ public class KemptySlots {
                      * them as ignored in the ignored array
                      * */
                     else {
-                        for (int j = currentFlower + 1; j < upperFlower; j++) {
-                            ignored[j] = true;
+                        for (int bud = currentFlower + 1; bud < upperFlower; bud++) {
+                            ignored[bud] = true;
                         }
                     }
                 }
