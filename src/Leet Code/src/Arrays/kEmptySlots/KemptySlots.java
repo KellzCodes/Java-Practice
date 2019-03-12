@@ -61,10 +61,7 @@ public class KemptySlots {
             // If the lower flower slot is less than the lowest index
             if (lowerFlower < 0) {
                 // Traverse from zero to the current flower slot
-                for (int bud = 0; bud < currentFlower; bud++) {
-                    // mark each flower as ignored
-                    ignored[bud] = true;
-                }
+                for (int kFlower = 0; kFlower < currentFlower; kFlower++) ignored[kFlower] = true;
             }
             else {
                 // If the lower flower slot is bloomed
@@ -75,12 +72,12 @@ public class KemptySlots {
                     * Since the lower flower slot is bloomed, traverse from the next slot to
                     * the current flower slot
                     * */
-                    for (int bud = lowerFlower + 1; bud < currentFlower; bud ++) {
+                    for (int kFlower = lowerFlower + 1; kFlower < currentFlower; kFlower ++) {
                         /*
-                        * Check to see if the bud flower is bloomed.
+                        * Check to see if the kFlower is bloomed.
                         * If it is, break the for loop and mark nobloom as false
                         * */
-                        if (bloomed[bud]) {
+                        if (bloomed[kFlower]) {
                             nobloom = false;
                             break;
                         }
@@ -98,8 +95,8 @@ public class KemptySlots {
                      * them as ignored in the ignored array
                      * */
                     else {
-                        for (int bud = lowerFlower + 1; bud < currentFlower; bud ++) {
-                            ignored[bud] = true;
+                        for (int kFlower = lowerFlower + 1; kFlower < currentFlower; kFlower ++) {
+                            ignored[kFlower] = true;
                         }
                     }
                 }
@@ -108,8 +105,8 @@ public class KemptySlots {
             // If the upper flower slot is greater than the highest index
             if (upperFlower > numberOfFlowers - 1) {
                 // Mark every flower between the current flower slot and the upper flower slot as ignored
-                for (int bud = currentFlower + 1; bud < numberOfFlowers; bud++) {
-                    ignored[bud] = true;
+                for (int kFlower = currentFlower + 1; kFlower < numberOfFlowers; kFlower++) {
+                    ignored[kFlower] = true;
                 }
             }
 
@@ -122,12 +119,12 @@ public class KemptySlots {
                     * Since the upper flower slot is bloomed, traverse between the
                     * current flower slot and the upper flower slot
                     * */
-                    for (int bud = currentFlower + 1; bud < upperFlower; bud++) {
+                    for (int kFlower = currentFlower + 1; kFlower < upperFlower; kFlower++) {
                         /*
-                        * If the bud flower is bloomed, nobloom is false.
+                        * If the kFlower is bloomed, nobloom is false.
                         * break the loop
                         * */
-                        if (bloomed[bud]) {
+                        if (bloomed[kFlower]) {
                             nobloom = false;
                             break;
                         }
@@ -145,8 +142,8 @@ public class KemptySlots {
                      * them as ignored in the ignored array
                      * */
                     else {
-                        for (int bud = currentFlower + 1; bud < upperFlower; bud++) {
-                            ignored[bud] = true;
+                        for (int kFlower = currentFlower + 1; kFlower < upperFlower; kFlower++) {
+                            ignored[kFlower] = true;
                         }
                     }
                 }
