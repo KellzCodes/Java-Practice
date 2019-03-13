@@ -12,10 +12,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/ThrowingExceptions.java">
+        <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/CatchingExceptions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+            <state relative-caret-position="306">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,6 +55,7 @@
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/Student.java" />
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/RuntimeExceptions.java" />
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/ThrowingExceptions.java" />
+        <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/CatchingExceptions.java" />
       </list>
     </option>
   </component>
@@ -103,7 +104,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552516669817" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552517699034" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -118,7 +119,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThrowingExceptions">
+  <component name="RunManager" selected="Application.CatchingExceptions">
+    <configuration name="CatchingExceptions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week1.exceptionHandling.CatchingExceptions" />
+      <module name="Coding Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Week1.exceptionHandling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExamAvg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="inputOutput.ExamAvg" />
       <module name="Coding Practice" />
@@ -134,19 +148,6 @@
     </configuration>
     <configuration name="FormatOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="inputOutput.FormatOutput" />
-      <module name="Coding Practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="inputOutput.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrintWrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="inputOutput.PrintWrite" />
       <module name="Coding Practice" />
       <extension name="coverage">
         <pattern>
@@ -186,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CatchingExceptions" />
         <item itemvalue="Application.ThrowingExceptions" />
         <item itemvalue="Application.RuntimeExceptions" />
         <item itemvalue="Application.ExamAvg" />
         <item itemvalue="Application.FormatOutput" />
-        <item itemvalue="Application.PrintWrite" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +357,17 @@
     <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/ThrowingExceptions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/CatchingExceptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
