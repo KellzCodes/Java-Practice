@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a962a03-6c91-4813-a7ea-f7e5e8e98787" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Coding Practice/arrayList/ints-in.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Coding Practice/arrayList/ints-out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scanner/PrintReverse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scanner/ints-in.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scanner/ints-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputOutput/PrintReverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/PrintReverse.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,20 +14,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/inputOutput/ScannerNext.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/inputOutput/PrintWrite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="289">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/inputOutput/input.txt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/inputOutput/PrintReverse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="-49">
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -55,15 +54,18 @@
         <option value="$PROJECT_DIR$/src/scanner/PrintReverse.java" />
         <option value="$PROJECT_DIR$/src/scanner/InputOutput.java" />
         <option value="$PROJECT_DIR$/src/scanner/input.txt" />
-        <option value="$PROJECT_DIR$/src/inputOutput/ScannerNext.java" />
         <option value="$PROJECT_DIR$/src/inputOutput/input.txt" />
+        <option value="$PROJECT_DIR$/src/inputOutput/ScannerNext.java" />
+        <option value="$PROJECT_DIR$/src/inputOutput/PrintReverse.java" />
+        <option value="$PROJECT_DIR$/src/inputOutput/PrintWriter.java" />
+        <option value="$PROJECT_DIR$/src/inputOutput/PrintWrite.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -98,7 +100,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552501875016" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552502070073" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -113,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ScannerNext (1)">
+  <component name="RunManager" selected="Application.PrintWrite">
     <configuration name="PrintReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="arrayList.PrintReverse" />
       <module name="Coding Practice" />
@@ -127,8 +129,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScannerNext (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="inputOutput.ScannerNext" />
+    <configuration name="PrintWrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inputOutput.PrintWrite" />
       <module name="Coding Practice" />
       <extension name="coverage">
         <pattern>
@@ -153,8 +155,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ScannerNext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inputOutput.ScannerNext" />
+      <module name="Coding Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inputOutput.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrintWrite" />
         <item itemvalue="Application.ScannerNext (1)" />
         <item itemvalue="Application.ScannerNext" />
         <item itemvalue="Application.PrintReverse" />
@@ -175,10 +191,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="782" height="831" extended-state="0" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2728532" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27323163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -234,17 +250,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/inputOutput/ScannerNext.java">
+    <entry file="file://$PROJECT_DIR$/src/inputOutput/input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/inputOutput/input.txt">
+    <entry file="file://$PROJECT_DIR$/src/inputOutput/ScannerNext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="357">
+          <caret line="21" column="69" lean-forward="true" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inputOutput/PrintReverse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inputOutput/PrintWrite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

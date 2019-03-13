@@ -1,4 +1,4 @@
-package scanner;
+package inputOutput;
 
 /*
 * Reads a file named "ints-in.txt" containing integers and writes the integers to
