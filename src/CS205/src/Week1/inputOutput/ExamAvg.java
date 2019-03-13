@@ -1,4 +1,4 @@
-package inputOutput;
+package Week1.inputOutput;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,10 +8,10 @@ import java.util.Scanner;
 public class ExamAvg {
     public static void main(String[] args) throws FileNotFoundException {
         // Open "scores-in.txt" for reading
-        Scanner in = new Scanner(new File("C:\\Users\\kelda\\Documents\\Java-Algorithm-Practice\\src\\CS205\\src\\inputOutput\\text-files\\scores-in.txt"));
+        Scanner in = new Scanner(new File("Week1/inputOutput/text-files/scores-in.txt"));
 
         // Open "scores-out.txt" for writing
-        PrintWriter out = new PrintWriter(new File("C:\\Users\\kelda\\Documents\\Java-Algorithm-Practice\\src\\CS205\\src\\inputOutput\\text-files\\scores-out.txt"));
+        PrintWriter out = new PrintWriter(new File("Week1/inputOutput/text-files/scores-out.txt"));
 
         // Print the column headers
         out.println("Exam 1   Exam 2    Exam 3    Exam Avg");
