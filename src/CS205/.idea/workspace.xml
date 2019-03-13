@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5a962a03-6c91-4813-a7ea-f7e5e8e98787" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Coding Practice/inputOutput/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Coding Practice/inputOutput/ints-in.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Coding Practice/inputOutput/ints-out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Coding Practice/inputOutput/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Coding Practice/inputOutput/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inputOutput/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inputOutput/ints-in.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inputOutput/ints-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coding Practice/inputOutput/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputOutput/output.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,12 +16,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/inputOutput/FormatOutput.java">
+        <entry file="file://$PROJECT_DIR$/src/inputOutput/ExamAvg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="578">
+              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/inputOutput/text-files/scores-out.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -54,6 +57,7 @@
         <option value="$PROJECT_DIR$/src/inputOutput/PrintWriter.java" />
         <option value="$PROJECT_DIR$/src/inputOutput/PrintWrite.java" />
         <option value="$PROJECT_DIR$/src/inputOutput/FormatOutput.java" />
+        <option value="$PROJECT_DIR$/src/inputOutput/ExamAvg.java" />
       </list>
     </option>
   </component>
@@ -87,6 +91,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="inputOutput" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CS205" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS205" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="inputOutput" type="462c0819:PsiDirectoryNode" />
+              <item name="text-files" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -95,7 +106,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552509029765" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552510252974" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -110,9 +121,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FormatOutput">
-    <configuration name="FormatOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="inputOutput.FormatOutput" />
+  <component name="RunManager" selected="Application.ExamAvg">
+    <configuration name="ExamAvg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inputOutput.ExamAvg" />
       <module name="Coding Practice" />
       <extension name="coverage">
         <pattern>
@@ -124,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="arrayList.PrintReverse" />
+    <configuration name="FormatOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inputOutput.FormatOutput" />
       <module name="Coding Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="arrayList.*" />
+          <option name="PATTERN" value="inputOutput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExamAvg" />
         <item itemvalue="Application.FormatOutput" />
         <item itemvalue="Application.PrintWrite" />
         <item itemvalue="Application.ScannerNext (1)" />
         <item itemvalue="Application.ScannerNext" />
-        <item itemvalue="Application.PrintReverse" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +222,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32808024" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -302,8 +313,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/inputOutput/FormatOutput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="268">
+          <caret line="40" column="56" lean-forward="true" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inputOutput/text-files/scores-out.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inputOutput/ExamAvg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
