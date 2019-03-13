@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a962a03-6c91-4813-a7ea-f7e5e8e98787" name="Default Changelist" comment="" />
+    <list default="true" id="5a962a03-6c91-4813-a7ea-f7e5e8e98787" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/CatchingExceptions.java">
+        <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/FinallyClause.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="561">
+              <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,6 +58,8 @@
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/RuntimeExceptions.java" />
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/ThrowingExceptions.java" />
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/CatchingExceptions.java" />
+        <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/output.txt" />
+        <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/FinallyClause.java" />
       </list>
     </option>
   </component>
@@ -96,6 +100,21 @@
               <item name="Week1" type="462c0819:PsiDirectoryNode" />
               <item name="exceptionHandling" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CS205" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS205" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Week1" type="462c0819:PsiDirectoryNode" />
+              <item name="inputOutput" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS205" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS205" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Week1" type="462c0819:PsiDirectoryNode" />
+              <item name="inputOutput" type="462c0819:PsiDirectoryNode" />
+              <item name="text-files" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -104,8 +123,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552517699034" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552520960202" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kelda\Documents\Java-Algorithm-Practice\src\CS205\src\Week1\exceptionHandling" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -119,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CatchingExceptions">
+  <component name="RunManager" selected="Application.FinallyClause">
     <configuration name="CatchingExceptions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Week1.exceptionHandling.CatchingExceptions" />
       <module name="Coding Practice" />
@@ -146,12 +170,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormatOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="inputOutput.FormatOutput" />
+    <configuration name="FinallyClause" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week1.exceptionHandling.FinallyClause" />
       <module name="Coding Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="inputOutput.*" />
+          <option name="PATTERN" value="Week1.exceptionHandling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FinallyClause" />
         <item itemvalue="Application.CatchingExceptions" />
         <item itemvalue="Application.ThrowingExceptions" />
         <item itemvalue="Application.RuntimeExceptions" />
         <item itemvalue="Application.ExamAvg" />
-        <item itemvalue="Application.FormatOutput" />
       </list>
     </recent_temporary>
   </component>
@@ -366,8 +390,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/CatchingExceptions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/output.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/FinallyClause.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
