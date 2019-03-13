@@ -1,4 +1,4 @@
-package arrayList;
+package scanner;
 
 /*
 * Reads a file named "ints-in.txt" containing integers and writes the integers to
