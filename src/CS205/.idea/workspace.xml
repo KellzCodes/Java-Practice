@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a962a03-6c91-4813-a7ea-f7e5e8e98787" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Week1/objectsAndClasses/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Week1/objectsAndClasses/Point.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,20 +15,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Week1/objectsAndClasses/InstantiatingObjects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <folding>
+                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Week1/objectsAndClasses/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-              <folding>
-                <element signature="e#692#693#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
-                <element signature="e#858#859#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="251">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -68,6 +72,7 @@
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/output.txt" />
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/FinallyClause.java" />
         <option value="$PROJECT_DIR$/src/Week1/objectsAndClasses/Point.java" />
+        <option value="$PROJECT_DIR$/src/Week1/objectsAndClasses/InstantiatingObjects.java" />
       </list>
     </option>
   </component>
@@ -101,6 +106,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Week1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CS205" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS205" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Week1" type="462c0819:PsiDirectoryNode" />
+              <item name="objectsAndClasses" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -109,7 +121,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552525942767" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552527813244" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -399,17 +411,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Week1/objectsAndClasses/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        <state relative-caret-position="251">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Week1/objectsAndClasses/InstantiatingObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding>
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
           </folding>
         </state>
       </provider>
