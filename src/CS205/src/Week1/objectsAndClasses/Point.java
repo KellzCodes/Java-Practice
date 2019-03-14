@@ -27,8 +27,8 @@ public class Point {
     * Constructors may be overloaded
     * */
     public Point(){ // Default constructor
-        setX(0);
-        setY(0);
+        // One constructor can call another constructor of the same class using "this"
+        this(0, 0);
     }
 
     public Point(double initX, double initY){ // Second constructor
@@ -37,6 +37,13 @@ public class Point {
     }
 
     // Mutator method for y
+    /*
+    * Every object has an instance variable named this which is automatically
+    * declared by the java compiler.
+    *
+    * One use of "this" is when the name of an instance variable conflicts with
+    * the name of a method parameter
+    * */
     public void setY(double y) {
         this.y = y;
     }
