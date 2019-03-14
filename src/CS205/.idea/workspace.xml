@@ -14,12 +14,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/FinallyClause.java">
+        <entry file="file://$PROJECT_DIR$/src/Week1/objectsAndClasses/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
+            <state relative-caret-position="493">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#806#807#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#882#883#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,6 +67,7 @@
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/CatchingExceptions.java" />
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/output.txt" />
         <option value="$PROJECT_DIR$/src/Week1/exceptionHandling/FinallyClause.java" />
+        <option value="$PROJECT_DIR$/src/Week1/objectsAndClasses/Point.java" />
       </list>
     </option>
   </component>
@@ -93,28 +101,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Week1" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CS205" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS205" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Week1" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptionHandling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS205" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS205" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Week1" type="462c0819:PsiDirectoryNode" />
-              <item name="inputOutput" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS205" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS205" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Week1" type="462c0819:PsiDirectoryNode" />
-              <item name="inputOutput" type="462c0819:PsiDirectoryNode" />
-              <item name="text-files" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -123,7 +109,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552520960202" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552525942767" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -403,10 +389,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Week1/exceptionHandling/FinallyClause.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
+        <state relative-caret-position="335">
+          <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Week1/objectsAndClasses/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
           </folding>
         </state>
       </provider>
