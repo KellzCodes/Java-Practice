@@ -14,16 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Week1/objectsAndClasses/Static.java">
+        <entry file="file://$PROJECT_DIR$/src/Week1/objectsAndClasses/DeclaringConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding>
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -66,6 +60,8 @@
         <option value="$PROJECT_DIR$/src/Week1/objectsAndClasses/InstantiatingObjects.java" />
         <option value="$PROJECT_DIR$/src/Week1/objectsAndClasses/Point.java" />
         <option value="$PROJECT_DIR$/src/Week1/objectsAndClasses/Static.java" />
+        <option value="$PROJECT_DIR$/src/Week1/objectsAndClasses/Final.java" />
+        <option value="$PROJECT_DIR$/src/Week1/objectsAndClasses/DeclaringConstants.java" />
       </list>
     </option>
   </component>
@@ -114,7 +110,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552530299150" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552530773033" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -432,14 +428,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Week1/objectsAndClasses/Static.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="236">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="e#468#469#0" expanded="true" />
             <element signature="e#489#490#0" expanded="true" />
             <element signature="e#529#530#0" expanded="true" />
             <element signature="e#546#547#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Week1/objectsAndClasses/DeclaringConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
     </entry>
