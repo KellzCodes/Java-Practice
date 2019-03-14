@@ -16,8 +16,22 @@ public class Point {
     private double x;
     private double y;
 
-    // Constructor
-    public Point(double initX, double initY){
+    /*
+    * All classes must have at least one constructor even if that constructor
+    * does nothing
+    *
+    * The default constructor of a class is the constructor that has no
+    * parameters. If you do not write a constructor, the compiler automatically
+    * generates a default constructor
+    *
+    * Constructors may be overloaded
+    * */
+    public Point(){ // Default constructor
+        setX(0);
+        setY(0);
+    }
+
+    public Point(double initX, double initY){ // Second constructor
         setX(initX);
         setY(initY);
     }
