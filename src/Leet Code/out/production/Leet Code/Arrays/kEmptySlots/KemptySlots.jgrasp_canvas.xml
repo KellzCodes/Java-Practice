@@ -16,39 +16,8 @@
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>40</X>
-      <Y>40</Y>
-      <W>428</W>
-      <H>91</H>
-    </Bounds>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int[]` flowers</Expression>
-      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>620</X>
-      <Y>70</Y>
-      <W>106</W>
-      <H>50</H>
-    </Bounds>
-    <LabelLoc>
-      <WO>false</WO>
-    </LabelLoc>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int` numberOfFlowers</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
       <X>790</X>
-      <Y>300</Y>
+      <Y>180</Y>
       <W>106</W>
       <H>50</H>
     </Bounds>
@@ -57,7 +26,7 @@
     </LabelLoc>
     <Viewer>
       <ScopeID>0</ScopeID>
-      <Expression>`local boolean` nobloom</Expression>
+      <Expression>`local int` kFlower</Expression>
       <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
     </Viewer>
   </Frame>
@@ -65,86 +34,7 @@
     <Bounds>
       <AutoSize>true</AutoSize>
       <X>490</X>
-      <Y>180</Y>
-      <W>106</W>
-      <H>50</H>
-    </Bounds>
-    <LabelLoc>
-      <WO>false</WO>
-    </LabelLoc>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int` currentFlower</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>650</X>
-      <Y>170</Y>
-      <W>106</W>
-      <H>50</H>
-    </Bounds>
-    <LabelLoc>
-      <WO>false</WO>
-    </LabelLoc>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int` currentDay</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>30</X>
-      <Y>170</Y>
-      <W>428</W>
-      <H>91</H>
-    </Bounds>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local boolean[]` bloomed</Expression>
-      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>470</X>
-      <Y>60</Y>
-      <W>106</W>
-      <H>50</H>
-    </Bounds>
-    <LabelLoc>
-      <WO>false</WO>
-    </LabelLoc>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int` k</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>40</X>
       <Y>300</Y>
-      <W>428</W>
-      <H>91</H>
-    </Bounds>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local boolean[]` ignored</Expression>
-      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>800</X>
-      <Y>80</Y>
       <W>106</W>
       <H>50</H>
     </Bounds>
@@ -153,24 +43,7 @@
     </LabelLoc>
     <Viewer>
       <ScopeID>0</ScopeID>
-      <Expression>`local int` currentIndex</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>780</X>
-      <Y>180</Y>
-      <W>106</W>
-      <H>50</H>
-    </Bounds>
-    <LabelLoc>
-      <WO>false</WO>
-    </LabelLoc>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local int` bud</Expression>
+      <Expression>`local int` lowerFlower</Expression>
       <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
     </Viewer>
   </Frame>
@@ -194,7 +67,7 @@
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>490</X>
+      <X>790</X>
       <Y>300</Y>
       <W>106</W>
       <H>50</H>
@@ -204,7 +77,134 @@
     </LabelLoc>
     <Viewer>
       <ScopeID>0</ScopeID>
-      <Expression>`local int` lowerFlower</Expression>
+      <Expression>`local boolean` nobloom</Expression>
+      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>40</X>
+      <Y>40</Y>
+      <W>428</W>
+      <H>91</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int[]` flowers</Expression>
+      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>40</X>
+      <Y>300</Y>
+      <W>428</W>
+      <H>91</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local boolean[]` ignored</Expression>
+      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>490</X>
+      <Y>180</Y>
+      <W>106</W>
+      <H>50</H>
+    </Bounds>
+    <LabelLoc>
+      <WO>false</WO>
+    </LabelLoc>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int` currentFlower</Expression>
+      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>620</X>
+      <Y>70</Y>
+      <W>106</W>
+      <H>50</H>
+    </Bounds>
+    <LabelLoc>
+      <WO>false</WO>
+    </LabelLoc>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int` numberOfFlowers</Expression>
+      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>470</X>
+      <Y>60</Y>
+      <W>106</W>
+      <H>50</H>
+    </Bounds>
+    <LabelLoc>
+      <WO>false</WO>
+    </LabelLoc>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int` k</Expression>
+      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>800</X>
+      <Y>80</Y>
+      <W>106</W>
+      <H>50</H>
+    </Bounds>
+    <LabelLoc>
+      <WO>false</WO>
+    </LabelLoc>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int` currentIndex</Expression>
+      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>30</X>
+      <Y>170</Y>
+      <W>428</W>
+      <H>91</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local boolean[]` bloomed</Expression>
+      <ViewerClass>jgrasp_viewers._X_A_PresentationView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>650</X>
+      <Y>170</Y>
+      <W>106</W>
+      <H>50</H>
+    </Bounds>
+    <LabelLoc>
+      <WO>false</WO>
+    </LabelLoc>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int` currentDay</Expression>
       <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
     </Viewer>
   </Frame>
