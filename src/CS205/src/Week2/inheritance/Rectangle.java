@@ -14,11 +14,9 @@ package Week2.inheritance;
 * */
 
 
-public class Rectangle {
+public class Rectangle extends Shape{
     private int mHeight;
     private int mWidth;
-    private int mX;
-    private int mY;
 
     /*
     * Default Constructor.
@@ -29,17 +27,16 @@ public class Rectangle {
         this(0, 0, 0, 0);
     }
 
-    public Rectangle(int pX, int pY){
-        setY(pY);
-        setX(pX);
-    }
-
     // Second constructor
     public Rectangle(int pX, int pY, int pWidth, int pHeight) {
-        setX(pX);
-        setY(pY);
+        super(pX, pY);
         setWidth(pWidth);
         setHeight(pHeight);
+    }
+
+    // Third constructor
+    public Rectangle (int pX, int pY){
+        super(pX, pY);
     }
 
     // Accessor method for the mHeight data member
