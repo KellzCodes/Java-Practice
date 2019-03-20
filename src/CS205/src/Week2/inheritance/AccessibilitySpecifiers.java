@@ -62,5 +62,54 @@ public class AccessibilitySpecifiers {
     *       sub.setPrivate2(0);          // Legal: setPrivate2() is public.
     *       int x = sub.getPrivate2();   // Legal: getPrivate2() is public.
     *  }
-    *}*/
+    *}
+    *
+    * Inheritance :: Accessibility Specifiers Recommendations
+    *
+    * 1. Declare all instance variables in every class as private.
+    *
+    * 2. If an instance variable must not be accessible in other classes—whether
+    * subclasses or not—do not provide accessor and/or mutator methods (or
+    * provide private accessor/mutator methods for use within the class).
+    *
+    * 3. If an instance variable must be accessible in other classes—whether
+    * subclasses or not—declare public accessor and/or mutator methods to
+    * provide read/write access.
+    *
+    * 4. If an instance variable must be accessible in subclasses, but not
+    * in other nonsubclasses—declare protected accessor and/or mutator
+    * methods to provide read/write access to objects of subclasses.
+    *
+    * 5. If a method is only intended to be called by other methods of the
+    * same class declare the method as private.
+    *
+    * 6. If a method must be callable from the methods of subclass objects declare
+    * the method as protected.
+    *
+    * 7. If a method must be callable from the methods of any object—whether
+    * subclass objects or not— declare the method as public.
+    *
+    *
+    * public class Super {
+    *   // All instance variables are private.
+    *   private T mX;
+    *   private T mY;
+    *   private T mZ;
+    *
+    *   // Public methods are callable from the methods of any object of any class.
+    *   public void doItAgain() { ... }
+    *   public T getZ() { return mZ; }
+    *   public void setZ(T pNewZ) { mZ = pNewZ; }
+    *
+    *   // Protected methods are callable from Super and Sub methods.
+    *   protected void doSomethingElse() { ... }
+    *   protected T getY() { return mY; }
+    *   protected void setY(T pNewY) { mY = pNewY; }
+    *
+    *   // Private methods are callable only from methods of Super.
+    *   private void doSomething() { ... }
+    *   private T getX() { return mX; }
+    *   private void setX(T pNewX) { mX = pNewX; }
+    * }
+    * */
 }

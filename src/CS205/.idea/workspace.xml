@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a962a03-6c91-4813-a7ea-f7e5e8e98787" name="Default Changelist" comment="" />
+    <list default="true" id="5a962a03-6c91-4813-a7ea-f7e5e8e98787" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Week2/inheritance/AccessibilitySpecifiers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Week2/inheritance/AccessibilitySpecifiers.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/Week2/inheritance/AccessibilitySpecifiers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="616">
-              <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+              <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -114,7 +116,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553046856668" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553047940998" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -412,7 +414,7 @@
     <entry file="file://$PROJECT_DIR$/src/Week2/inheritance/AccessibilitySpecifiers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
-          <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+          <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
         </state>
       </provider>
     </entry>
