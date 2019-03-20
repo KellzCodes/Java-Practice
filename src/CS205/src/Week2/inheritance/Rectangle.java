@@ -29,6 +29,11 @@ public class Rectangle {
         this(0, 0, 0, 0);
     }
 
+    public Rectangle(int pX, int pY){
+        setY(pY);
+        setX(pX);
+    }
+
     // Second constructor
     public Rectangle(int pX, int pY, int pWidth, int pHeight) {
         setX(pX);

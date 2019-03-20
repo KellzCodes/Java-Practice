@@ -6,12 +6,13 @@ package Week2.inheritance;
 * left corner of the Square on the window and the length of each side.
 * */
 
-/*
-* CLASS: Square (Square.java)
-*
-*  Represents a Square that can be drawn on a graphical window.
-*  */
-public class Square {
+/**
+ * Represents a Square that can be drawn on a graphical window. Square is a
+ * subclass of Rectangle and inherits all of the instance variables of
+ * Rectangle: mX, mY, mWidth, and mHeight. Square may also call any public
+ * or protected method in Rectangle.
+ * */
+public class Square extends Rectangle{
     private int mSideLen;     
     private int mX;     
     private int mY;
@@ -25,15 +26,17 @@ public class Square {
         this(0, 0, 0);
     }
 
+    /**
+     * Second constructor
+     * */
     public Square(int pX, int pY, int pSideLen) {
-        setX(pX);
-        setY(pY);
+        super(pX, pY); // call Rectangle(int, int)
         setSideLen(pSideLen);
     }
 
     // Accessor method for the mSideLen data member.
     public int getSideLen() {
-        return mSideLen;
+        return getWidth();
     }
 
     // Accessor method for the mX data member
@@ -54,7 +57,7 @@ public class Square {
 
     // Change the size of this Square.
     public void resize(int pNewSideLen){
-        setSideLen(pNewSideLen);
+        super.resize(pNewSideLen, pNewSideLen);
     }
 
     // Mutator method for the mX data member.
@@ -68,7 +71,8 @@ public class Square {
     }
 
     // Mutator method for the mSideLen data member.
-    public void setSideLen(int sideLen) {
-        mSideLen = sideLen;
+    public void setSideLen(int pNewSideLen) {
+        setWidth(pNewSideLen);
+        setHeight(pNewSideLen);
     }
 }
