@@ -26,7 +26,7 @@ public class RuntimeExceptions {
         Student steve = new Student();
         System.out.println(steve.getInitials());
         /*
-        * Output:
+        * writeOutputFile:
         * Exception in thread "main" java.lang.NullPointerException
         * at Week1.exceptionHandling.Student.getInitials(Student.java:11)
         * at Week1.exceptionHandling.RuntimeExceptions.main(RuntimeExceptions.java:27)
@@ -42,7 +42,7 @@ public class RuntimeExceptions {
         }
         return 1;
         /*
-        * Output:
+        * writeOutputFile:
         * Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
         * at Week1.exceptionHandling.RuntimeExceptions.indexOutOfBoundsException(RuntimeExceptions.java:40)
         * at Week1.exceptionHandling.RuntimeExceptions.main(RuntimeExceptions.java:25)
@@ -61,7 +61,7 @@ public class RuntimeExceptions {
 
         return 1;
         /*
-        * Output:
+        * writeOutputFile:
         * Exception in thread "main" java.lang.ArithmeticException: / by zero
         * at Week1.exceptionHandling.RuntimeExceptions.arithmeticException(RuntimeExceptions.java:59)
         * at Week1.exceptionHandling.RuntimeExceptions.main(RuntimeExceptions.java:24)

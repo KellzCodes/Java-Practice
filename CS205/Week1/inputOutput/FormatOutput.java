@@ -34,10 +34,10 @@ public class FormatOutput {
         double a = 3.1743985798, b = 4.4389;
         String first = "Wilma", last = "Flintstone";
         System.out.printf("%6d %-,8d\n", x, y);
-        // Output:    123  456,789
+        // writeOutputFile:    123  456,789
         System.out.printf("%5.2f %-7.4f\n", a, b);
-        // Output:  3.17 4.4389
+        // writeOutputFile:  3.17 4.4389
         System.out.printf("first = [%s] last = [%12s]\n", first, last);
-        // Output: first = [Wilma] last = [  Flintstone]
+        // writeOutputFile: first = [Wilma] last = [  Flintstone]
     }
 }
