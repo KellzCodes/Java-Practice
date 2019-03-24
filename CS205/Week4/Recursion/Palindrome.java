@@ -1,5 +1,21 @@
 import java.util.Scanner;
 
+/**
+*	A phrase is a palindrome if it reads the same forward 
+*	as backward: 
+* 	"Go hang a salami, I'm a lasagna hog."
+*/
+
+// Rule 1:  A string s, s.length() ≤ 1  , is a palindrome.
+
+// Rule 2:  A string s, s.length() > 1, is not a palindrome if the first and last characters are not the same
+
+// Rule 3: A string s, s.length() ≥ 2, is a palindrome if both of these requirements are met: 
+// 		a. The first and last characters are the same 
+// 		b. The substring from the second character to the second to last character is a palindrome. 
+
+// Rule 3 is a recursive definition because it is defined in terms of itself
+
 public class Palindrome {
     public static void main(String[] args) { new Palindrome().run(); }
 
