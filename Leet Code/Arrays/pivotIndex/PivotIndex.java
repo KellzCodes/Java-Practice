@@ -40,6 +40,7 @@ public class PivotIndex {
         int last = nums.length - 1;
 
         // if the numbers at the first and last index are equal, return 0
+        // This also handles arrays that have only 1 character
         if (nums[last] - nums[0] == 0) {
             return 0;
         }
