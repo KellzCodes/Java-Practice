@@ -1,3 +1,0 @@
-Pebbles Flinstone\n
-1 2.2 \n
-This is a line of text\n
