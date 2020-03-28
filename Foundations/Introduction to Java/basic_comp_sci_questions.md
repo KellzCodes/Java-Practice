@@ -75,6 +75,7 @@ g. Where the fundamental processing of a computer takes place.
 a. peripheral b. controller c. modem d. main or RAM e. secondary or ROM f. RAM g. CPU
 
 networks
+
 14. What is a file server?
 - A file server is a network computer that is dedicated to storing and providing programs and data that are needed by many network users.
 
@@ -98,6 +99,7 @@ a. duke is the name of a computer within the csc subdomain (the Department of Co
 b. java is the name of a computer (Web server) at the sun.com domain, which represents Sun Microsystems, Inc. The com top level domain indicates that it is a commercial business. This URL is requesting a file called index.html from within a subdirectory called products.
 
 The Java Programming Language
+
 20. When was the Java programming language developed? By whom? When was it introduced to the public?
 - The Java programming language was developed in the early 1990s by James Gosling at Sun Microsystems. It was introduced to the public in 1995.
 
