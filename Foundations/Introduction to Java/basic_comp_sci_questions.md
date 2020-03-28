@@ -1,6 +1,7 @@
 Basic Comp Sci Questions
 
 Computer Processing
+
 1. What is hardware? What is software?
 - The hardware of a computer system consists of its physical components such as a circuit board, monitor, or keyboard. Computer software consists of the programs that are executed by the hardware and the data that those programs use. Hardware is tangible, whereas software is intangible. In order to be useful, hardware requires software and software requires hardware.
 
@@ -28,6 +29,7 @@ d. 7 bits can represent 128 items because 27 5 128
 - It would take 6 bits to represent each of the 50 states. Five bits is not enough because 2^5 = 32 but six bits would be enough because 2^6 = 64.
 
 Hardware Components
+
 7. How many bytes are in each of the following?
 a. 3 KB
 b. 2 MB
@@ -131,6 +133,7 @@ d. smTstScr
 - White space is a term that refers to the spaces, tabs, and newline characters that separate words and symbols in a program. The compiler ignores extra white space; therefore, it doesn’t affect execution. However, it is crucial to use white space appropriately to make a program readable to humans.
 
 Program development
+
 27. We all know that computers are used to perform complex jobs. However, a computer’s instructions can do only simple tasks. Explain this apparent contradiction.
 - At the lowest level, a computer’s instructions perform only simple tasks, such as copying a value or comparing two numbers. However, by putting together millions of these simple instructions every second, a computer can perform complex tasks.
 
@@ -173,6 +176,7 @@ grade should have been output
 zero) c. Logical error
 
 Object-Oriented Programming
+
 33. List the five general steps required to solve a problem.
 - 1. Understand the problem.
  2. Design a solution.
