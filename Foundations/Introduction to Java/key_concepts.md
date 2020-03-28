@@ -1,0 +1,38 @@
+Key Concepts of Computer Science
+- A computer system consists of hardware and software that work in concert to help us solve problems.
+- The CPU reads the program instructions from main memory, executing them one at a time until the program ends.
+- The operating system provides a user interface and manages computer resources.
+- As far as the user is concerned, the interface is the program.
+- Digital computers store information by breaking it into pieces and representing each piece as a number.
+- Binary is used to store and move information in a computer because the devices that store and manipulate binary data are inexpensive and reliable.
+- There are exactly 2N permutations of N bits. Therefore, N bits can represent up to 2N unique items.
+- The core of a computer is made up of main memory, which stores programs and data, and the CPU, which executes program instructions one at a time.
+- An address is a unique number associated with a memory location.
+- Main memory is volatile, meaning the stored information is maintained only as long as electric power is supplied.
+- The surface of a CD has both smooth areas and small pits. A pit represents a binary 1 and a smooth area represents a binary 0.
+- A rewritable CD simulates the pits and smooth areas of a regular CD by using a coating that can be made amorphous or crystalline as needed.
+- The fetch-decode-execute cycle forms the foundation of computer processing.
+- A network consists of two or more computers connected together so that they can exchange information.
+- Sharing a communication line creates delays, but it is cost effective and simplifies adding new computers to the network.
+- A local-area network (LAN) is an effective way to share information and resources throughout an organization.
+- The Internet is a wide-area network (WAN) that spans the globe.
+- Every computer connected to the Internet has an IP address that uniquely identifies it.
+- The World Wide Web is software that makes sharing information across a network easy for humans.
+- A URL uniquely specifies documents and other information found on the Web for a browser to obtain and display.
+- Comments do not affect a program’s processing; instead, they serve to facilitate human comprehension.
+- Inline documentation should provide insight into your code. It should not be ambiguous or belabor the obvious.
+- Java is case sensitive. The uppercase and lowercase versions of a letter are distinct
+- Identifier names should be descriptive and readable.
+- Appropriate use of white space makes a program easier to read and understand.
+- You should adhere to a set of guidelines that establish the way you format and document your programs.
+- All programs must be translated to a particular CPU’s machine language in order to be executed.
+- High-level languages allow a programmer to ignore the underlying details of machine language.
+- A Java compiler translates Java source code into Java bytecode, a lowlevel, architecture-neutral representation of the program.
+- Many different development environments exist to help you create and modify Java programs.
+- Syntax rules dictate the form of a program. Semantics dictate the meaning of the program statements.
+- The programmer is responsible for the accuracy and reliability of a program.
+- A Java program must be syntactically correct or the compiler will not produce bytecode.
+- Object-oriented programming helps us solve problems, which is the purpose of writing a program.
+- Program design involves breaking a solution down into manageable pieces.
+- Each object has a state, defined by its attributes, and a set of behaviors, defined by its methods.
+- A class is a blueprint of an object. Multiple objects can be created from one class definition.
