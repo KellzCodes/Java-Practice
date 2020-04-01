@@ -40,10 +40,10 @@ public class DiagonalTraverse {
         int row = 0, column = 0, mRow = matrix.length, nColumn = matrix[0].length, array[] = new int[mRow * nColumn];
 
         // Go through the whole array starting at the beginning
-        for (int i = 0; i < array.length; i++) {
+        for (int currentIndex = 0; currentIndex < array.length; currentIndex++) {
 
-            // The current array index is equal to the current matrix index
-            array[i] = matrix[row][column];
+            // The value of the current array index is equal to the value of the current matrix index
+            array[currentIndex] = matrix[row][column];
 
             // if the sum of current row and column is an even number
             if ((row + column) % 2 == 0) { // moving up
