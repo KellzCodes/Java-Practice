@@ -18,27 +18,35 @@
 public class SingleNumber {
     public static void main (String args[]){
         // Create an array
-        int[] nums = {2,2,1};
+        int[] nums = {4,1,2,1,2};
 
         // Put the array in the singleNumber function and print the results
         System.out.println(singleNumber(nums));
     }
     public static int singleNumber(int[] nums) {
-        // Take the first number of the array
-        int num = nums[0];
-
-        /**
-         * Traverse through the array from the beginning and do an
-         * XOR comparison between num and every other number in the
-         * array.
-         *
-         * XOR or Exclusive Or is a logical operation that outputs
-         * true only when inputs differ (one is true, the other is
-         * false)
-         * */
-        for (int i = 1; i < nums.length; i++) num ^= nums[i];
-
-        // Return the number that does not have a double
-        return num;
+        // Count the number of integers in the array
+        int size = nums.length;
+        // Isolate the first number in the array
+        int result = nums[0];
+        
+        // Traverse through the entire array starting from the second number
+        for (int i = 1; i < size; i++)
+            /**
+             * Use an XOR gate to find the number without a match.
+             *
+             * XOR or Exclusive Or is a  logical operation that outputs
+             * true only when inputs differ (one is true, the other is
+             * false).
+             *
+             * In this case, the program will traverse through the array
+             * adding each number to the result variable
+             * until it gets to the middle. After the
+             * midpoint, it will subtract each subsequent number from
+             * result
+             * */
+            result = result ^ nums[i];
+            
+        // Return the "true" integer that does not appear twice
+        return result;
     }
 }
