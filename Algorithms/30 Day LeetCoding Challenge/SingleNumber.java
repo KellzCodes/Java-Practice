@@ -39,10 +39,11 @@ public class SingleNumber {
              * false).
              *
              * In this case, the program will traverse through the array
-             * adding each number to the result variable
-             * until it gets to the middle. After the
-             * midpoint, it will subtract each subsequent number from
-             * result
+             * adding each number to the result until it comes to a number
+             * it has already added. Instead of adding a number again, the
+             * program will subtract the number from result. When the
+             * for-loop has completed, the result will be the number
+             * that was added but not subtracted.
              * */
             result = result ^ nums[i];
             
