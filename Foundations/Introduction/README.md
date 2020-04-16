@@ -63,6 +63,9 @@ System.out.println("Hello World");
 
 # Basic Programs
 
+- [Hello World](#Hello-World)
+- [Hello You](#Hello-You)
+
 ## Hello World
 
 A basic program that prints the famous phrase, "Hello World."
@@ -70,3 +73,23 @@ A basic program that prints the famous phrase, "Hello World."
 1. Open the [HelloWorld.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/Introduction/HelloWorld.java) file.
 
 2. Run the code in a text editor see what is printed to the screen.
+
+## Hello You
+
+A basic program that prints your name
+
+1. Start with this code:
+```
+public class HelloYou {
+  public static void main(String[] args) {
+    
+  }
+}
+```
+
+2. Inside ```main()```, add a statement which prints ```Hello someName!```, with **your** name replacing ```someName```. Make sure to end the statement with a semicolon.
+
+	For example, if your name were “Maria,” the program would print ```Hello Maria!```.
+
+Example code can be found in the [HelloYou.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/Introduction/HelloYou.java) file.
+
