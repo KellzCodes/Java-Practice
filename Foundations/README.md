@@ -1,7 +1,8 @@
-# Introduction to Java
-## A simple Intro to Java Programming
+# Foundations
 
-This project is basically a tutorial that discusses basic computer processing and then begins our exploration of software development by introducing the Java programming language and the principles of object-oriented programming.
+## Basics of Java
+
+Here is a quick run down of the lessons found in the foundations folder.
 
 ## Table of Contents
 
