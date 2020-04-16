@@ -2,7 +2,7 @@
 
 ## A simple repository that teaches the basics of Java
 
-This project is my coding journal. I am learning C++ from scratch and sharing my lessons with you. Hopefully, this will be a great tutorial.
+This project is my coding journal. I am learning Java from scratch and sharing my lessons with you. Hopefully, this will be a great tutorial.
 
 ## Table of Contents
 - [Introduction to Java](#Introduction-to-Java)
