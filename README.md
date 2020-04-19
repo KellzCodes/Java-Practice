@@ -1,5 +1,4 @@
-# Java-Practice
- 100 Days of Code
+# Java Practice - 100 Days of Code
 
 # Java Program Structure
 Java programs have a specific structure in how the code is written. There are key elements that all Java programs share.
