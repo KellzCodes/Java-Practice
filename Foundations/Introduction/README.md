@@ -524,7 +524,7 @@ Example code can be found in the [Tree.java](https://github.com/keldavis/Java-Pr
 
 ## Creator
 
-Demonstrates the use of variables
+Demonstrates the printing of variables
 
 1. Start with this code:
 
