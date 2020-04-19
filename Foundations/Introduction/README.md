@@ -453,27 +453,27 @@ Introduce yourself to users and plant a tree for them!
 
 2. This code produces an error because our program needs a ```main()``` method.
 
-  Define this method inside the curly braces of the ```Tree``` class.
+    Define this method inside the curly braces of the ```Tree``` class.
 
 3. Write a comment in ```main()``` that describes the task it will perform.
 
-  We’re going to introduce ourselves and print a tree to the screen.
+    We’re going to introduce ourselves and print a tree to the screen.
 
-  You can use the single-line or multi-line syntax for your comment.
+    You can use the single-line or multi-line syntax for your comment.
 
 4. Below your comment, print a message introducing yourself to the user.
 
-  Try something like “Hey there, I’m Ariel and I’m learning to code in Java!”
+    Try something like “Hey there, I’m Ariel and I’m learning to code in Java!”
 
-  When you run the code, you should see this message printed to the screen.
+    When you run the code, you should see this message printed to the screen.
 
 5. After introducing yourself, use another print statement to output the project goal!
 
-  Something like “I’m going to plant a tree today!” or “Ready to get my hands dirty!”
+    Something like “I’m going to plant a tree today!” or “Ready to get my hands dirty!”
 
 6. See how the second statement begins on a new line? We’ll use multiple print statements to plant our tree.
 
-  For example:
+    For example:
 
 ```
     System.out.println("  *  ");
@@ -483,7 +483,7 @@ Introduce yourself to users and plant a tree for them!
     System.out.println("  *  ");  
 ```
 
-  will print a tree like this:
+    will print a tree like this:
 
 ```
   *  
@@ -493,11 +493,11 @@ Introduce yourself to users and plant a tree for them!
   *  
 ```
 
-  Try it out!
+    Try it out!
 
 7. Have fun and experiment with different trees.
 
-  Here are a couple more examples:
+    Here are a couple more examples:
 
 ```
 
@@ -518,7 +518,7 @@ Introduce yourself to users and plant a tree for them!
   #######
 ```
 
-  You can explore other printing methods in the [Java documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#out).
+    You can explore other printing methods in the [Java documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#out).
 
 Example code can be found in the [Tree.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/Introduction/Tree.java) file.
 
