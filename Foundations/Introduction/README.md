@@ -518,7 +518,8 @@ Introduce yourself to users and plant a tree for them!
   #######
 ```
 
-    You can explore other printing methods in the [Java documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#out).
+
+You can explore other printing methods in the [Java documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#out).
 
 Example code can be found in the [Tree.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/Introduction/Tree.java) file.
 
