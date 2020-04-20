@@ -217,6 +217,10 @@ Welcome to my github repo!
 ```
 
 ### Variables
+- [Introduction to Variables](#Introduction-to-Variables)
+- [Ints](#Ints)
+
+#### Introduction to Variables
 
 Let’s say we need a program that connects a user with new jobs. We need the user’s name, their salary, and their employment status. All of these pieces of information are stored in our program.
 
@@ -253,6 +257,27 @@ For example, to assign ```2011``` to a variable named ```yearCodecademyWasFounde
 
 ```
 int yearCodecademyWasFounded = 2011;
+```
+
+#### Ints
+
+The first type of data we will store is the whole number. Whole numbers are very common in programming. You often see them used to store ages, or maximum sizes, or the number of times some code has been run, among many other uses.
+
+In Java, whole numbers are stored in the *int* primitive data type.
+
+```int```s hold positive numbers, negative numbers, and zero. They do not store fractions or numbers with decimals in them.
+
+The ```int``` data type allows values between -2,147,483,648 and 2,147,483,647, inclusive.
+
+To declare a variable of type ```int```, we use the ```int``` keyword before the variable name:
+
+```
+// int variable declaration
+int yearJavaWasCreated;
+// assignment
+yearJavaWasCreated = 1996;
+// declaration and assignment
+int numberOfPrimitiveTypes = 8;
 ```
 
 # Basic Programs
