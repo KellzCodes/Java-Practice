@@ -6,6 +6,7 @@
 - [Char](#Char)
 - [String](#String)
 - [Naming](#Naming)
+- [Manipulating Variables](#Manipulating-Variables)
 - [Basic Programs](#Basic-Programs)
 
 Let’s say we need a program that connects a user with new jobs. We need the user’s name, their salary, and their employment status. All of these pieces of information are stored in our program.
@@ -186,6 +187,118 @@ boolean IsHuman;
 boolean is_human;
 ```
 
+## Manipulating Variables
+
+- [Addition and Subtraction](#Addition-and-Subtraction)
+- [Multiplication and Division](#Multiplication-and-Division)
+- [Modulo](#Modulo)
+
+Let’s say we are writing a program that represents a user’s bank account.
+
+With variables, we know how to store a balance! We’d use a ```double```, the primitive type that can hold big decimal numbers.
+
+But how would we deposit and withdraw from the account?
+
+Java has built-in math operations that perform calculations on numeric values!
+
+To deposit:
+
+```
+// declare initial balance
+double balance = 20000.99;
+// declare deposit amount
+double depositAmount = 1000.00;
+// store result of calculation in new variable
+double updatedBalance = balance + depositAmount;
+```
+
+## Addition and Subtraction
+
+In our bank account example from the last exercise, we used ```+``` to add!
+
+```
+double balance = 20000.99;
+double depositAmount = 1000.0;
+double updatedBalance = balance + depositAmount;
+//updatedBalance now holds 21000.99
+```
+
+If we wanted to withdraw from the balance, we would use ```-```:
+
+```
+double withdrawAmount = 500;
+double updatedBalance = balance - withdrawAmount;
+//updatedBalance now holds 19500.99
+```
+
+Addition and subtraction work with ```int```s as well!
+
+```
+int numPicturesOfCats = 60 + 24;
+```
+
+If you had 60 pictures of cats on your phone, and you took 24 more, you could use the above line of code to store ```84``` in ```numPicturesOfCats```.
+
+## Multiplication and Division
+
+Let’s say that our employer is calculating our paycheck and depositing it to our bank account. We worked 40 hours last week, at a rate of 15.50 an hour. Java can calculate this with the multiplication operator ```*```:
+
+```
+double paycheckAmount = 40 * 15.50;
+//paycheckAmount now holds 620.0
+```
+
+If we want to see how many hours our total balance represents, we use the division operator ```/```:
+
+```
+double balance = 20010.5;
+double hourlyRate = 15.5;
+double hoursWorked = balance / hourlyRate;
+//hoursWorked now holds 1291.0
+```
+
+Division has different results with integers. The ```/``` operator does integer division, which means that any remainder is lost.
+
+```
+int evenlyDivided = 10 / 5;
+//evenlyDivided holds 2, because 10 divided by 5 is 2
+int unevenlyDivided = 10 / 4;
+//unevenlyDivided holds 2, because 10 divided by 4 is 2.5
+```
+
+```evenlyDivided``` stores what you expect, but ```unevenlyDivided``` holds ```2``` because ```int```s cannot store decimals!
+
+Java removes the 0.5 to fit the result into an ```int``` type!
+
+## Modulo
+
+If we baked 10 cookies and gave them out in batches of 3, how many would we have leftover after giving out all the full batches we could?
+
+The modulo operator ```%```, gives us the **remainder** after two numbers are divided.
+
+```
+int cookiesBaked = 10;
+int cookiesLeftover = 10 % 3;
+//cookiesLeftover holds 1
+```
+
+You have 1 cookie left after giving out all the batches of 3 you could!
+
+Modulo can be a tricky concept, so let’s try another example.
+
+Imagine we need to know whether a number is even or odd. An even number is divisible by 2.
+
+Modulo can help! Dividing an even number by 2 will have a **remainder** of 0. Dividing an odd number by 2 will have a **remainder** of 1.
+
+```
+7 % 2
+// 1, odd!
+8 % 2
+// 0, even!
+9 % 2
+// 1, odd!
+```
+
 # Basic Programs
 - [Creator](#Creator)
 - [Count Comment](#Count-Comment)
@@ -197,6 +310,10 @@ boolean is_human;
 - [Bad Names](#Bad-Names)
 - [My Profile](#My-Profile)
 - [Mad Libs](#Mad-Libs)
+- [Guessing Game](#Guessing-Game)
+- [Plus and Minus](#Plus-and-Minus)
+- [Mult and Divide](#Mult-and-Divide)
+- [Modulo](#Modulo)
 
 ## Creator
 
@@ -488,3 +605,98 @@ Date: 2/19/2049
 12. Time to read the story! Use ```System.out.println()``` to print the story variable.
 
 Example code can be found in the [MadLibs.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/MadLibs.java) file.
+
+## Guessing Game
+
+Introduces math operations
+
+1. Start with this code:
+
+```
+public class GuessingGame {
+  public static void main(String[] args) {   
+    int mystery1 = 8 + 6;
+    int mystery2 = 8 - 6;
+  }
+}
+```
+
+2. In the file **GuessingGame.java**, we have defined two integers ```mystery1``` and ```mystery2```.
+
+    Use ```System.out.println()``` to print the variable that holds a value of ```2```.
+
+Example code can be found in the [GuessingGame.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/GuessingGame.java) file.
+
+## Plus and Minus
+
+Demonstrates the use of plus and minus operators
+
+1. Start with this code:
+
+```
+public class PlusAndMinus {
+  public static void main(String[] args) {   
+    int zebrasInZoo = 8;
+    int giraffesInZoo = 4;
+  }
+}
+```
+
+2. Create an ```int``` variable called ```animalsInZoo``` that holds the amount of zebras plus the amount of giraffes at the zoo.
+
+    Then, print your ```animalsInZoo``` variable.
+
+3. Two of the zebras have been traded to a neighboring rival zoo. Subtract 2 from the number of zebras and store the result in a variable called ```numZebrasAfterTrade```.
+
+    Then, print the ```numZebrasAfterTrade``` variable!
+
+Example code can be found in the [PlusAndMinus.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/GuessingGame.java) file.
+
+## Mult and Divide
+
+Demonstrates the use of multiplication and division operators
+
+1. Start with this code: 
+
+```
+public class MultAndDivide {
+  public static void main(String[] args) {   
+    double subtotal = 30;
+    double tax = 0.0875;
+  }
+}
+```
+
+2. In ```main()```, there is a variable called ```subtotal```, which represents the subtotal of an amount to pay on a bill, and a variable called ```tax```, which represents the amount of tax added to the subtotal.
+
+    Create a ```double``` variable, ```total```, that holds ```subtotal``` plus the product of ```subtotal``` and ```tax```.
+
+    Print the ```total``` variable!
+
+3. There were 4 people who bought this meal together and want to split the cost.
+
+    Create a ```double``` variable called ```perPerson``` that holds ```total``` divided by 4.
+
+    Print the ```perPerson``` variable!
+
+Example code can be found in the [MultAndDivide.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/MultAndDivide.java) file.
+
+## Modulo 
+
+Demonstrates use of modulo operator
+
+1. Start with this code:
+
+```
+public class Modulo {
+  public static void main(String[] args) {   
+    int students = 26;
+  }
+}
+```
+
+2. You are trying to split up students into groups of 3. How many students will be left out once the groups are made?
+
+    Create a variable called ```leftOut``` that holds the modulo of ```students``` and 3. Then, print the variable!
+
+Example code can be found in the [Modulo.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Modulo.java) file.
