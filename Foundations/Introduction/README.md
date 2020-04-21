@@ -290,6 +290,7 @@ int numberOfPrimitiveTypes = 8;
 - [Review](#Review)
 - [Tree](#Tree)
 - [Creator](#Creator)
+- [Count Comment](#Count-Comment)
 
 ## Hello World
 
@@ -568,3 +569,35 @@ public class Creator {
 3. Use the same command to print out ```yearCreated```.
 
 Example code can be found in the [Creator.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/Introduction/Creator.java) file.
+
+## Count Comment
+
+Demonstrates use of ```int``` data type
+
+1. Start with this code:
+
+
+```
+//This is the class declaration
+public class CountComment {
+  //This is the main method that runs when you compile
+  public static void main(String[] args) {
+    //This is where you will define your variable
+    
+    //This is where you will print your variable
+    
+  }
+  
+  //This is the end of the class
+}
+
+//This is outside the class
+```
+
+2. The file **CountComment.java** has a number of comments in it.
+
+    In your head, count the number of comments. Then, inside the ```main()``` method, declare a variable called ```numComments``` that holds how many comments you counted.
+
+3. Print out ```numComments```.
+
+Example code can be found in the [CountComment.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/Introduction/CountComment.java) file.
