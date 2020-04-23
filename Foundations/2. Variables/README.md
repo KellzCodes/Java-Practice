@@ -192,6 +192,8 @@ boolean is_human;
 - [Addition and Subtraction](#Addition-and-Subtraction)
 - [Multiplication and Division](#Multiplication-and-Division)
 - [Modulo](#Modulo)
+- [Greater Than and Less Than](#Greater-Than-and-Less-Than)
+- [Equals and Not Equals](#Equals-and-Not-Equals)
 
 Let’s say we are writing a program that represents a user’s bank account.
 
@@ -299,6 +301,53 @@ Modulo can help! Dividing an even number by 2 will have a **remainder** of 0. Di
 // 1, odd!
 ```
 
+## Greater Than and Less Than
+
+Now, we’re withdrawing money from our bank account program, and we want to see if we’re withdrawing less money than what we have available.
+
+Java has *relational operators* for numeric datatypes that make ```boolean``` comparisons. These include less than (```<```) and greater than (```>```), which help us solve our withdrawal problem.
+
+```
+double balance = 20000.01;
+double amountToWithdraw = 5000.01;
+System.out.print(amountToWithdraw < balance);
+//this will print true, since amountToWithdraw is less than balance
+```
+
+You can save the result of a comparison as a ```boolean```.
+
+```
+double myBalance = 200.05;
+double costOfBuyingNewLaptop = 1000.05;
+boolean canBuyLaptop = myBalance > costOfBuyingNewLaptop;
+//canBuyLaptop is false, since 200.05 is not more than 1000.05
+```
+
+## Equals and Not Equals
+
+So how would we validate our paycheck to see if we got paid the right amount?
+
+We can use another relational operator to do this. ```==``` will tell us if two variables are equal:
+
+```
+double paycheckAmount = 620;
+double calculatedPaycheck = 15.50 * 40;
+System.out.print(paycheckAmount == calculatedPaycheck);
+//this will print true, since paycheckAmount equals calculatedPaycheck
+```
+
+Notice that the equality check is **two** equal signs, instead of one. One equal sign, ```=```, is how we assign values to variables! It’s easy to mix these up, so make sure to check your code for the right number of equal signs.
+
+To check if two variables are **not** equal, we can use ```!=```:
+
+```
+double balance = 20000.0;
+double amountToDeposit = 620;
+double updatedBalance = balance + amountToDeposit;
+boolean balanceHasChanged = balance != updatedBalance;
+//depositWorked holds true, since balance does not equal updatedBalance
+```
+
 # Basic Programs
 - [Creator](#Creator)
 - [Count Comment](#Count-Comment)
@@ -314,6 +363,8 @@ Modulo can help! Dividing an even number by 2 will have a **remainder** of 0. Di
 - [Plus and Minus](#Plus-and-Minus)
 - [Mult and Divide](#Mult-and-Divide)
 - [Modulo](#Modulo)
+- [Greater Less Than](#Greater-Less-Than)
+- [Equal Not Equal](#Equal-Not-Equal)
 
 ## Creator
 
@@ -700,3 +751,54 @@ public class Modulo {
     Create a variable called ```leftOut``` that holds the modulo of ```students``` and 3. Then, print the variable!
 
 Example code can be found in the [Modulo.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Modulo.java) file.
+
+## Greater Less Than
+
+Demonstrates use of greater than and less than operators
+
+1. Start with this code:
+
+```
+public class GreaterLessThan {
+  public static void main(String[] args) {   
+    double creditsEarned = 176.5;
+    double creditsOfSeminar = 8;
+    double creditsToGraduate = 180;
+  }
+}
+```
+
+2. Print the expression that checks if the amount of credits you have earned, ```creditsEarned```, is greater than the number of credits you need to graduate, ```creditsToGraduate```.
+
+3. Create a variable called ```creditsAfterSeminar``` that holds the amount of credits earned after taking a seminar, which is worth ```creditsOfSeminar``` credits. ```creditsAfterSeminar``` should be the sum of ```creditsEarned``` and ```creditsOfSeminar```.
+
+    Print out whether ```creditsToGraduate``` is less than ```creditsAfterSeminar```.
+
+Example code can be found in the [GreaterLessThan.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/GreaterLessThan.java) file.
+
+## Equal Not Equal
+
+Demonstrates the use of the equals and not equals operators
+
+1. Start with this code:
+
+```
+public class EqualNotEqual {
+  public static void main(String[] args) {   
+    int songsA = 9;
+    int songsB = 9;
+    int albumLengthA = 41;
+    int albumLengthB = 53;
+  }
+}
+```
+
+2. You have unearthed two unlabeled albums, record A and record B.
+
+    To see if these are the same album, you’re going to compare the number of songs on each one, and the total length of the albums.
+
+    First, create a variable called ```sameNumberOfSongs``` that stores whether the two albums have the same number of songs.
+
+3. Now, create a variable called ```differentLength``` that stores the result of checking whether the two album lengths are **not** the same.
+
+Example code can be found in the [EqualNotEqual.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/EqualNotEqual.java) file.
