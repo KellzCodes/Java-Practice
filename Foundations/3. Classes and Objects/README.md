@@ -475,7 +475,7 @@ However, ```milesDriven```, which is declared at the top of the class, can be us
 - Methods
 	- [Salon](#Salon)
 	- [SmallStore](#SmallStore)
-	- [BigStore](#BigStore)
+	- [Defining Method Scope](#Defining-Method-Scope)
 
 ## Store
 
@@ -772,9 +772,7 @@ public class Store {
 
 Example code can be found in the [SmallStore.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/SmallStore.java) file.
 
-## Big Store
-
-Method scope
+## Defining Method Scope
 
 1. Start with this code:
 
