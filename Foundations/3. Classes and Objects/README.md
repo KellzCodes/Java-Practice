@@ -820,9 +820,9 @@ public class Store {
 
 4. Inside of the ```main()``` method, print the String ```message```, which is declared in the ```advertise()``` method. This should print:
 
-```
-	Selling Cookies!
-```
+	```
+		Selling Cookies!
+	```
 
 	Right?
 
