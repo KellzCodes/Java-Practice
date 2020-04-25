@@ -184,9 +184,9 @@ public class Mart {
 
 	Review the order of the printed messages:
 
-		1. Running the program invokes ```main()```
-		2. We create an instance so we move from ```main()``` to ```Store()```
-		3. The code inside ```Store()``` runs
-		4. When ```Store()``` finishes execution, we **return** to ```main()```
+	1. Running the program invokes ```main()```
+	2. We create an instance so we move from ```main()``` to ```Store()```
+	3. The code inside ```Store()``` runs
+	4. When ```Store()``` finishes execution, we **return** to ```main()```
 
 Example code can be found in the [Mart.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Mart.java) file.
