@@ -194,6 +194,9 @@ boolean is_human;
 - [Modulo](#Modulo)
 - [Greater Than and Less Than](#Greater-Than-and-Less-Than)
 - [Equals and Not Equals](#Equals-and-Not-Equals)
+- [Greater/Less Than or Equal To](#Greater-less-than-or-equal-to)
+- [Equals](#Equals)
+- [String Concatenation](#String-Concatenation)
 
 Let’s say we are writing a program that represents a user’s bank account.
 
@@ -348,6 +351,78 @@ boolean balanceHasChanged = balance != updatedBalance;
 //depositWorked holds true, since balance does not equal updatedBalance
 ```
 
+## Greater Less Than or Equal To
+
+How could we make sure we got paid at least the amount we expected in our paycheck? We could use greater than or equal to, ```>=```, or less than or equal to, ```<=```!
+
+```
+double paycheckAmount = 620;
+double calculatedPaycheck = 15.50 * 40;
+System.out.println(paycheckAmount >= calculatedPaycheck);
+//this will print true, since paycheckAmount equals calculatedPaycheck
+```
+
+## Equals
+
+**.equals()**
+
+So far, we’ve only been using operations on primitive types. It doesn’t make much sense to multiply ```String```s, or see if one ```String``` is less than the other. But what if we had two users logging into a site, and we wanted to see if their usernames were the same?
+
+With objects, such as ```String```s, we can’t use the primitive equality operator. To test equality with ```String```s, we use a built-in method called ```.equals()```.
+
+To use it, we call it on one ```String```, by using ```.```, and pass in the ```String``` to compare against in parentheses:
+
+```
+String person1 = "Paul";
+String person2 = "John";
+String person3 = "Paul";
+
+System.out.println(person1.equals(person2));
+//prints false, since "Paul" is not "John"
+
+System.out.println(person1.equals(person3));
+//prints true, since "Paul" is "Paul"
+```
+
+## String Concatenation
+
+We have covered a lot of built-in functionality in Java throughout this lesson. We’ve seen ```+```, ```-```, ```<```, ```==```, and many other operators. Most of these only work on primitives, but some work on ```String```s too!
+
+Let’s say we want to print out a variable, and we want to describe it as we print it out. For our bank account example, imagine we want to tell the user:
+
+```
+Your username is: <username>
+```
+
+With the value of the variable ```username``` displayed.
+
+The ```+``` operator, which we used for adding numbers together, can be used to *concatenate* ```String```s. In other words, we can use it to join two ```String```s together!
+
+```
+String username = "PrinceNelson";
+System.out.println("Your username is: " + username);
+```
+
+This code will print:
+
+```
+Your username is: PrinceNelson
+```
+
+We can even use a primitive datatype as the second variable to concatenate, and Java will intelligently make it a ```String``` first:
+
+```
+int balance = 10000;
+String message = "Your balance is: " + balance;
+System.out.println(message);
+```
+
+This code will print:
+
+```
+Your balance is: 10000
+```
+
 # Basic Programs
 - [Creator](#Creator)
 - [Count Comment](#Count-Comment)
@@ -365,6 +440,11 @@ boolean balanceHasChanged = balance != updatedBalance;
 - [Modulo](#Modulo)
 - [Greater Less Than](#Greater-Less-Than)
 - [Equal Not Equal](#Equal-Not-Equal)
+- [Greater Than Equal To](#Greater-Than-Equal-To)
+- [Sing](#Sing)
+- [Zoo](#Zoo)
+- [Bank Account](#Bank-Account)
+- [Magic](#Magic)
 
 ## Creator
 
@@ -802,3 +882,181 @@ public class EqualNotEqual {
 3. Now, create a variable called ```differentLength``` that stores the result of checking whether the two album lengths are **not** the same.
 
 Example code can be found in the [EqualNotEqual.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/EqualNotEqual.java) file.
+
+## Greater Than Equal To
+
+Demonstrates greater than or equal to operator
+
+1. Start with this code:
+
+```
+public class GreaterThanEqualTo {
+    public static void main(String[] args){
+      double recommendedWaterIntake = 8;
+      double daysInChallenge = 30;
+      double yourWaterIntake = 235.5;
+    }       
+}
+```
+
+2. You have been trying to complete a 30 day challenge to drink enough water per day.
+
+    Create a ```double``` variable called ```totalRecommendedAmount``` and set it to the product of the recommended water intake (```recommendedWaterIntake```) and the amount of days in the challenge (```daysInChallenge```).
+
+3. Create a ```boolean``` variable called ```isChallengeComplete``` and set it to the result of checking if your intake, ```yourWaterIntake```, is at least as much as the ```totalRecommendedAmount```.
+
+    Then, print the ```isChallengeComplete``` variable.
+
+Example code can be found in the [GreaterThanEqualTo.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/GreaterThanEqualTo.java) file.
+
+## Sing
+
+Demonstrates the use of ```.equals()```
+
+1. Start with this code:
+
+```
+public class Sing {
+    public static void main(String[] args){
+      String line1 = "Nah nah nah nah nah nah nah nah nah yeah";
+      String line2 = "Nah nah nah nah nah nah, nah nah nah, hey Jude";
+      String line3 = "Nah nah nah nah nah nah, nah nah nah, hey Jude";
+    }       
+}
+```
+
+2. We have three lines from a song in **Sing.java**.
+
+    First, print out whether ```line1``` and ```line2``` are the same.
+
+3. Now, print whether ```line2``` and ```line3``` are equal.
+
+Example code can be found in the [Sing.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Sing.java) file.
+
+## Zoo
+
+Demonstrates string concatenation
+
+1. Start with this code:
+
+```
+public class Zoo {
+    public static void main(String[] args){
+      int animals = 12;
+      String species = "zebra";
+    }       
+}
+```
+
+2. In our zoo, we have a certain number of animals, stored in ```animals```, of a certain species, stored in ```species```.
+
+    Use ```+``` to make a new ```String``` variable called ```zooDescription```. It should hold a String that looks like:
+
+    ```
+    Our zoo has <animals> <species>s!
+    ```
+
+    For example, if we had ```5``` animals that were all of the species ```Masai Giraffe```, the String would say:
+
+    ```
+    Our zoo has 5 Masai Giraffes!
+    ```
+
+3. Print out the variable ```zooDescription```!
+
+Example code can be found in the [Zoo.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Zoo.java) file.
+
+## Bank Account
+
+Demonstrates how to manipulate variables
+
+1. Start with this code:
+
+```
+public class BankAccount {
+    public static void main(String[] args){
+      double balance = 1000.75;
+      double amountToWithdraw = 250;
+    }       
+}
+```
+
+2. To review, let’s try building some of the bank account functionality we talked about throughout the lesson.
+
+    First, create a new ```double``` variable called ```updatedBalance```, and store ```balance``` with ```amountToWithdraw``` subtracted from it.
+
+3. Now, you’ve decided to split your balance evenly 3 ways and give it to your three best friends.
+
+    Create a ```double``` variable called ```amountForEachFriend``` that holds your updated balance divided by ```3```.
+
+4. How much money did you give your friends, anyway?
+
+    Use ```+``` and ```System.out.println()``` to print out:
+```
+    I gave each friend <amountForEachFriend>...
+```
+    with the value of ```amountForEachFriend``` where ```<amountForEachFriend>``` is.
+
+Example code can be found in the [BankAccount.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/BankAccount.java) file.
+
+## Magic
+
+A small program that performs a mathematical magic trick
+
+1. Start with this code:
+
+```
+public class Magic {
+  public static void main(String[] args) {
+
+    
+
+  }
+}
+```
+
+2. Create an int variable called ```myNumber```.
+
+    Set it equal to any integer other than 0.
+
+3. We will refer to ```myNumber``` as the original number from now on - it might be helpful to document this.
+
+    Write a comment in the program that documents this.
+
+4. Create an ```int``` variable called ```stepOne```.
+
+    Set it equal to the original number (```myNumber```) multiplied by itself.
+
+5. Create an ```int``` variable called ```stepTwo```.
+
+    Set it equal to the previous result (```stepOne```) plus the original number (```myNumber```).
+
+6. Create an ```int``` variable called ```stepThree```.
+
+    Set it equal to the previous result (```stepTwo```) divided by the original number.
+
+7. Create an ```int``` variable called ```stepFour```.
+
+    Set it equal to the previous result (```stepThree```) plus ```17```.
+
+8. Create an ```int``` variable called ```stepFive```.
+
+    Set it equal to the previous result (```stepFour```) minus the original number.
+
+9. Create an ```int``` variable called ```stepSix```.
+
+    Set it equal to the previous result (```stepFive```) divided by ```6```.
+
+10. Print out the value of the last step.
+
+    Then, save and run your code!
+
+    What number is printed to the console?
+
+11. Now, go back to your code and change ```myNumber``` to any other integer. Run your program again.
+
+    Is the output the same?
+
+    It’s math magic!
+
+Example code can be found in the [Magic.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Magic.java) file.
