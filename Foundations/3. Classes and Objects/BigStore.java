@@ -20,6 +20,6 @@ public class BigStore {
   // main method
   public static void main(String[] args) {
     BigStore lemonadeStand = new BigStore("Lemonade");
-    lemonadeStand.greetCustomer("Hello World");
+    lemonadeStand.greetCustomer("Betty");
   }
 }
