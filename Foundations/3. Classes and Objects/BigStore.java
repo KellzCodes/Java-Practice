@@ -13,6 +13,7 @@ public class BigStore {
 		System.out.println(message);
   }
   
+  // method with parameter
   public void greetCustomer(String customer){
     System.out.println("Welcome to the BigStore, " + customer + "!");
   }
