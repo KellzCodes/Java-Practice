@@ -14,6 +14,9 @@
 	- [Scope](#Scope)
 	- [Adding Parameters](#Adding-Parameters)
 	- [Reassigning Instance Fields](#Reassigning-Instance-Fields)
+	- [Returns](#Returns)
+	- [The toString() Method](#The-toString-Method)
+	- [Review](#Review)
 - [Basic Programs](#Basic-Programs)
 
 ## Introduction to Classes
@@ -366,10 +369,9 @@ What if it took 20 lines of code to make a sandwich? Our program would become ve
 
 Remember our ```Car``` example from the last lesson? Let’s add a method to this ```Car``` called ```startEngine()``` that will print:
 
-```
-Starting the car!
-Vroom!
-```
+	> Starting the car!
+	> Vroom!
+
 
 This method looks like:
 
@@ -495,10 +497,10 @@ In this code, we create a ```startRadio()``` method that accepts an ```String```
 
 A call to the ```startRadio()``` method on ```myCar``` results in printing:
 
-```
-Turning on the radio to Meditation Station!
-Enjoy!
-```
+
+	> Turning on the radio to Meditation Station!
+	> Enjoy!
+
 
 ### Reassigning Instance Fields
 
@@ -551,6 +553,85 @@ This code first prints ```2000```, the initial value of ```myAccount.balance```,
 
 Changing instance fields is how we change the state of an object and make our objects more flexible and realistic.
 
+### Returns 
+
+Remember, variables can only exist in the *scope* that they were declared in.
+
+We can use a value outside of the method it was created in if we *return* it from the method.
+
+We return a value by using the keyword *return*:
+
+```
+public int numberOfTires() {
+   int tires = 4;
+   return tires;
+}
+```
+
+This method, called ```numberOfTires```, returns ```4```. In past exercises, when creating new methods, we used the keyword ```void```. Here, we are replacing ```void``` with ```int```, to signify that the *return type* is an ```int```.
+
+The void keyword (which means “completely empty”) indicates to the method that no value is returned after calling that method.
+
+Alternatively, we can use datatype keywords (such as int, char, etc.) to specify that a method should return a value of that type.
+
+```
+public static void main(String[] args){
+  Car myCar = new Car("red");
+  int numTires = myCar.numberOfTires();
+}
+```
+
+Within ```main()```, we called the ```numberOfTires()``` method on ```myCar```. Since the method returns an ```int``` value of 4, we store the value 4 in an integer variable called ```numTires```. If we printed ```numTires```, we would see ```4```.
+
+### The toString Method
+
+When we print out Objects, we often see a String that is not very helpful in determining what the Object represents. In the last lesson, we saw that when we printed our ```Store``` objects, we would see output like:
+
+
+	> Store@6bc7c054
+
+
+where ```Store``` is the name of the object and ```6bc7c054``` is its position in memory.
+
+This doesn’t tell us anything about what the ```Store``` sells, the price, or the other instance fields we’ve defined. We can add a method to our classes that makes this printout more descriptive.
+
+When we define a *toString()* method for a class, we can return a ```String``` that will print when we print the object:
+
+```
+class Car {
+
+    String color;
+
+    public Car(String carColor) {
+        color = carColor;
+    }
+
+    public static void main(String[] args){
+        Car myCar = new Car("red");
+        System.out.println(myCar);
+    }
+
+   public String toString(){
+       return "This is a " + color + " car!";
+   }
+}
+```
+
+When this runs, the command ```System.out.println(myCar)``` will print ```This is a red car!```, which tells us about the Object ```myCar```.
+
+### Review
+
+Methods are a powerful way to abstract tasks away and make them repeatable. They allow us to define behavior for classes, so that the Objects we create can do the things we expect them to. Let’s review everything we have learned about methods so far.
+
+- *Defining a method*: Methods have a method signature that declares their return type, name, and parameters
+- *Calling a method*: Methods are invoked with a ```.``` and ```()```
+- *Parameters*: Inputs to the method and their types are declared in parentheses in the method signature
+- *Changing Instance Fields*: Methods can be used to change the value of an instance field
+- *Scope*: Variables only exist within the domain that they are created in
+- *Return*: The type of the variables that are output are declared in the method signature
+
+As you move through more Java material, it will be helpful to frame the tasks you create in terms of methods. This will help you think about what inputs you might need and what output you expect.
+
 # Basic Programs
 - Classes
 	- [Store](#Store)
@@ -563,10 +644,17 @@ Changing instance fields is how we change the state of an object and make our ob
 	- [Savings Account](#Savings-Account)
 - Methods
 	- [Salon](#Salon)
-	- [SmallStore](#SmallStore)
+	- [Small Store](#Small-Store)
 	- [Defining Method Scope](#Defining-Method-Scope)
 	- [Big Store](#Big-Store)
 	- [Large Store](#Large-Store)
+	- [Medium Store](#Medium-Store)
+	- [Tiny Store](#Tiny-Store)
+	- [Checking Account](#Checking-Account)
+- Projects
+	- [Calculator](#Calculator)
+	- [Droid](#Droid)
+
 
 ## Store
 
@@ -817,17 +905,16 @@ public class Store {
 	You can leave the body of the method empty.
 
 3. Inside the ```advertise()``` method, type two print statements. They should result in the printouts:
-```
-	"Come spend some money!"
-	"Selling productType!"
-```
+	> "Come spend some money!"
+	> "Selling productType!"
+
 	where ```productType``` is replaced with the value in the variable ```productType```.
 
 	However, we’re not going to see these Strings printed out yet!
 
 Example code can be found in the [Salon.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Salon.java) file.
 
-## SmallStore
+## Small Store
 
 Calling methods
 
@@ -894,11 +981,8 @@ public class Store {
 ```
 
 2. Inside of the ```advertise()``` method, change the ```productType``` variable to the ```cookie``` variable, which is declared in the ```main()``` method. This should also result in the printout:
-
-	```
-	Selling cookies!
-	```
-
+	> Selling cookies!
+	
 	Right?
 
 3. No! We got an error! The ```cookie``` variable cannot be accessed inside of the advertise method. The scope is wrong! Change it back to ```productType```:
@@ -908,10 +992,7 @@ public class Store {
 ```
 
 4. Inside of the ```main()``` method, print the String ```message```, which is declared in the ```advertise()``` method. This should print:
-
-	```
-		Selling Cookies!
-	```
+	> Selling Cookies!
 
 	Right?
 
@@ -1004,3 +1085,317 @@ public class Store {
 4. In the ```main()``` method, increase the price at the lemonade stand by ```1.5```. Then, print the ```lemonadeStand.price``` to see how it has changed!
 
 Example code can be found in the [LargeStore.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/LargeStore.java) file.
+
+## Medium Store
+
+Demonstrates method returns
+
+1. Start with this code:
+
+```
+public class Store {
+  // instance fields
+  String productType;
+  double price;
+  
+  // constructor method
+  public Store(String product, double initialPrice) {
+    productType = product;
+    price = initialPrice;
+  }
+  
+  // increase price method
+  public void increasePrice(double priceToAdd){
+    double newPrice = price + priceToAdd;
+    price = newPrice;
+  }
+  
+  // get price with tax method
+
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+
+  }
+}
+```
+
+2. We want to have a method that returns the price plus tax.
+
+	Define a method called ```getPriceWithTax()``` that is intended to return the price plus the tax. It should take in no parameters and return a ```double```.
+
+	You can leave the body of the method empty for now. **Note**: the code will have an error until we return the correct type from the method, which we will do in the next step.
+
+3. Inside the ```getPriceWithTax()``` method, create a ```double``` variable ```totalPrice``` that is equal to ```price + price * 0.08```. ```0.08``` is the tax applied to the price.
+
+	Then, return ```totalPrice```.
+
+4. Example code can be found in the [MediumStore.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/MediumStore.java) file.
+
+## Tiny Store
+
+Demonstrates the toString() method
+
+1. Start with this code: 
+
+```
+public class Store {
+  // instance fields
+  String productType;
+  double price;
+  
+  // constructor method
+  public Store(String product, double initialPrice) {
+    productType = product;
+    price = initialPrice;
+  }
+  
+  // increase price method
+  public void increasePrice(double priceToAdd){
+    double newPrice = price + priceToAdd;
+    price = newPrice;
+  }
+  
+  // get price with tax method
+  public double getPriceWithTax(){
+    double tax = 0.08;
+    double totalPrice = price + price*tax;
+    return totalPrice;
+  }
+
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+    Store cookieShop = new Store("Cookies", 5);
+
+  }
+}
+```
+
+2. In the ```main()``` method, print the Objects ```lemonadeStand``` and ```cookieShop```. Are these printouts helpful in understanding these Objects?
+
+3. Create a ```toString()``` method for the ```Store``` class. The method signature should say that it is ```public```, and that it returns a ```String```. It shouldn’t take in any parameters. For now, have it return the ```String``` ```"Store"```.
+
+4. ```"Store"``` isn’t very helpful! What kind of Store is it?
+
+	Change the ```toString()``` to return a ```String``` that describes this ```Store``` object.
+
+	Your ```String``` should look like:
+```
+	This store sells productType at a price of price.
+```
+	where ```productType``` and ```price``` are the values in those instance fields. For example, if it was a hat store where hats cost 8, the ```String``` would say:
+	> This store sells hats at a price of 8.
+
+Example code can be found in the [TinyStore.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/TinyStore.java) file.
+
+## Checking Account
+
+1. Start with this code:
+
+```
+public class SavingsAccount {
+  
+  int balance;
+  
+  public SavingsAccount(int initialBalance){
+    balance = initialBalance;
+  }
+  
+  public static void main(String[] args){
+    SavingsAccount savings = new SavingsAccount(2000);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+    //Withdrawing:
+    int afterWithdraw = savings.balance - 300;
+    savings.balance = afterWithdraw;
+    System.out.println("You just withdrew "+300);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+    //Deposit:
+    int afterDeposit = savings.balance + 600;
+    savings.balance = afterDeposit;
+    System.out.println("You just deposited "+600);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+    //Deposit:
+    int afterDeposit2 = savings.balance + 600;
+    savings.balance = afterDeposit2;
+    System.out.println("You just deposited "+600);
+    
+    //Check balance:
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+savings.balance);
+    
+  }       
+}
+
+```
+
+2. Now that we’ve learned about behavior, we can apply behavior to our ```CheckingAccount``` class using methods!
+
+	We’ve added the functionality for each method inside ```main()``` now, but you will be rebuilding each above ```main()```. Note that your methods can directly access the ```balance``` field.
+
+	First, write a method called ```checkBalance()``` that prints:
+	> Hello! Your balance is
+
+	with the balance of the account displayed.
+
+	It should take in no parameters and return nothing.
+
+3. Now, write a method called ```deposit()``` that takes in an ```int``` parameter ```amountToDeposit``` and adds it to the balance. It should return nothing.
+
+	If you want, you can also have the method print:
+	> You just deposited amountToDeposit
+
+	with the value of ```amountToDeposit``` displayed.
+
+4. Test out your methods by trying to replace some of the code in the ```main()``` method with the equivalent methods!
+
+	Make sure to use ```checkBalance()```, ```deposit()```, and ```withdraw()``` at least once each.
+
+5. Congratulations! You’ve made a basic ```SavingsAccount```.
+
+	If you want, you can add more functionality to this! What other instance fields might you want to keep track of? What might a ```toString()``` look like for this class?
+
+Example code can be found in the [CheckingAccount.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/CheckingAccount.java) file.
+
+## Calculator
+### A Basic Calculator
+
+In this project, you will use classes, methods, and objects to create a simple arithmetic calculator. The calculator will be able to:
+
+- Add two integers
+- Subtract two integers
+- Multiply two integers
+- Divide two integers
+- Apply the modulo operator on two integers
+
+The instructions provided are general guidelines.
+
+1. Create a public class called ```Calculator```.
+
+2. Inside of the class, create a ```Calculator()``` constructor. You can leave the contents of the constructor empty.
+
+3. Next, create a ```public``` method that returns an ```int``` and call it ```add()```.
+
+4. The ```add()``` method should accept two int parameters. For example: ```int a, int b```.
+
+5. The ```add``` method should add the two integer parameters that a user will specify. Inside of the ```add``` method, return the sum of ```a``` and ```b```.
+
+6. Next, create another similar method called ```subtract()```. The ```subtract()``` method should accept two ```int``` parameters, just like the ```add()``` method does.
+
+7. Inside of the ```subtract()``` method, return the difference of ```a``` and ```b```.
+
+8. Create another method called ```multiply()```. The ```multiply()``` method should accept two ```int``` parameters.
+
+9. Inside of the ```multiply``` method, return the product of ```a``` and ```b```.
+
+10. Create another method called ```divide()```. It should accept two ```int``` parameters.
+
+11. Inside of the ```divide()``` function, return ```a``` divided by ```b```.
+
+12. Create another method called ```modulo```. It should accept two ```int``` parameters.
+
+13. Inside of the ```modulo()``` function, return ```a``` modulo ```b```.
+
+14. Next, create a ```main()``` method. Can you remember all the keywords necessary for a ```main()``` method?
+
+15. Inside of ```main()```, create a ```Calculator``` object called ```myCalculator```.
+
+16. Print out the value of calling the ```add()``` method on ```myCalculator```. Pass in ```5``` and ```7``` as parameters.
+
+17. On the next line, print out the value of calling the ```subtract()``` method on ```myCalculator```. Pass in ```45``` and ```11``` as parameters.
+
+18. If you completed this project correctly, the output should be ```12``` and ```34```. Feel free to explore more with the program. What are some ways in which the program could be improved?
+
+19. Add comments near the top of the program that describe what the program does.
+
+Example code can be found in the [Calculator.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Calculator.java) file.
+
+## Droid
+### Build A Droid
+
+We’ve set up a robot workshop to build some droids. All that’s missing are the instructions on how to create the robots and what they’ll do.
+
+Can we write a Java class to help?
+
+We’ll need to define the state and behavior of the droids using instance fields and methods. Let’s get to work!
+
+1. The **Droid.java** file is empty.
+
+	Start by defining the class ```Droid```.
+
+	Don’t forget to include a ```main()``` method! You can leave it empty for now.
+
+	We want a ```Droid``` object that has the following state:
+
+	- name
+	- battery level
+
+	and the following behavior:
+
+	- performing a task
+	- stating its battery level
+
+2. Declare an instance field called ```batteryLevel```. We want to store whole number values in this field.
+
+3. Declare another instance field called ```name``` which will store our droid’s name.
+
+	What type should this be?
+
+4. Create a constructor method for the ```Droid``` class.
+
+	The method should have one parameter of ```String droidName```.
+
+5. Inside the constructor, assign the parameter value of ```droidName``` to the appropriate instance field.
+
+	Set the value of ```batteryLevel``` to ```100```. Every new instance of ```Droid``` will have a ```batteryLevel``` of ```100```.
+
+6. Inside ```main()```, create a ```new``` instance of ```Droid``` named ```"Codey"```.
+
+7. Print out the variable using ```System.out.println()```.
+
+8. That output isn’t very informative!
+
+	Define a ```toString()``` method within ```Droid```.
+
+	The return type is ```String```.
+
+	Inside ```toString()```, ```return``` a string that introduces the ```Droid``` using their name.
+
+	Something like “Hello, I’m the droid: droidNameHere”
+
+9. Define a new method: ```performTask()```. This method should have a single parameter: ```String task```.
+
+	This method does not return any value.
+
+10. Inside ```performTask()```, print a statement like “```name``` is performing task: ```task```“.
+
+For example, ```codey.performTask("dancing");``` will print:
+	> Codey is performing task: dancing
+
+11. Performing tasks is hard work. After the print statement, set ```batteryLevel``` to be ```10``` less than it was before.
+
+	We’ll need to reassign the instance field to be the current value minus 10.
+
+12. Have your ```Droid``` instance perform some tasks inside of ```main()```.
+
+13. Create new instances and play around with methods. Here are some ideas to get you started:
+
+	- Create a ```energyReport()``` method that prints the instance’s ```batteryLevel```.
+
+	- Create another instance.
+
+	- Create a method ```energyTransfer()``` that exchanges ```batteryLevel``` between instances.
+
+Example code can be found in the [Droid.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Droid.java) file. 
