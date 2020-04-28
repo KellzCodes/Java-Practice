@@ -7,13 +7,13 @@ Here is a quick run down of the lessons found in the foundations folder.
 ## Table of Contents
 
 - [Introduction](#Introduction)
+- [Variables](#Variables)
+- [Object-Oriented Java](#Object-Oriented-Java)
 - [Key Concepts of Computer Science](#Key-Concepts-of-Computer-Science)
 - [identifiers and reserved words](#identifiers-and-reserved-words)
 - [Basic Computer Science Questions](#Basic-Comp-Sci-Questions)
 
 ## Introduction
-- [Hello World](#Hello-World)
-- [Variables](#Variables)
 
 ### Hello World
 
@@ -118,9 +118,9 @@ In Java, a statement is a line of code that executes a task and is terminated wi
 System.out.println("Java Programming ☕️");
 ```
 
-### Variables
+## Variables
 
-#### ```boolean``` Data Type
+### ```boolean``` Data Type
 
 In Java, the ```boolean``` primitive data type is used to store a value, which can be either ```true``` or ```false```.
 
@@ -129,7 +129,7 @@ boolean result = true;
 boolean isMarried = false;
 ```
 
-#### Strings
+### Strings
 
 A String in Java is a Object that holds multiple characters. It is not a primitive datatype.
 
@@ -145,7 +145,7 @@ String name = "Bob";
 System.out.println(name.equals("bob"));
 ```
 
-#### ```int``` Data Type
+### ```int``` Data Type
 
 In Java, the ```int``` datatype is used to store integer values. This means that it can store all positive and negative whole numbers and zero.
 
@@ -156,7 +156,7 @@ int num3 = 0;    // zero value
 int num4 = 12.5; // not allowed
 ```
 
-#### ```char``` Data Type
+### ```char``` Data Type
 
 In Java, ```char``` is used to store a single character. The character must be enclosed in single quotes.
 
@@ -164,7 +164,7 @@ In Java, ```char``` is used to store a single character. The character must be e
 char answer = 'y';
 ```
 
-#### Primitive Data Types
+### Primitive Data Types
 
 Java’s most basic data types are known as primitive data types and are in the system by default.
 
@@ -199,7 +199,7 @@ float k = (float)12.5;
 double pi = 3.14;
 ```
 
-#### Static Typing
+### Static Typing
 
 In Java, the type of a variable is checked at compile time. This is known as *static typing*. It has the advantage of catching the errors at compile time rather than at execution time.
 
@@ -213,7 +213,7 @@ j = 20;             // won't compile, no type is given
 char name = "Lil";  // won't compile, wrong data type
 ```
 
-#### Math Operations
+### Math Operations
 
 Basic math operations can be applied to ```int```, ```double``` and ```float``` data types:
 - ```+``` addition
@@ -241,7 +241,7 @@ result = a / b;  // 2
 result = a % b;  // 0
 ```
 
-#### Comparison Operators
+### Comparison Operators
 
 Comparison operators can be used to compare two values:
 
@@ -262,7 +262,230 @@ boolean result = a > b;
 // result now holds the boolean value true
 ```
 
-### Key Concepts of Computer Science
+## Object Oriented Java
+
+### Java objects’ state and behavior
+
+In Java, instances of a class are known as objects. Every object has state and behavior in the form of instance fields and methods respectively.
+
+```
+public class Person {
+  // state of an object
+  int age;
+  String name;
+  
+  // behavior of an object
+  public void set_value() {
+    age = 20;
+    name = "Robin";
+  }
+  public void get_value() {
+    System.out.println("Age is " + age);
+    System.out.println("Name is " + name);
+  }
+  
+  // main method
+  public static void main(String [] args) {
+    // creates a new Person object
+    Person p = new Person(); 
+    
+    // changes state through behavior
+    p.set_value();
+  }
+}
+```
+
+### Java instance
+
+Java instances are objects that are based on classes. For example, ```Bob``` may be an instance of the class ```Person```.
+
+Every instance has access to its own set of variables which are known as *instance fields*, which are variables declared within the scope of the instance. Values for instance fields are assigned within the constructor method.
+
+```
+public class Person {
+  int age;
+  String name;
+  
+  // Constructor method
+  public Person(int age, String name) {
+    this.age = age;
+    this.name = name;
+  }
+  
+  public static void main(String[] args) {
+    Person Bob = new Person(31, "Bob");
+    Person Alice = new Person(27, "Alice");
+  }
+}
+```
+
+### Java dot notation
+
+In Java programming language, we use ```.``` to access the variables and methods of an object or a Class.
+
+This is known as *dot notation* and the structure looks like this-
+
+```instanceOrClassName.fieldOrMethodName```
+
+```
+public class Person {
+  int age;
+  
+  public static void main(String [] args) {
+    Person p = new Person();
+    
+    // here we use dot notation to set age
+    p.age = 20; 
+    
+    // here we use dot notation to access age and print
+    System.out.println("Age is " + p.age);
+    // Output: Age is 20
+  }
+}
+```
+
+### Constructor Method in Java.
+
+Java classes contain a *constructor* method which is used to create instances of the class.
+
+The constructor is named after the class. If no constructor is defined, a default empty constructor is used.
+
+```
+public class Maths {
+  public Maths() {
+    System.out.println("I am constructor");
+  }
+  public static void main(String [] args) {
+    System.out.println("I am main");
+    Maths obj1 = new Maths();
+  }
+}
+```
+
+### Creating a new Class instance in Java
+
+In Java, we use the ```new``` keyword followed by a call to the class constructor in order to create a new *instance* of a class.
+
+The constructor can be used to provide initial values to instance fields.
+
+```
+public class Person {
+  int age;
+  
+  public Person(int a) {
+    age = a;
+  }
+  
+  public static void main(String [] args) {
+    // Here, we create a new instance of the Person class
+    Person p = new Person(20);
+    
+    System.out.println("Age is " + p.age);
+    // Output: Age is 20
+  }
+}
+```
+
+### The body of a Java method
+
+In Java, we use curly brackets ```{}``` to enclose the body of a method.
+
+The statements written inside the ```{}``` are executed when a method is called.
+
+```
+public class Maths {
+  public static void sum(int a, int b) { // Start of sum
+    int result = a + b;
+    System.out.println("Sum is " + result);
+  } // End of sum
+  
+  
+  public static void main(String [] args) {
+    // Here, we call the sum method
+    sum(10, 20);
+    // Output: Sum is 30
+  }
+}
+```
+
+### Method parameters in Java
+
+In java, parameters are declared in a method definition. The parameters act as variables inside the method and hold the value that was passed in. They can be used inside a method for printing or calculation purposes.
+
+In the example, a and b are two parameters which, when the method is called, hold the value 10 and 20 respectively.
+
+```
+
+public class Maths {
+  public int sum(int a, int b) {
+    int k = a + b;
+    return k;
+  }
+  
+  public static void main(String [] args) {
+    Maths m = new Maths();
+    int result = m.sum(10, 20);
+    System.out.println("sum is " + result);
+    // prints - sum is 30
+  }
+}
+```
+
+### Java Variables Inside a Method
+
+Java variables defined inside a method cannot be used outside the scope of that method.
+
+```
+//For example, `i` and `j` variables are available in the `main` method only:
+
+public class Maths {
+  public static void main(String [] args) {
+    int i, j;
+    System.out.println("These two variables are available in main method only");
+  }
+}
+```
+
+### Returning info from a Java method
+
+A Java method can return any value that can be saved in a variable. The value returned must match with the return type specified in the method signature.
+
+The value is returned using the ```return``` keyword.
+
+```
+public class Maths { 
+  
+  // return type is int
+  public int sum(int a, int b) {
+    int k;
+    k = a + b;
+    
+    // sum is returned using the return keyword
+    return k;
+  }
+  
+  public static void main(String [] args) {
+    Maths m = new Maths();
+    int result;
+    result = m.sum(10, 20);
+    System.out.println("Sum is " + result);
+    // Output: Sum is 30
+  }
+}
+```
+
+### Java method signature
+
+In Java, methods are defined with a *method signature*, which specifies the scope (private or public), return type, name of the method, and any parameters it receives.
+
+```
+// Here is a public method named sum whose return type is int and has two parameters a and b
+public int sum(int a, int b) {
+  return(a + b);
+}
+```
+
+## Key Concepts of Computer Science
 - A computer system consists of hardware and software that work in concert to help us solve problems.
 - The CPU reads the program instructions from main memory, executing them one at a time until the program ends.
 - The operating system provides a user interface and manages computer resources.
@@ -373,7 +596,7 @@ void
 volatile
 while
 
-### Basic Comp Sci Questions
+## Basic Comp Sci Questions
 
 #### Computer Processing
 
