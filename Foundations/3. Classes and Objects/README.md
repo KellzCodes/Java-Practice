@@ -1382,7 +1382,7 @@ We’ll need to define the state and behavior of the droids using instance field
 10. Inside ```performTask()```, print a statement like “```name``` is performing task: ```task```“.
 
 	For example, ```codey.performTask("dancing");``` will print:
-		> Codey is performing task: dancing
+	> Codey is performing task: dancing
 
 11. Performing tasks is hard work. After the print statement, set ```batteryLevel``` to be ```10``` less than it was before.
 
