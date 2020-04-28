@@ -11,8 +11,6 @@ This project is my coding journal. I am learning Java from scratch and sharing m
 - [Semicolons and Whitespace](#Semicolons-and-Whitespace)
 - [Compiling and Catching Errors](#Compiling-and-Catching-Errors)
 - [Compiling and Creating Executables](#Compiling-and-Creating-Executables)
-- [Variables](#Variables)
-- [Manipulating Variables](#Manipulating-Variables)
 - [Basic Programs](#Basic-Programs)
 
 ### Introduction to Java
