@@ -298,10 +298,10 @@ public class Order {
 
 2. In the code, there is an ```isFilled``` value, that represents whether the order is ready to ship.
 
-Write an if-then-else statement that:
+	Write an if-then-else statement that:
 
-- When ```isFilled``` is ```true```, print ```Shipping```.
-- When ```isFilled``` is ```false```, print ```Order not ready```.
+	- When ```isFilled``` is ```true```, print ```Shipping```.
+	- When ```isFilled``` is ```false```, print ```Order not ready```.
 
 Example code can be found in the [BigOrder.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/BigOrder.java) file.
 
