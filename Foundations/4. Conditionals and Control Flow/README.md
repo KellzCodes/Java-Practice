@@ -5,6 +5,9 @@
 - [If-Then-Else](#If-Then-Else)
 - [If-Then-Else-If](#If-Then-Else-If)
 - [Switch Statement](#Switch-Statement)
+- [Conditional-And: &&](#Conditional-AND)
+- [Conditional-Or: ||](#Conditional-OR)
+- [Logical NOT: !](#Logical-NOT)
 - [Basic Programs](#Basic-Programs)
 
 Imagine we’re writing a program that enrolls students in courses.
@@ -241,12 +244,129 @@ switch (course) {
 // enrolls student in Biology... AND History and Theatre!
 ```
 
+### Conditional AND
+
+Let’s return to our student enrollment program. We’ve added an additional requirement: not only must students have the prerequisite, but their tuition must be paid up as well. We have *two* conditions that must be ```true``` before we enroll the student.
+
+Here’s one way we could write the code:
+
+```
+if (tuitionPaid) {
+  if (hasPrerequisite) {
+    // enroll student
+  }
+}
+```
+
+We’ve nested two ```if-then``` statements. This does the job but we can be more concise with the *AND* operator:
+
+```
+if (tuitionPaid && hasPrerequisite) {
+  // enroll student
+}
+```
+
+The AND operator, ```&&```, is used between two boolean values and evaluates to a single boolean value. If the values **on both sides** are ```true```, then the resulting value is ```true```, otherwise the resulting value is ```false```.
+
+This code illustrates every combination:
+
+```
+true && true
+// true
+false && true
+// false
+true && false
+// false
+false && false
+// false
+```
+
+### Conditional OR
+
+The requirements of our enrollment program have changed again. Certain courses have prerequisites that are satisfied by multiple courses. As long as students have taken **at least one** prerequisite, they should be allowed to enroll.
+
+Here’s one way we could write the code:
+
+```
+if (hasAlgebraPrerequisite) {
+  // Enroll in course
+}
+
+if (hasGeometryPrerequisite) {
+  // Enroll in course
+}
+```
+
+We’re using two different ```if-then``` statements with the **same code block**. We can be more concise with the *OR* operator:
+
+```
+if (hasAlgebraPrerequisite || hasGeometryPrerequisite) {
+  // Enroll in course
+}
+```
+
+The OR operator, ```||```, is used between two boolean values and evaluates to a single boolean value. If **either of the two values** is ```true```, then the resulting value is ```true```, otherwise the resulting value is ```false```.
+
+This code illustrates every combination:
+
+```
+true || true
+// true
+false || true
+// true
+true || false
+// true
+false || false
+// false
+```
+
+### Logical NOT
+
+The *unary* operator NOT, ```!```, works on a **single** value. This operator evaluates to the opposite boolean to which it’s applied:
+
+```
+!false
+// true
+!true
+// false
+```
+
+NOT is useful for expressing our intent clearly in programs. For example, sometimes we need the opposite behavior of an ```if-then```: run a code block **only if** the condition is ```false```.
+
+```
+boolean hasPrerequisite = false;
+
+if (hasPrerequisite) {
+  // do nothing
+} else {
+  System.out.println("Must complete prerequisite course!");
+}
+```
+
+This code does what we want but it’s strange to have a code block that does nothing!
+
+The logical NOT operator cleans up our example:
+
+```
+boolean hasPrerequisite = false;
+
+if (!hasPrerequisite) {
+  System.out.println("Must complete prerequisite course!");
+}
+```
+
+We can write a succinct conditional statement without an empty code block.
+
 ## Basic Programs
 
 - [Order](#Order)
 - [Big Order](#Big-Order)
 - [Bigger Order](#Bigger-Order)
 - [Large Order](#Large-Order)
+- [Reservation](#Reservation)
+- [Early Reservation](#Early-Reservation)
+- [Late Reservation](#Late-Reservation)
+- [Car Loan](#Car-Loan)
 
 ### Order
 
@@ -429,3 +549,224 @@ public class Order {
 	**Make sure the method returns ```shippingCost``` after the ```switch``` statement.**
 
 Example code can be found in the [LargeOrder.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/LargeOrder.java) file.
+
+### Reservation
+
+1. Start with this code:
+
+```
+public class Reservation {
+  int guestCount;
+  int restaurantCapacity;
+  boolean isRestaurantOpen;
+  boolean isConfirmed;
+  
+  public Reservation(int count, int capacity, boolean open) {
+    guestCount = count;
+		restaurantCapacity = capacity;
+		isRestaurantOpen = open;
+  }  
+  
+  public void confirmReservation() {
+    /* 
+       Write conditional
+       ~~~~~~~~~~~~~~~~~
+       if restaurantCapacity is greater
+       or equal to guestCount
+       AND
+       the restaurant is open:
+         print "Reservation confirmed"
+         set isConfirmed to true
+       else:
+         print "Reservation denied"
+         set isConfirmed to false
+    */
+  }
+  
+  public void informUser() {
+    System.out.println("Please enjoy your meal!");
+  }
+  
+  public static void main(String[] args) {
+    Reservation partyOfThree = new Reservation(3, 12, true);
+    Reservation partyOfFour = new Reservation(4, 3, true);
+    partyOfThree.confirmReservation();
+    partyOfThree.informUser();
+    partyOfFour.confirmReservation();
+    partyOfFour.informUser();
+  }
+}
+```
+
+2. Our ```Reservation``` class has the method ```confirmReservation()``` which validates if a restaurant can accomodate a given reservation.
+
+	We need to build the conditional logic into ```confirmReservation()``` using two parameters:
+
+	- ```restaurantCapacity```
+	- ```isRestaurantOpen```
+	
+	Use an ```if-then-else``` statement:
+
+	If ```restaurantCapacity``` is greater than or equal to ```guestCount``` **and** the restaurant is open, print ```"Reservation confirmed"``` and set ```isConfirmed``` to ```true```.
+
+	```else``` print ```"Reservation denied"``` and set ```isConfirmed``` to ```false```.
+
+Example code can be found in the [Reservation.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/Reservation.java) file.
+
+### Early Reservation
+
+Shows how to use Conditional OR operator
+
+1. Start with this code:
+
+```
+public class Reservation {
+  int guestCount;
+  int restaurantCapacity;
+  boolean isRestaurantOpen;
+  boolean isConfirmed;
+  
+  public Reservation(int count, int capacity, boolean open) {
+    // Write conditional statement below
+    
+    
+    guestCount = count;
+		restaurantCapacity = capacity;
+		isRestaurantOpen = open;
+  }  
+  
+  public void confirmReservation() {
+    if (restaurantCapacity >= guestCount && isRestaurantOpen) {
+      System.out.println("Reservation confirmed");
+      isConfirmed = true;
+    } else {
+      System.out.println("Reservation denied");
+			isConfirmed = false;
+    }
+  }
+  
+  public void informUser() {
+    System.out.println("Please enjoy your meal!");
+  }
+  
+  public static void main(String[] args) {
+    Reservation partyOfThree = new Reservation(3, 12, true);
+    Reservation partyOfFour = new Reservation(4, 3, true);
+    partyOfThree.confirmReservation();
+    partyOfThree.informUser();
+    partyOfFour.confirmReservation();
+    partyOfFour.informUser();
+  }
+}
+```
+
+2. Let’s write a message inside the ```Reservation()``` constructor that warns against bad input.
+
+	Our restaurants can’t seat parties of more than ```8``` people, and we don’t want reservations for ```0``` or less because that would be silly.
+
+	Inside ```Reservation()```, write a conditional that uses ```||```.
+
+	If ```count``` is less than ```1``` **OR** greater than ```8``` we want to write the following message: ```Invalid reservation!```.
+
+Example code can be found in the [EarlyReservation.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/EarlyReservation.java) file.
+
+### Late Reservation
+
+1. Start with this code:
+
+```
+public class Reservation {
+  int guestCount;
+  int restaurantCapacity;
+  boolean isRestaurantOpen;
+  boolean isConfirmed;
+  
+  public Reservation(int count, int capacity, boolean open) {
+    if (count < 1 || count > 8) {
+      System.out.println("Invalid reservation!");
+    }
+    guestCount = count;
+		restaurantCapacity = capacity;
+		isRestaurantOpen = open;
+  }  
+  
+  public void confirmReservation() {
+    if (restaurantCapacity >= guestCount && isRestaurantOpen) {
+      System.out.println("Reservation confirmed");
+      isConfirmed = true;
+    } else {
+      System.out.println("Reservation denied");
+			isConfirmed = false;
+    }
+  }
+  
+  public void informUser() {
+    // Write conditional here
+
+  }
+  
+  public static void main(String[] args) {
+    Reservation partyOfThree = new Reservation(3, 12, true);
+    Reservation partyOfFour = new Reservation(4, 3, true);
+    partyOfThree.confirmReservation();
+    partyOfThree.informUser();
+    partyOfFour.confirmReservation();
+    partyOfFour.informUser();
+  }
+}
+```
+
+2. Let’s make ```informUser()``` more informative. If their reservation is not confirmed, they should know!
+
+	Write an ```if-then-else``` statement and use ```!``` with ```isConfirmed``` as the condition.
+
+	If their reservation is **not** confirmed, write ```Unable to confirm reservation, please contact restaurant.```
+
+	Else write: ```Please enjoy your meal!```
+
+Example code can be found in the [LateReservation.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/LateReservation.java) file
+
+### Car Loan
+
+Let’s combine a few of the concepts that you have learned so far: conditionals, Boolean expressions, and arithmethic expressions.
+
+In this project, you will write a program that will calculate the *monthly* car payment a user should expect to make after taking out a car loan. The program will include the following:
+
+- Car loan amount
+- Interest rate of the loan
+- Length of the loan (in years)
+- Down payment
+
+1. Create an ```int``` variable called ```carLoan``` and set it equal to ```10000```.
+
+2. Next, create an ```int``` variable called ```loanLength``` and set it equal to ```3```. This will represent a loan length of 3 years.
+
+3. Now create an ```int``` variable called ```interestRate``` and set it equal to ```5```. This will represent an interest rate of 5% on the loan.
+
+4. Next, create an ```int``` variable called ```downPayment``` and set it equal ```2000```. This will represent the down payment provided by a user for this car purchase.
+
+5. Let’s build in some requirements that would prevent a buyer from taking out an invalid car loan. Write an ```if``` statement that checks whether the loan length is less than or equal to zero ```or``` whether the interest rate is less than or equal to zero.
+
+6. Next, inside of the ```if``` statement, print out a helpful error message to the user. For example, you can print out something like: ```Error! You must take out a valid car loan```.
+
+7. What if the down payment is more than the price of the car? Add to the ```if``` statement and use ```else if``` to check whether the down payment is greater than or equal to the car loan.
+
+8. Inside of the ```else if``` block, print out a helpful message to the user about the down payment and car loan amounts. For example, you can print out something like: ```The car can be paid in full.```
+
+9. Finally, if none of the previous Boolean expressions evaluate to ```true```, calculate the monthly payment in an ```else``` block.
+
+10. Inside of the ```else``` block, create an ```int``` variable called ```remainingBalance``` and set it equal to ```carLoan``` minus ```downPayment```.
+
+11. Since we need the *monthly* payment, we must convert the loan length from years to months. On the next line, create an ```int``` variable called ```months``` and set it equal to ```loanLength``` times ```12```.
+
+12. Create an ```int``` variable called ```monthlyBalance``` and set it equal to ```remainingBalance``` divided by ```months```. This represents the monthly payment *without* interest included.
+
+13. The user needs to pay interest on the loan borrowed. Create an ```int``` variable called ```interest``` and set it equal to the monthly balance times the interest rate, divided all by 100.
+
+14. Calculate the final monthly payment. Create an ```int``` variable called ```monthlyPayment``` and set it equal to the monthly balance plus the interest.
+
+15. On the next line, print out the monthly payment. If you correctly completed this project, the console should print out ```233``` as the monthly payment.
+
+16. Add comments near the top of the program that describe what the program does.
+
+Example code can be found in the [CarLoan.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/CarLoan.java) file.
