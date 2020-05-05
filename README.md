@@ -1,4 +1,4 @@
-# Java Practice - 100 Days of Code
+# Java Practice 100 Days of Code
 
 - [Java Program Structure](#Java-Program-Structure)
 - [What is an IDE?](#What-is-an-IDE)
