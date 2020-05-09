@@ -48,6 +48,8 @@ What should a savings account do?
 
 Imagine two people have accounts that are instances of the ```SavingsAccount``` class. They share behavior (how they deposit and withdraw) but have individual state (their balances), and even with the same balance amount these accounts are separate entities.
 
+Example code can be found in the [Introduction to classes](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Introduction%20to%20Classes) folder.
+
 ## Classes
 
 ### Syntax 
@@ -79,6 +81,8 @@ public class Car {
 This example defines a ```class``` named ```Car```. ```public``` is an *access level modifier* that allows **other** classes to interact with this class.
 
 This class has a ```main()``` method, which lists the tasks performed by the program. ```main()``` runs when we execute the compiled **Car.class** file.
+
+Example code can be found in the [Classes-Syntax](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Classes-Syntax) folder
 
 ### Constructors
 
@@ -135,6 +139,8 @@ This is the first time we’ve called a method that we’ve also defined. ```mai
 
 Introducing a second method is a big step in your programming journey, congratulations!
 
+Example code can be found in the [Classes-Constructors](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Classes-Constructors) folder.
+
 ### Instance Fields
 
 The [Store.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Classes-Constructors/Store.java) program ends with printing an instance of ```Store```, which looks something like ```Store@6bc7c054```. The first part, ```Store```, refers to the class, and the second part ```@6bc7c054``` refers to the instance’s location in the computer’s memory.
@@ -169,6 +175,8 @@ public class Car {
 The declaration is **within** the class and the instance variable will be available for assignment inside the constructor.
 
 Fields are a type of state each instance will possess. One instance may have ```"red"``` as its ```color```, another ```"blue"```, etc.
+
+Example code can be found in the [Clases-Instance Fields](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Classes-Instance%20Fields) folder.
 
 ### Constructor Parameters
 
@@ -211,6 +219,8 @@ new Car("yellow");
 Within the constructor, we assign the parameter value to the instance field.
 
 Instance fields are available for assignment inside the constructor because we declared them within the class.
+
+Example code can be found in the [Classes-Constructor Parameters](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Classes-Constructor%20Parameters) folder.
 
 ### Assigning Values to Instance Fields
 
@@ -255,6 +265,8 @@ objectName.fieldName
 ferrari.color;
 // "red"
 ```
+
+Example code can be found in the [Classes-Assigning values to instance fields](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Classes-Assigning%20values%20to%20instance%20fields) file.
 
 ### Multiple Fields
 
@@ -304,6 +316,8 @@ Car honda = new Car("green", false, 0);
 Car junker = new Car(true, 42, "brown");
 ```
 
+Example code can be found in the [Classes-Multiple Fields](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Classes-Multiple%20Fields) folder.
+
 ### Review
 
 Java is an object-oriented programming language where every program has at least one class. Programs are often built from many classes and objects, which are the instances of a class.
@@ -340,6 +354,8 @@ public class Dog {
 }
 ```
 
+Example code can be found in the [Classes-Review](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Classes-Review) folder.
+
 ## Methods
 
 In the last lesson, we created an instance of the ```Store``` class in the main method. We learned that objects have state and behavior:
@@ -364,6 +380,8 @@ You have defined and called constructor methods, which create an instance of a c
 ![alt text](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/methods-conceptual.gif)
 
 What if it took 20 lines of code to make a sandwich? Our program would become very long very quickly if we were making multiple sandwiches. Methods are powerful because they allow us to create blocks of code that are repeatable and modular.
+
+Example code can be found in the [Introduction to Methods](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Introduction%20to%20Methods) folder
 
 ### Defining Methods
 
@@ -400,6 +418,8 @@ The two print statements are inside the *body* of the method, which is defined b
 
 Anything we can do in our ```main()``` method, we can do in other methods! All of the Java tools you know, like the math and comparison operators, can be used to make interesting and useful methods.
 
+Example code can be found in the [Methods-Defining Methods](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Methods-Defining%20Methods) folder.
+
 ### Calling Methods
 
 Great! When we add the ```startEngine()``` method to the ```Car``` class, it becomes available to use on any ```Car``` object. We can do this by *calling* the method on the ```Car``` object we created, for example.
@@ -429,6 +449,7 @@ class Car {
 
 In the example above, we call the ```startEngine()``` method on the ```myFastCar``` object. This method call occurs inside the ```main()``` method. Running the program results in printing ```Vroom!``` to the output terminal.
 
+Example code can be found in the [Methods-Calling Methods](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Methods-Calling%20Methods) folder.
 
 ### Scope
 
@@ -462,9 +483,11 @@ class Car {
 }
 ```
 
-The variable ```message```, which is declared and initialized inside of ```drive```, cannot be used inside of ```main()```! It only exists within the scope of the drive() method.
+The variable ```message```, which is declared and initialized inside of ```drive```, cannot be used inside of ```main()```! It only exists within the scope of the ```drive()``` method.
 
 However, ```milesDriven```, which is declared at the top of the class, can be used inside all methods in the class, since it is in the scope of the whole class.
+
+Example code can be found in the [Methods-Scope](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Methods-Scope) folder.
 
 ### Adding Parameters
 
@@ -501,6 +524,7 @@ A call to the ```startRadio()``` method on ```myCar``` results in printing:
 	> Turning on the radio to Meditation Station!
 	> Enjoy!
 
+Example code can be found in the [Methods-Adding Parameters](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Methods-Adding%20Parameters) folder.
 
 ### Reassigning Instance Fields
 
@@ -553,6 +577,8 @@ This code first prints ```2000```, the initial value of ```myAccount.balance```,
 
 Changing instance fields is how we change the state of an object and make our objects more flexible and realistic.
 
+Example code can be found in the [Methods-Reassigning Instance Fields](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Methods-Reassigning%20Instance%20Fields) folder.
+
 ### Returns 
 
 Remember, variables can only exist in the *scope* that they were declared in.
@@ -582,6 +608,8 @@ public static void main(String[] args){
 ```
 
 Within ```main()```, we called the ```numberOfTires()``` method on ```myCar```. Since the method returns an ```int``` value of 4, we store the value 4 in an integer variable called ```numTires```. If we printed ```numTires```, we would see ```4```.
+
+Example code can be found in the [Methods-Returns](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Methods-Returns) folder.
 
 ### The toString Method
 
@@ -619,6 +647,8 @@ class Car {
 
 When this runs, the command ```System.out.println(myCar)``` will print ```This is a red car!```, which tells us about the Object ```myCar```.
 
+Example code can be found in the [Methods-toString](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Methods-toString) folder.
+
 ### Review
 
 Methods are a powerful way to abstract tasks away and make them repeatable. They allow us to define behavior for classes, so that the Objects we create can do the things we expect them to. Let’s review everything we have learned about methods so far.
@@ -632,189 +662,4 @@ Methods are a powerful way to abstract tasks away and make them repeatable. They
 
 As you move through more Java material, it will be helpful to frame the tasks you create in terms of methods. This will help you think about what inputs you might need and what output you expect.
 
-# Basic Programs
-- Classes
-	- [Store](#Store)
-	- [Shop](#Shop)
-	- [Mart](#Mart)
-	- [Emporium](#Emporium)
-	- [Outlet](#Outlet)
-	- [Boutique](#Boutique)
-	- [Dog](#Dog)
-	- [Savings Account](#Savings-Account)
-- Methods
-	- [Salon](#Salon)
-	- [Small Store](#Small-Store)
-	- [Defining Method Scope](#Defining-Method-Scope)
-	- [Big Store](#Big-Store)
-	- [Large Store](#Large-Store)
-	- [Medium Store](#Medium-Store)
-	- [Tiny Store](#Tiny-Store)
-	- [Checking Account](#Checking-Account)
-- Projects
-	- [Calculator](#Calculator)
-	- [Droid](#Droid)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Calculator
-### A Basic Calculator
-
-In this project, you will use classes, methods, and objects to create a simple arithmetic calculator. The calculator will be able to:
-
-- Add two integers
-- Subtract two integers
-- Multiply two integers
-- Divide two integers
-- Apply the modulo operator on two integers
-
-The instructions provided are general guidelines.
-
-1. Create a public class called ```Calculator```.
-
-2. Inside of the class, create a ```Calculator()``` constructor. You can leave the contents of the constructor empty.
-
-3. Next, create a ```public``` method that returns an ```int``` and call it ```add()```.
-
-4. The ```add()``` method should accept two int parameters. For example: ```int a, int b```.
-
-5. The ```add``` method should add the two integer parameters that a user will specify. Inside of the ```add``` method, return the sum of ```a``` and ```b```.
-
-6. Next, create another similar method called ```subtract()```. The ```subtract()``` method should accept two ```int``` parameters, just like the ```add()``` method does.
-
-7. Inside of the ```subtract()``` method, return the difference of ```a``` and ```b```.
-
-8. Create another method called ```multiply()```. The ```multiply()``` method should accept two ```int``` parameters.
-
-9. Inside of the ```multiply``` method, return the product of ```a``` and ```b```.
-
-10. Create another method called ```divide()```. It should accept two ```int``` parameters.
-
-11. Inside of the ```divide()``` function, return ```a``` divided by ```b```.
-
-12. Create another method called ```modulo```. It should accept two ```int``` parameters.
-
-13. Inside of the ```modulo()``` function, return ```a``` modulo ```b```.
-
-14. Next, create a ```main()``` method. Can you remember all the keywords necessary for a ```main()``` method?
-
-15. Inside of ```main()```, create a ```Calculator``` object called ```myCalculator```.
-
-16. Print out the value of calling the ```add()``` method on ```myCalculator```. Pass in ```5``` and ```7``` as parameters.
-
-17. On the next line, print out the value of calling the ```subtract()``` method on ```myCalculator```. Pass in ```45``` and ```11``` as parameters.
-
-18. If you completed this project correctly, the output should be ```12``` and ```34```. Feel free to explore more with the program. What are some ways in which the program could be improved?
-
-19. Add comments near the top of the program that describe what the program does.
-
-Example code can be found in the [Calculator.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Calculator.java) file.
-
-## Droid
-### Build A Droid
-
-We’ve set up a robot workshop to build some droids. All that’s missing are the instructions on how to create the robots and what they’ll do.
-
-Can we write a Java class to help?
-
-We’ll need to define the state and behavior of the droids using instance fields and methods. Let’s get to work!
-
-1. The **Droid.java** file is empty.
-
-	Start by defining the class ```Droid```.
-
-	Don’t forget to include a ```main()``` method! You can leave it empty for now.
-
-	We want a ```Droid``` object that has the following state:
-
-	- name
-	- battery level
-
-	and the following behavior:
-
-	- performing a task
-	- stating its battery level
-
-2. Declare an instance field called ```batteryLevel```. We want to store whole number values in this field.
-
-3. Declare another instance field called ```name``` which will store our droid’s name.
-
-	What type should this be?
-
-4. Create a constructor method for the ```Droid``` class.
-
-	The method should have one parameter of ```String droidName```.
-
-5. Inside the constructor, assign the parameter value of ```droidName``` to the appropriate instance field.
-
-	Set the value of ```batteryLevel``` to ```100```. Every new instance of ```Droid``` will have a ```batteryLevel``` of ```100```.
-
-6. Inside ```main()```, create a ```new``` instance of ```Droid``` named ```"Codey"```.
-
-7. Print out the variable using ```System.out.println()```.
-
-8. That output isn’t very informative!
-
-	Define a ```toString()``` method within ```Droid```.
-
-	The return type is ```String```.
-
-	Inside ```toString()```, ```return``` a string that introduces the ```Droid``` using their name.
-
-	Something like “Hello, I’m the droid: droidNameHere”
-
-9. Define a new method: ```performTask()```. This method should have a single parameter: ```String task```.
-
-	This method does not return any value.
-
-10. Inside ```performTask()```, print a statement like “```name``` is performing task: ```task```“.
-
-	For example, ```codey.performTask("dancing");``` will print:
-	> Codey is performing task: dancing
-
-11. Performing tasks is hard work. After the print statement, set ```batteryLevel``` to be ```10``` less than it was before.
-
-	We’ll need to reassign the instance field to be the current value minus 10.
-
-12. Have your ```Droid``` instance perform some tasks inside of ```main()```.
-
-13. Create new instances and play around with methods. Here are some ideas to get you started:
-
-	- Create a ```energyReport()``` method that prints the instance’s ```batteryLevel```.
-
-	- Create another instance.
-
-	- Create a method ```energyTransfer()``` that exchanges ```batteryLevel``` between instances.
-
-Example code can be found in the [Droid.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Droid.java) file. 
+Example code can be found in the [Methods-Review](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Methods-Review) file
