@@ -33,4 +33,4 @@ public class Store {
 
 	However, we’re not going to see these Strings printed out yet!
 
-Example code can be found in the [Store.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Methods-Defining%20%20Methods/Store.java) file.
+Example code can be found in the [Store.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Methods-Defining%20Methods/Store.java) file.
