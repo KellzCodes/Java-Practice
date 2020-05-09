@@ -1,8 +1,8 @@
-public class CheckingAccount {
+public class SavingsAccount {
   
   int balance;
   
-  public CheckingAccount(int initialBalance){
+  public SavingsAccount(int initialBalance){
     balance = initialBalance;
   }
   
@@ -27,7 +27,7 @@ public class CheckingAccount {
   }
   
   public static void main(String[] args){
-    CheckingAccount checking = new CheckingAccount(2000);
+    SavingsAccount checking = new SavingsAccount(2000);
     
     //Check balance:
     checking.checkBalance();
