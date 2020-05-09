@@ -37,4 +37,4 @@ public class Store {
 
 5. Inside the ```main()``` method, call the ```greetCustomer()``` method on the ```lemonadeStand``` object. Pass in a ```String``` argument of your choice!
 
-Example code can be found in the [BigStore.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Methods-Adding%20Parameters/Store.java) file.
+Example code can be found in the [Store.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Methods-Adding%20Parameters/Store.java) file.
