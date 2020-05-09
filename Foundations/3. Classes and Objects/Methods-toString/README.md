@@ -45,10 +45,17 @@ public class Store {
 	Change the ```toString()``` to return a ```String``` that describes this ```Store``` object.
 
 	Your ```String``` should look like:
+
 ```
 	This store sells productType at a price of price.
 ```
-	where ```productType``` and ```price``` are the values in those instance fields. For example, if it was a hat store where hats cost 8, the ```String``` would say:
-	> This store sells hats at a price of 8.
+
+Where ```productType``` and ```price``` are the values in those instance fields. For example, if it was a hat store where hats cost 8, the ```String``` would say:
+
+```
+This store sells hats at a price of 8.
+```
 
 Example code can be found in the [Store.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/3.%20Classes%20and%20Objects/Methods-toString/Store.java) file.
+
+
