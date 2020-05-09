@@ -1,11 +1,11 @@
-public class Boutique {
+public class Store {
   // instance fields
   String productType;
   int inventoryCount;
   double inventoryPrice;
   
   // constructor method
-  public Boutique(String product, int count, double price) {
+  public Store(String product, int count, double price) {
     productType = product;
     inventoryCount = count;
     inventoryPrice = price;
@@ -13,6 +13,6 @@ public class Boutique {
   
   // main method
   public static void main(String[] args) {
-    Boutique cookieShop = new Boutique("cookies", 12, 3.75);
+    Store cookieShop = new Store("cookies", 12, 3.75);
   }
 }
