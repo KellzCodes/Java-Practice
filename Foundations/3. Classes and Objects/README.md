@@ -17,7 +17,6 @@
 	- [Returns](#Returns)
 	- [The toString() Method](#The-toString-Method)
 	- [Review](#Review)
-- [Basic Programs](#Basic-Programs)
 
 ## Introduction to Classes
 
