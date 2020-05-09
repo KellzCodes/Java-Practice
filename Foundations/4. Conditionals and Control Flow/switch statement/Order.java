@@ -1,9 +1,9 @@
-public class LargeOrder {
+public class Order {
   boolean isFilled;
   double billAmount;
   String shipping;
   
-  public LargeOrder(boolean filled, double cost, String shippingMethod) {
+  public Order(boolean filled, double cost, String shippingMethod) {
 		if (cost > 24.00) {
       System.out.println("High value item!");
     }
@@ -45,8 +45,8 @@ public class LargeOrder {
   
   public static void main(String[] args) {
     // do not alter the main method!
-    LargeOrder book = new LargeOrder(true, 9.99, "Express");
-    LargeOrder chemistrySet = new LargeOrder(false, 72.50, "Regular");
+    Order book = new Order(true, 9.99, "Express");
+    Order chemistrySet = new Order(false, 72.50, "Regular");
     
     book.ship();
     chemistrySet.ship();
