@@ -8,7 +8,6 @@
 - [Conditional-And: &&](#Conditional-AND)
 - [Conditional-Or: ||](#Conditional-OR)
 - [Logical NOT: !](#Logical-NOT)
-- [Basic Programs](#Basic-Programs)
 
 Imagine we’re writing a program that enrolls students in courses.
 
@@ -96,6 +95,8 @@ if (true) System.out.println("Brevity is the soul of wit");
 
 **Note**: Conditional statements do not end in a semicolon.
 
+Example code can be found in the [if-then](https://github.com/keldavis/Java-Practice/tree/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/if-then) folder.
+
 ### If Then Else
 
 We’ve seen how to conditionally execute one block of code, but what if there are two possible blocks of code we’d like to execute?
@@ -124,6 +125,8 @@ This code is also called an *if-then-else* statement:
 
 - If *condition* is true, then do something.
 - Else, do a different thing.
+
+Example code can be found in the [if-then-else](https://github.com/keldavis/Java-Practice/tree/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/if-then-else) folder.
 
 ### If Then Else If
 
@@ -188,6 +191,8 @@ This chained conditional statement has two conditions that evaluate ```true```. 
 
 **Note**: Only one of the code blocks will run.
 
+Example code can be found in the [if-then-else-if](https://github.com/keldavis/Java-Practice/tree/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/if-then-else-if) folder.
+
 ### Switch Statement
 
 An alternative to chaining if-then-else conditions together is to use the ```switch``` statement. This conditional will check a given value against any number of conditions and run the code block where there is a match.
@@ -244,6 +249,8 @@ switch (course) {
 // enrolls student in Biology... AND History and Theatre!
 ```
 
+Example code can be found in the [switch statement](https://github.com/keldavis/Java-Practice/tree/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/switch%20statement) folder.
+
 ### Conditional AND
 
 Let’s return to our student enrollment program. We’ve added an additional requirement: not only must students have the prerequisite, but their tuition must be paid up as well. We have *two* conditions that must be ```true``` before we enroll the student.
@@ -280,6 +287,8 @@ true && false
 false && false
 // false
 ```
+
+Example code can be found in the [Conditional AND]() folder.
 
 ### Conditional OR
 
@@ -320,6 +329,8 @@ false || false
 // false
 ```
 
+Example code can be found in the [Conditional OR](https://github.com/keldavis/Java-Practice/tree/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/Conditional%20OR) folder.
+
 ### Logical NOT
 
 The *unary* operator NOT, ```!```, works on a **single** value. This operator evaluates to the opposite boolean to which it’s applied:
@@ -357,469 +368,4 @@ if (!hasPrerequisite) {
 
 We can write a succinct conditional statement without an empty code block.
 
-## Basic Programs
-
-- [Order](#Order)
-- [Big Order](#Big-Order)
-- [Bigger Order](#Bigger-Order)
-- [Large Order](#Large-Order)
-- [Reservation](#Reservation)
-- [Early Reservation](#Early-Reservation)
-- [Late Reservation](#Late-Reservation)
-- [Car Loan](#Car-Loan)
-- [Continents](#Continents)
-
-### Order
-
-Shows how to use *if-then* statement
-
-1. Start with this code:
-
-```
-public class Order {
-  
-  public static void main(String[] args) {
-    
-    double itemCost = 30.99;
-    
-    // Write an if-then statement:
-    
-    
-  }
-  
-}
-```
-
-2. The code contains an ```Order``` class to track retail shipments.
-
-	Write an ```if-then``` statement that prints ```High value item!``` when ```itemCost``` is greater than ```24.00```.
-
-Example code can be found in the [Order.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/Order.java) file.
-
-### Big Order
-
-Shows how to use if-then-else statement
-
-1. Start with this code:
-
-```
-public class Order {
-  
-  public static void main(String[] args) {
-    
-    boolean isFilled = false;
-    
-    // Write an if-then-else statement:
-    
-    
-  }
-  
-}
-```
-
-2. In the code, there is an ```isFilled``` value, that represents whether the order is ready to ship.
-
-	Write an if-then-else statement that:
-
-	- When ```isFilled``` is ```true```, print ```Shipping```.
-	- When ```isFilled``` is ```false```, print ```Order not ready```.
-
-Example code can be found in the [BigOrder.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/BigOrder.java) file.
-
-### Bigger Order
-
-Shows how to use if-then-else-if statements
-
-1. Start with this code:
-
-```
-public class Order {
-  boolean isFilled;
-  double billAmount;
-  String shipping;
-  
-  public Order(boolean filled, double cost, String shippingMethod) {
-		if (cost > 24.00) {
-      System.out.println("High value item!");
-    }
-    isFilled = filled;
-    billAmount = cost;
-    shipping = shippingMethod;
-  }
-  
-  public void ship() {
-    if (isFilled) {
-      System.out.println("Shipping");
-      System.out.println("Shipping cost: " + calculateShipping());
-    } else {
-      System.out.println("Order not ready");
-    }
-  }
-  
-  public double calculateShipping() {
-	 	// declare conditional statement here
-    
- 	}
-  
-  public static void main(String[] args) {
-    // do not alter the main method!
-    Order book = new Order(true, 9.99, "Express");
-    Order chemistrySet = new Order(false, 72.50, "Regular");
-    
-    book.ship();
-    chemistrySet.ship();
-  }
-}
-
-```
-
-2. We need to calculate the shipping costs for our orders.
-
-	There’s a new instance field, ```String shipping```, that we use to calculate the cost.
-
-	Use a chained ```if-then-else``` to check for different values within the ```calculateShipping()``` method.
-
-	When the ```shipping``` instance field equals ```"Regular"```, the method should return ```0```.
-
-	When the ```shipping``` instance field equals ```"Express"```, the method should return ```1.75```.
-
-	Else the method should return ```.50```.
-
-Example code can be found in the [BiggerOrder.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/BiggerOrder.java) file.
-
-### Large Order
-
-Shows how to use Switch Statement
-
-1. Start with this order:
-
-```
-public class Order {
-  boolean isFilled;
-  double billAmount;
-  String shipping;
-  
-  public Order(boolean filled, double cost, String shippingMethod) {
-		if (cost > 24.00) {
-      System.out.println("High value item!");
-    }
-    isFilled = filled;
-    billAmount = cost;
-    shipping = shippingMethod;
-  }
-  
-  public void ship() {
-    if (isFilled) {
-      System.out.println("Shipping");
-      System.out.println("Shipping cost: " + calculateShipping());
-    } else {
-      System.out.println("Order not ready");
-    }
-  }
-  
-  public double calculateShipping() {
-    double shippingCost;
-	 	// declare switch statement here
-    
-    
-    return shippingCost;
- 	}
-  
-  public static void main(String[] args) {
-    // do not alter the main method!
-    Order book = new Order(true, 9.99, "Express");
-    Order chemistrySet = new Order(false, 72.50, "Regular");
-    
-    book.ship();
-    chemistrySet.ship();
-  }
-}
-
-```
-
-2. We’ll rewrite the ```calculateShipping()``` method so it uses a ```switch``` statement instead.
-
-	There’s an uninitialized variable ```shippingCost``` in ```calculateShipping()```. Assign the correct value to ```shippingCost``` using a ```switch``` statement:
-
-	We’ll check the value of the instance field ```shipping```.
-
-	- When ```shipping``` matches ```"Regular"```, ```shippingCost``` should be ```0```.
-	- When ```shipping``` matches ```"Express"```, ```shippingCost``` should be ```1.75```.
-	- The default should assign ```.50``` to ```shippingCost```.
-	
-	**Make sure the method returns ```shippingCost``` after the ```switch``` statement.**
-
-Example code can be found in the [LargeOrder.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/LargeOrder.java) file.
-
-### Reservation
-
-1. Start with this code:
-
-```
-public class Reservation {
-  int guestCount;
-  int restaurantCapacity;
-  boolean isRestaurantOpen;
-  boolean isConfirmed;
-  
-  public Reservation(int count, int capacity, boolean open) {
-    guestCount = count;
-		restaurantCapacity = capacity;
-		isRestaurantOpen = open;
-  }  
-  
-  public void confirmReservation() {
-    /* 
-       Write conditional
-       ~~~~~~~~~~~~~~~~~
-       if restaurantCapacity is greater
-       or equal to guestCount
-       AND
-       the restaurant is open:
-         print "Reservation confirmed"
-         set isConfirmed to true
-       else:
-         print "Reservation denied"
-         set isConfirmed to false
-    */
-  }
-  
-  public void informUser() {
-    System.out.println("Please enjoy your meal!");
-  }
-  
-  public static void main(String[] args) {
-    Reservation partyOfThree = new Reservation(3, 12, true);
-    Reservation partyOfFour = new Reservation(4, 3, true);
-    partyOfThree.confirmReservation();
-    partyOfThree.informUser();
-    partyOfFour.confirmReservation();
-    partyOfFour.informUser();
-  }
-}
-```
-
-2. Our ```Reservation``` class has the method ```confirmReservation()``` which validates if a restaurant can accomodate a given reservation.
-
-	We need to build the conditional logic into ```confirmReservation()``` using two parameters:
-
-	- ```restaurantCapacity```
-	- ```isRestaurantOpen```
-	
-	Use an ```if-then-else``` statement:
-
-	If ```restaurantCapacity``` is greater than or equal to ```guestCount``` **and** the restaurant is open, print ```"Reservation confirmed"``` and set ```isConfirmed``` to ```true```.
-
-	```else``` print ```"Reservation denied"``` and set ```isConfirmed``` to ```false```.
-
-Example code can be found in the [Reservation.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/Reservation.java) file.
-
-### Early Reservation
-
-Shows how to use Conditional OR operator
-
-1. Start with this code:
-
-```
-public class Reservation {
-  int guestCount;
-  int restaurantCapacity;
-  boolean isRestaurantOpen;
-  boolean isConfirmed;
-  
-  public Reservation(int count, int capacity, boolean open) {
-    // Write conditional statement below
-    
-    
-    guestCount = count;
-		restaurantCapacity = capacity;
-		isRestaurantOpen = open;
-  }  
-  
-  public void confirmReservation() {
-    if (restaurantCapacity >= guestCount && isRestaurantOpen) {
-      System.out.println("Reservation confirmed");
-      isConfirmed = true;
-    } else {
-      System.out.println("Reservation denied");
-			isConfirmed = false;
-    }
-  }
-  
-  public void informUser() {
-    System.out.println("Please enjoy your meal!");
-  }
-  
-  public static void main(String[] args) {
-    Reservation partyOfThree = new Reservation(3, 12, true);
-    Reservation partyOfFour = new Reservation(4, 3, true);
-    partyOfThree.confirmReservation();
-    partyOfThree.informUser();
-    partyOfFour.confirmReservation();
-    partyOfFour.informUser();
-  }
-}
-```
-
-2. Let’s write a message inside the ```Reservation()``` constructor that warns against bad input.
-
-	Our restaurants can’t seat parties of more than ```8``` people, and we don’t want reservations for ```0``` or less because that would be silly.
-
-	Inside ```Reservation()```, write a conditional that uses ```||```.
-
-	If ```count``` is less than ```1``` **OR** greater than ```8``` we want to write the following message: ```Invalid reservation!```.
-
-Example code can be found in the [EarlyReservation.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/EarlyReservation.java) file.
-
-### Late Reservation
-
-1. Start with this code:
-
-```
-public class Reservation {
-  int guestCount;
-  int restaurantCapacity;
-  boolean isRestaurantOpen;
-  boolean isConfirmed;
-  
-  public Reservation(int count, int capacity, boolean open) {
-    if (count < 1 || count > 8) {
-      System.out.println("Invalid reservation!");
-    }
-    guestCount = count;
-		restaurantCapacity = capacity;
-		isRestaurantOpen = open;
-  }  
-  
-  public void confirmReservation() {
-    if (restaurantCapacity >= guestCount && isRestaurantOpen) {
-      System.out.println("Reservation confirmed");
-      isConfirmed = true;
-    } else {
-      System.out.println("Reservation denied");
-			isConfirmed = false;
-    }
-  }
-  
-  public void informUser() {
-    // Write conditional here
-
-  }
-  
-  public static void main(String[] args) {
-    Reservation partyOfThree = new Reservation(3, 12, true);
-    Reservation partyOfFour = new Reservation(4, 3, true);
-    partyOfThree.confirmReservation();
-    partyOfThree.informUser();
-    partyOfFour.confirmReservation();
-    partyOfFour.informUser();
-  }
-}
-```
-
-2. Let’s make ```informUser()``` more informative. If their reservation is not confirmed, they should know!
-
-	Write an ```if-then-else``` statement and use ```!``` with ```isConfirmed``` as the condition.
-
-	If their reservation is **not** confirmed, write ```Unable to confirm reservation, please contact restaurant.```
-
-	Else write: ```Please enjoy your meal!```
-
-Example code can be found in the [LateReservation.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/LateReservation.java) file
-
-### Car Loan
-
-Let’s combine a few of the concepts that you have learned so far: conditionals, Boolean expressions, and arithmethic expressions.
-
-In this project, you will write a program that will calculate the *monthly* car payment a user should expect to make after taking out a car loan. The program will include the following:
-
-- Car loan amount
-- Interest rate of the loan
-- Length of the loan (in years)
-- Down payment
-
-1. Create an ```int``` variable called ```carLoan``` and set it equal to ```10000```.
-
-2. Next, create an ```int``` variable called ```loanLength``` and set it equal to ```3```. This will represent a loan length of 3 years.
-
-3. Now create an ```int``` variable called ```interestRate``` and set it equal to ```5```. This will represent an interest rate of 5% on the loan.
-
-4. Next, create an ```int``` variable called ```downPayment``` and set it equal ```2000```. This will represent the down payment provided by a user for this car purchase.
-
-5. Let’s build in some requirements that would prevent a buyer from taking out an invalid car loan. Write an ```if``` statement that checks whether the loan length is less than or equal to zero ```or``` whether the interest rate is less than or equal to zero.
-
-6. Next, inside of the ```if``` statement, print out a helpful error message to the user. For example, you can print out something like: ```Error! You must take out a valid car loan```.
-
-7. What if the down payment is more than the price of the car? Add to the ```if``` statement and use ```else if``` to check whether the down payment is greater than or equal to the car loan.
-
-8. Inside of the ```else if``` block, print out a helpful message to the user about the down payment and car loan amounts. For example, you can print out something like: ```The car can be paid in full.```
-
-9. Finally, if none of the previous Boolean expressions evaluate to ```true```, calculate the monthly payment in an ```else``` block.
-
-10. Inside of the ```else``` block, create an ```int``` variable called ```remainingBalance``` and set it equal to ```carLoan``` minus ```downPayment```.
-
-11. Since we need the *monthly* payment, we must convert the loan length from years to months. On the next line, create an ```int``` variable called ```months``` and set it equal to ```loanLength``` times ```12```.
-
-12. Create an ```int``` variable called ```monthlyBalance``` and set it equal to ```remainingBalance``` divided by ```months```. This represents the monthly payment *without* interest included.
-
-13. The user needs to pay interest on the loan borrowed. Create an ```int``` variable called ```interest``` and set it equal to the monthly balance times the interest rate, divided all by 100.
-
-14. Calculate the final monthly payment. Create an ```int``` variable called ```monthlyPayment``` and set it equal to the monthly balance plus the interest.
-
-15. On the next line, print out the monthly payment. If you correctly completed this project, the console should print out ```233``` as the monthly payment.
-
-16. Add comments near the top of the program that describe what the program does.
-
-Example code can be found in the [CarLoan.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/CarLoan.java) file.
-
-### Continents
-
-Planet Earth is a magical place. Let’s practice the Java switch statement that you learned about.
-
-Write a **Continents.java** program that will print out a continent and the largest city in that continent, based on the value of an integer.
-
-1. Let’s create a skeleton for the program. Add:
-
-```
-public class Continents {
-
-  public static void main(String[] args) {
-
-
-
-  }
-
-}
-```
-
-2. Write a comment near the top of the program that describe what the program does.
-
-3. Create an ```int``` variable called ```continent``` and set it equal to ```4```.
-
-4. Create a ```switch``` statement that will switch based on the value of ```continent```.
-
-5. Inside of the switch statement, add a ```case``` that will run when the value of ```continent``` is ```1```.
-
-6. When the value of ```continent``` is ```1```, print out ```North America: Mexico City, Mexico```.
-
-7. Make sure the next line exits out of the case.
-
-8. Add another ```case``` that will run when the value of ```continent``` is ```2```. When this value is met, print out ```South America: Sao Paulo, Brazil```.
-
-9. Make sure the next line exits out of the case.
-
-10. Add another ```case``` that will run when the value of ```continent``` is ```3```. When this value is met, print out ```Europe: Moscow, Russia```. Make sure the next line exits out of the case.
-
-11. Add another ```case``` that will run when the value of ```continent``` is ```4```. When this value is met, print out ```Africa: Lagos, Nigeria```. Make sure the next line exits out of the case.
-
-12. Add another ```case``` that will run when the value of ```continent``` is ```5```. When this value is met, print out ```Asia: Shanghai, China```. Make sure the next line exits out of the case.
-
-13. Add another ```case``` that will run when the value of ```continent``` is ```6```. When this value is met, print out ```Australia: Sydney, Australia```. Make sure the next line exits out of the case.
-
-14. Add another ```case``` that will run when the value of ```continent``` is ```7```. When this value is met, print out ```Antarctica: McMurdo Station, US```. Make sure the next line exits out of the case.
-
-15. Finally, add the ```default``` case. The ```default``` case should print out ```Undefined continent!``` Make sure the next line exits out of the case.
-
-16. If the program is written correctly, your output should be ```Africa: Lagos, Nigeria```. Great work!
-
-Example code can be found in the [Continents.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/Continents.java) file.
+Example code can be found in the [Logical NOT](https://github.com/keldavis/Java-Practice/tree/master/Foundations/4.%20Conditionals%20and%20Control%20Flow/Logical%20NOT) folder.
