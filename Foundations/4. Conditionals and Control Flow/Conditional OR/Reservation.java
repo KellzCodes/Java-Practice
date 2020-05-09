@@ -1,10 +1,10 @@
-public class EarlyReservation {
+public class Reservation {
   int guestCount;
   int restaurantCapacity;
   boolean isRestaurantOpen;
   boolean isConfirmed;
   
-  public EarlyReservation(int count, int capacity, boolean open) {
+  public Reservation(int count, int capacity, boolean open) {
     /*
     If count is less than 1 OR greater than 8 
     we want to write the following message: 
@@ -33,8 +33,8 @@ public class EarlyReservation {
   }
   
   public static void main(String[] args) {
-    EarlyReservation partyOfThree = new EarlyReservation(3, 12, true);
-    EarlyReservation partyOfFour = new EarlyReservation(4, 3, true);
+    Reservation partyOfThree = new Reservation(3, 12, true);
+    Reservation partyOfFour = new Reservation(4, 3, true);
     partyOfThree.confirmReservation();
     partyOfThree.informUser();
     partyOfFour.confirmReservation();
