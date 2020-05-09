@@ -176,7 +176,7 @@ The declaration is **within** the class and the instance variable will be availa
 
 Fields are a type of state each instance will possess. One instance may have ```"red"``` as its ```color```, another ```"blue"```, etc.
 
-Example code can be found in the [Clases-Instance Fields](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Classes-Instance%20Fields) folder.
+Example code can be found in the [Classes-Instance Fields](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Classes-Instance%20Fields) folder.
 
 ### Constructor Parameters
 
@@ -662,4 +662,4 @@ Methods are a powerful way to abstract tasks away and make them repeatable. They
 
 As you move through more Java material, it will be helpful to frame the tasks you create in terms of methods. This will help you think about what inputs you might need and what output you expect.
 
-Example code can be found in the [Methods-Review](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Methods-Review) file
+Example code can be found in the [Methods-Review](https://github.com/keldavis/Java-Practice/tree/master/Foundations/3.%20Classes%20and%20Objects/Methods-Review) folder
