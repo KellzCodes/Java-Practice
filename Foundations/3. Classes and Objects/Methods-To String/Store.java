@@ -1,10 +1,10 @@
-public class TinyStore {
+public class Store {
   // instance fields
   String productType;
   double price;
   
   // constructor method
-  public TinyStore(String product, double initialPrice) {
+  public Store(String product, double initialPrice) {
     productType = product;
     price = initialPrice;
   }
@@ -24,8 +24,8 @@ public class TinyStore {
 
   // main method
   public static void main(String[] args) {
-    TinyStore lemonadeStand = new TinyStore("Lemonade", 3.75);
-    TinyStore cookieShop = new TinyStore("Cookies", 5);
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+    Store cookieShop = new Store("Cookies", 5);
     System.out.println(lemonadeStand);
     System.out.println(cookieShop);
   }
