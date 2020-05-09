@@ -1,10 +1,10 @@
-public class MediumStore {
+public class Store {
   // instance fields
   String productType;
   double price;
   
   // constructor method
-  public MediumStore(String product, double initialPrice) {
+  public Store(String product, double initialPrice) {
     productType = product;
     price = initialPrice;
   }
@@ -23,7 +23,7 @@ public class MediumStore {
 
   // main method
   public static void main(String[] args) {
-    MediumStore lemonadeStand = new MediumStore("Lemonade", 3.75);
+    Store lemonadeStand = new Store("Lemonade", 3.75);
     double lemonadePrice = lemonadeStand.getPriceWithTax();
     System.out.println(lemonadePrice);
   }
