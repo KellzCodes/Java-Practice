@@ -1,10 +1,10 @@
-public class LargeStore {
+public class Store {
   // instance fields
   String productType;
   double price;
   
   // constructor method
-  public LargeStore(String product, double initialPrice) {
+  public Store(String product, double initialPrice) {
     productType = product;
     price = initialPrice;
   }
@@ -19,7 +19,7 @@ public class LargeStore {
   
   // main method
   public static void main(String[] args) {
-    LargeStore lemonadeStand = new LargeStore("Lemonade", 3.75);
+    Store lemonadeStand = new Store("Lemonade", 3.75);
     // increase the price at the lemonade stand by 1.5
     lemonadeStand.increasePrice(1.5);
     // print the lemonadeStand price
