@@ -1,4 +1,4 @@
-# Classes Syntax
+# Classes: Syntax
 
 ## Shop
 
