@@ -1,9 +1,9 @@
-public class Salon {
+public class Store {
   // instance fields
   String productType;
   
   // constructor method
-  public Salon(String product) {
+  public Store(String product) {
     productType = product;
   }
   
