@@ -23,33 +23,33 @@ public class SavingsAccount {
   }
   
   public String toString(){
-    return "This is a checking account with " + balance + " saved.";
+    return "This is a savings account with " + balance + " saved.";
   }
   
   public static void main(String[] args){
-    SavingsAccount checking = new SavingsAccount(2000);
+    SavingsAccount savings = new SavingsAccount(2000);
     
     //Check balance:
-    checking.checkBalance();
+    savings.checkBalance();
     
     //Withdrawing:
-    checking.withdraw(300);
+    savings.withdraw(300);
     
     //Check balance:
-    checking.checkBalance();
+    savings.checkBalance();
     
     //Deposit:
-    checking.deposit(600);
+    savings.deposit(600);
     
     //Check balance:
-    checking.checkBalance();
+    savings.checkBalance();
     
     //Deposit:
-    checking.deposit(600);
+    savings.deposit(600);
     
     //Check balance:
-    checking.checkBalance();
+    savings.checkBalance();
     
-    System.out.println(checking);
+    System.out.println(savings);
   }       
 }
