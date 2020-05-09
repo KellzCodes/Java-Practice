@@ -1,9 +1,9 @@
-public class Market {
+public class Store {
   // declare instance fields here!
   String productType;
   
   // constructor method
-  public Market() {
+  public Store() {
     System.out.println("I am inside the constructor method.");
   }
   
@@ -11,7 +11,7 @@ public class Market {
   public static void main(String[] args) {
     System.out.println("This code is inside the main method.");
     
-    Market lemonadeStand = new Market();
+    Store lemonadeStand = new Store();
     
     System.out.println(lemonadeStand);
   }
