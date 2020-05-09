@@ -1,7 +1,7 @@
-public class Mart {
+public class Store {
   
   // new method: constructor!
-  public Mart() {
+  public Store() {
     System.out.println("I am inside the constructor method.");
   }
   
@@ -10,7 +10,7 @@ public class Mart {
     System.out.println("Start of the main method.");
     
     // create the instance below
-    Mart lemonadeStand = new Mart();
+    Store lemonadeStand = new Store();
     
     // print the instance below
     System.out.println(lemonadeStand);
