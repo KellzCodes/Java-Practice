@@ -1,10 +1,10 @@
-public class LateReservation {
+public class Reservation {
   int guestCount;
   int restaurantCapacity;
   boolean isRestaurantOpen;
   boolean isConfirmed;
   
-  public LateReservation(int count, int capacity, boolean open) {
+  public Reservation(int count, int capacity, boolean open) {
     if (count < 1 || count > 8) {
       System.out.println("Invalid Reservation!");
     }
@@ -39,8 +39,8 @@ public class LateReservation {
   }
   
   public static void main(String[] args) {
-    LateReservation partyOfThree = new LateReservation(3, 12, true);
-    LateReservation partyOfFour = new LateReservation(4, 3, true);
+    Reservation partyOfThree = new Reservation(3, 12, true);
+    Reservation partyOfFour = new Reservation(4, 3, true);
     partyOfThree.confirmReservation();
     partyOfThree.informUser();
     partyOfFour.confirmReservation();
