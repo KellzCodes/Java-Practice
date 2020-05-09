@@ -1,9 +1,9 @@
-public class BigStore {
+public class Store {
   // instance fields
   String productType;
   
   // constructor method
-  public BigStore(String product) {
+  public Store(String product) {
     productType = product;
   }
   
@@ -15,12 +15,12 @@ public class BigStore {
   
   // method with parameter
   public void greetCustomer(String customer){
-    System.out.println("Welcome to the BigStore, " + customer + "!");
+    System.out.println("Welcome to the Store, " + customer + "!");
   }
   
   // main method
   public static void main(String[] args) {
-    BigStore lemonadeStand = new BigStore("Lemonade");
+    Store lemonadeStand = new Store("Lemonade");
     lemonadeStand.greetCustomer("Betty");
   }
 }
