@@ -4,7 +4,7 @@
 - [What is an IDE?](#What-is-an-IDE)
 
 # Java Program Structure
-Java programs have a specific structure in how the code is written. There are key elements that all Java programs share.
+Java programs have a specific structure in how the code is written. There are key elements that all Java programs share
 
 ## The Program
 
