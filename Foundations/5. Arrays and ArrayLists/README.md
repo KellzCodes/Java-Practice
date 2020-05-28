@@ -1,12 +1,15 @@
-# Arrays
+# Arrays amd ArrayLists
 
+Arrays
 - [Creating Arrays](#Creating-Arrays)
 - [Importing Arrays](#Importing-Arrays)
 - [Get Element By Index](#Get-Element-By-Index)
 - [Creating an Empty Array](#Creating-an-Empty-Array)
 - [Length](#Length)
 - [String[] args](#String-array-args)
-- [Review](#Review)
+- [Review Arrays](#Review-Arrays)
+
+## Arrays
 
 We have seen how to store single pieces of data in variables. What happens when we need to store a group of data? What if we have a list of students in a classroom? Or a ranking of the top 10 horses finishing a horse race?
 
@@ -30,9 +33,9 @@ Each index of an array corresponds with a different value. Here is a diagram of 
 
 Notice that the indexes start at 0! The element at index 0 is ```4```, while the element at index 1 is ```8```. This array has a length of 5, since it holds five elements, but the highest index of the array is 4.
 
-Example code can be found in the [Intro to Arrays](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays/Intro%20to%20Arrays) folder
+Example code can be found in the [Intro to Arrays](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays%20and%20ArrayLists/Intro%20to%20Arrays) folder
 
-## Creating Arrays
+### Creating Arrays
 
 Imagine that we’re using a program to keep track of the prices of different clothing items we want to buy. We would want a list of the prices and a list of the items they correspond to. To create an array, we first declare the type of data it holds:
 
@@ -58,9 +61,9 @@ We can use arrays to hold ```String```s and other objects as well as primitives:
 String[] clothingItems = {"Tank Top", "Beanie", "Funny Socks", "Corduroys"};
 ```
 
-Example code can be found in the [Creating Arrays](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays/Creating%20Arrays) folder.
+Example code can be found in the [Creating Arrays](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays%20and%20ArrayLists/Creating%20Arrays) folder.
 
-## Importing Arrays
+### Importing Arrays
 
 When we printed out the array we created in the last exercise, we saw a memory address that did not help us understand what was contained in the array.
 
@@ -93,9 +96,9 @@ public class Lottery(){
 This code will print:
 	>[4, 8, 15, 16, 23, 42]
 
-Example code can be found in the [Importing Arrays](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays/Importing%20Arrays) folder.
+Example code can be found in the [Importing Arrays](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays%20and%20ArrayLists/Importing%20Arrays) folder.
 
-## Get Element By Index
+### Get Element By Index
 
 Now that we have an array declared and initialized, we want to be able to get values out of it.
 
@@ -112,9 +115,9 @@ This command would print:
 
 Because ```15.87``` is the item at the ```1``` index of the array. Remember that arrays start at index ```0```!
 
-Example code can be found in the [Get Element By Index](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays/Get%20Element%20By%20Index) folder.
+Example code can be found in the [Get Element By Index](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays%20and%20ArrayLists/Get%20Element%20By%20Index) folder.
 
-## Creating an Empty Array
+### Creating an Empty Array
 
 We can also create empty arrays and then fill the items one by one. Empty arrays have to be initialized with a fixed size:
 
@@ -149,9 +152,9 @@ menuItems[3] = "Baked cauliflower";
 Now, the array looks like:
 	> ["Veggie hot dog", "Potato salad", "Cornbread", "Baked cauliflower", "Coffee ice cream"]
 
-Example code can be found in the [Creating an Empty Array](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays/Creating%20an%20Empty%20Array) folder
+Example code can be found in the [Creating an Empty Array](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays%20and%20ArrayLists/Creating%20an%20Empty%20Array) folder
 
-## Length
+### Array Length
 
 What if we have an array storing all the usernames for our program, and we want to quickly see how many users we have? To get the length of an array, we can access the ```length``` field of the array object:
 
@@ -172,10 +175,10 @@ System.out.println(prices.length);
 
 We would see ```4```, since there are four items in the ```prices``` array!
 
-Example code can be found in the [Length](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays/Length) folder.
+Example code can be found in the [Array Length](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays%20and%20ArrayLists/Array%20Length) folder.
 
-## String array args
-## String[] args
+### String array args
+### String[] args
 
 When we write ```main()``` methods for our programs, we use the parameter ```String[] args```. Now that we know about array syntax, we can start to parse what this means.
 
@@ -208,9 +211,9 @@ The ```String[] args``` would be interpreted as an array with one element, ```"L
 
 When we use ```args[0]``` in the main method, we can access that element like we did in ```HelloYou```.
 
-Example code can be found in the [String Array Args](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays/String%20Array%20Args) folder.
+Example code can be found in the [String Array Args](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays%20and%20ArrayLists/String%20Array%20Args) folder.
 
-## Review
+### Review Arrays
 
 We have now seen how to store a list of values in arrays. We can use this knowledge to make organized programs with more complex variables.
 
@@ -222,4 +225,4 @@ Throughout the lesson, we have learned about:
 - Getting the length of an array using ```length```.
 - Using the argument array ```args``` that is passed into the ```main()``` method of a class.
 
-Example code can be found in the [Review](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays/Review) folder
+Example code can be found in the [Review Arrays](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays%20and%20ArrayLists/Review%20Arrays) folder
