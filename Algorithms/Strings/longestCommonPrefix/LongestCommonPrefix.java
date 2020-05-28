@@ -1,0 +1,50 @@
+package Strings.longestCommonPrefix;
+
+/*
+* Write a function to find the longest common prefix string amongst an array of strings.
+* If there is no common prefix, return an empty string "".
+* Example 1:
+* Input: ["flower","flow","flight"]
+* Output: "fl"
+*
+* Example 2:
+* Input: ["dog","racecar","car"]
+* Output: ""
+* Explanation: There is no common prefix among the input strings.
+*
+* Note: All given inputs are in lowercase letters a-z.
+* */
+
+public class LongestCommonPrefix {
+    public static void main(String[] args){
+        String[] array = new String[]{"flower","flow","flight"};
+        String prefix = longestCommonPrefix(array);
+        System.out.print(prefix);
+    }
+    public static String longestCommonPrefix(String[] strings) {
+        // If the strings array is null or empty, return ""
+        if (strings == null || strings.length == 0) return "";
+        // Set the prefix to the first string in the array
+        String prefix = strings[0];
+        // Traverse through the strings array starting at index 0
+        int currentIndex = 0;
+        while (currentIndex < strings.length) {
+            // While the string at the current index is not starting with the prefix
+            while (!strings[currentIndex].startsWith(prefix)) {
+                // Shorten the prefix at the end by one character
+                prefix = prefix.substring(0, prefix.length() - 1);
+                // If there is no prefix left, return ""
+                if (prefix.isEmpty()) return "";
+            }
+            // go to the next index
+            currentIndex++;
+        }
+        // return prefix
+        return prefix;
+    }
+    /*
+    * Complexity Analysis
+    * Time Complexity: O(N*M) Where N is the outer loop and N is the inner loop
+    * Space Complexity: O(1)
+    * */
+}
