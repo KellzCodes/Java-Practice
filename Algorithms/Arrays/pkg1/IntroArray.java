@@ -1,3 +1,5 @@
+package Arrays.pkg1;
+
 import java.util.Arrays;
 
 /*
@@ -6,11 +8,19 @@ import java.util.Arrays;
 * identified by an array index.
 * */
 
-public class Main {
+public class IntroArray {
     public static void main(String[] args) {
         // 1. Initialize
         int[] a0 = new int[5];
         int[] a1 = {1, 2, 3};
+
+        // sum of all the elements in the array
+        int sum = 0;
+        for (int x : a1){
+            sum += x;
+        }
+
+        System.out.println("sum = " + sum);
         // 2. Get Length
         System.out.println("The size of a1 is: " + a1.length);
         // 3. Access Element
