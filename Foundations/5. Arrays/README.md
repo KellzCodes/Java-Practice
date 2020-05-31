@@ -1,6 +1,5 @@
-# Arrays amd ArrayLists
+# Arrays
 
-Arrays
 - [Creating Arrays](#Creating-Arrays)
 - [Importing Arrays](#Importing-Arrays)
 - [Get Element By Index](#Get-Element-By-Index)
@@ -8,8 +7,6 @@ Arrays
 - [Length](#Length)
 - [String[] args](#String-array-args)
 - [Review Arrays](#Review-Arrays)
-
-## Arrays
 
 We have seen how to store single pieces of data in variables. What happens when we need to store a group of data? What if we have a list of students in a classroom? Or a ranking of the top 10 horses finishing a horse race?
 
