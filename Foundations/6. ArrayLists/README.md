@@ -1,6 +1,7 @@
 # ArrayLists
 
 - [Creating ArrayLists](#Creating-ArrayLists)
+- [Adding an Item](#Adding-an-Item)
 
 When we work with arrays in Java, we’ve been limited by the fact that once an array is created, it has a fixed size. We can’t add or remove elements.
 
@@ -19,7 +20,7 @@ Remember how we had to import ```java.util.Arrays``` in order to use additional 
 import java.util.ArrayList;
 ```
 
-Example code can be found in the [Intro to ArrayLists](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays%20and%20ArrayLists/Intro%20to%20ArrayLists) folder
+Example code can be found in the [Intro to ArrayLists](https://github.com/keldavis/Java-Practice/tree/master/Foundations/6.%20ArrayLists/Intro%20to%20ArrayLists) folder
 
 ## Creating ArrayLists
 
@@ -54,3 +55,22 @@ ArrayList<String> babyNames = new ArrayList<String>();
 ```
 
 Example code can be found in the [Creating ArrayLists](https://github.com/keldavis/Java-Practice/tree/master/Foundations/5.%20Arrays%20and%20ArrayLists/Creating%20ArrayLists) folder.
+
+## Adding an Item
+
+Now we have an empty ```ArrayList```, but how do we get it to store values?
+
+```ArrayList``` comes with an ```add()``` method that takes an argument to add to the end of the ```ArrayList```:
+
+```
+ArrayList<Integer> sudokuRow1 = new ArrayList<Integer>();
+
+sudokuRow1.add(4);
+// sudokuRow1 now holds [4]
+sudokuRow1.add(8);
+// sudokuRow1 now holds [4, 8]
+sudokuRow1.add(3);
+// sudokuRow1 now holds [4, 8, 3]
+```
+
+Example code can be found in the [Adding an Item](https://github.com/keldavis/Java-Practice/tree/master/Foundations/6.%20ArrayLists/Adding%20an%20Item) folder.
