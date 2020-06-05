@@ -28,6 +28,7 @@ class Coffee {
 	> Fry drinks cup of coffee #1
 
 	The 1 in this statement should correspond with the current value of cupsOfCoffee. 
+
 	When cupsOfCoffee is 100, this should be printed:
 		> Fry drinks cup of coffee #100
 
