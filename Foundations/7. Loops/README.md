@@ -4,6 +4,7 @@
 - [For Loop](#For-Loop)
 - [Iterating Over Arrays and ArrayLists](#Iterating-Over-Arrays-and-ArrayLists)
 - [For-Each Loop](#For-Each-Loop)
+- [Review](#Review)
 
 In the programming world, we hate repeating ourselves. There are two reasons for this:
 
@@ -201,3 +202,40 @@ We can read the ```:``` as “in” like this: for each ```inventoryItem``` (whi
 Note that we can name the individual item whatever we want; using the singular of a plural is just a convention. You may also encounter conventions like ```String word : sentence```.
 
 Example code can be found in the [For Each Loop](https://github.com/keldavis/Java-Practice/tree/master/Foundations/7.%20Loops/For%20Each%20Loop) folder
+
+## Review
+
+Nice work! Let’s iterate over what you’ve just learned about loops:
+
+- ```while``` loops: These are useful to repeat a code block an unknown number of times until some condition is met. For example:
+
+```
+int wishes = 0;
+
+while (wishes < 3) {
+
+  // code that will run
+  wishes++;
+
+}
+```
+
+- ```for``` loops: These are ideal for when you are incrementing or decrementing with a counter variable. For example:
+
+```
+for (int i = 0; i < 5; i++) {
+
+  // code that will run
+
+}
+```
+
+For-each loops: These make it simple to do something with each item in a list. For example:
+
+```
+for (String inventoryItem : inventoryItems) {
+
+  // do something with each inventoryItem
+
+}
+```
