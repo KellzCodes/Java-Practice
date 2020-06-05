@@ -60,4 +60,4 @@ class Playlist {
 
 13. Nice work using ```ArrayList``` to build your desert island playlist!
 
-Example solution can be found in the [Playlist.java]() file
+Example solution can be found in the [Playlist.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/6.%20ArrayLists/Desert%20Island%20Playlist%20Project/Playlist.java) file
