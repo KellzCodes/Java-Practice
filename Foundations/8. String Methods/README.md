@@ -196,6 +196,25 @@ The genome of an organism stores all the genetic information necessary to build 
 [DNA](https://en.wikipedia.org/wiki/DNA) is composed of a series of nucleotides abbreviated as:
 
 - ```A```: Adenine
-- ```C: Cytosine
-G: Guanine
-T: Thymine
+- ```C```: Cytosine
+- ```G```: Guanine
+- ```T```: Thymine
+
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Foundations/8.%20String%20Methods/dna.webp" alt="function" width="500"/>
+
+So a strand of DNA could look something like ```ACGAATTCCG```.
+
+Write a **DNA.java** program that determines whether there is a protein in a strand of DNA.
+
+A protein has the following qualities:
+
+1. It begins with a “start codon”: ```ATG```.
+2. It ends with a “stop codon”: ```TGA```.
+3. In between, each additional codon is a sequence of three nucleotides.
+
+So for example:
+
+- ```ATGCGATACTGA``` is a protein because it has the start codon ```ATG```, the stop codon ```TGA```, and the length is divisible by 3.
+- ```ATGCGATAGA``` is not a protein because the sequence length is not divisible by 3, so the third condition is not satisfied.
+
+Project details can be found in the [DNA Sequencing Project](https://github.com/keldavis/Java-Practice/tree/master/Foundations/8.%20String%20Methods/DNA%20Sequencing%20Project) folder
