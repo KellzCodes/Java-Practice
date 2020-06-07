@@ -9,6 +9,10 @@ Here is a quick run down of the lessons found in the foundations folder.
 - [Introduction](#Introduction)
 - [Variables](#Variables)
 - [Object-Oriented Java](#Object-Oriented-Java)
+- [Arrays and ArrayLists](#Arrays-and-ArrayLists)
+- [Loops](#Loops)
+- [String Methods](#String-Methods)
+- [Inheritance and Polymorphism](#Inheritance-and-Polymorphism)
 - [Key Concepts of Computer Science](#Key-Concepts-of-Computer-Science)
 - [identifiers and reserved words](#identifiers-and-reserved-words)
 - [Basic Computer Science Questions](#Basic-Comp-Sci-Questions)
@@ -482,6 +486,416 @@ In Java, methods are defined with a *method signature*, which specifies the scop
 // Here is a public method named sum whose return type is int and has two parameters a and b
 public int sum(int a, int b) {
   return(a + b);
+}
+```
+
+## Arrays and ArrayLists
+
+### Arrays
+
+In Java, an array is used to store a list of elements of the same datatype.
+
+Arrays are fixed in size and their elements are ordered.
+
+```
+Arrays
+In Java, an array is used to store a list of elements of the same datatype.
+
+Arrays are fixed in size and their elements are ordered.
+```
+
+### Array creation in Java
+
+In Java, an array can be created in the following ways:
+
+- Using the ```{}``` notation, by adding each element all at once.
+- Using the ```new``` keyword, and assigning each position of the array individually.
+
+```
+int[] age = {20, 21, 30};
+
+int[] marks = new int[3];
+marks[0] = 50; 
+marks[1] = 70;
+marks[2] = 93;
+```
+
+### Index
+
+An index refers to an element’s position within an array.
+
+The index of an array starts from 0 and goes up to one less than the total length of the array.
+
+```
+int[] marks = {50, 55, 60, 70, 80};
+
+System.out.println(marks[0]);
+// Output: 50
+
+System.out.println(marks[4]);
+// Output: 80
+```
+
+### Java ArrayList
+
+In Java, an ```ArrayList``` is used to represent a dynamic list.
+
+While Java arrays are fixed in size (the size cannot be modified), an ```ArrayList``` allows flexibility by being able to both add and remove elements.
+
+```
+// import the ArrayList package
+import java.util.ArrayList;
+
+// create an ArrayList called students
+ArrayList<String> students = new ArrayList<String>();
+```
+
+### Modifying ArrayLists in Java
+
+An ```ArrayList``` can easily be modified using built in methods.
+
+To add elements to an ```ArrayList```, you use the ```add()``` method. The element that you want to add goes inside of the ```()```.
+
+To remove elements from an ```ArrayList```, you use the ```remove()``` method. Inside the ```()``` you can specify the index of the element that you want to remove. Alternatively, you can specify directly the element that you want to remove.
+
+```
+import java.util.ArrayList;
+
+public class Students {
+  public static void main(String[] args) {
+    
+     // create an ArrayList called studentList, which initially holds []
+    ArrayList<String> studentList = new ArrayList<String>();
+    
+    // add students to the ArrayList
+    studentList.add("John");
+    studentList.add("Lily");
+    studentList.add("Samantha");
+    studentList.add("Tony");
+    
+    // remove John from the ArrayList, then Lily
+    studentList.remove(0);
+    studentList.remove("Lily");
+    
+    // studentList now holds [Samantha, Tony]
+    
+    System.out.println(studentList);
+  }
+}
+```
+
+## Loops
+
+### For-each statement in Java
+In Java, the for-each statement allows you to directly loop through each item in an array or ```ArrayList``` and perform some action with each item.
+
+When creating a for-each statement, you must include the ```for``` keyword and two expressions inside of parentheses, separated by a colon. These include:
+
+1. The handle for an element we’re currently iterating over.
+
+2. The source array or ArrayList we’re iterating over.
+
+```
+// array of numbers
+int[] numbers = {1, 2, 3, 4, 5};
+
+// for-each loop that prints each number in numbers
+// int num is the handle while numbers is the source array
+for (int num : numbers) {  
+  System.out.println(num);
+}
+```
+
+## String Methods
+
+### length() String Method in Java
+
+In Java, the ```length()``` string method returns the total number of characters – the length – of a ```String```.
+
+```
+String str = "Codecademy";  
+
+System.out.println(str.length());
+// prints 10
+```
+
+#### concat() String Method in Java
+
+In Java, the ```concat()``` string method is used to append one ```String``` to the end of another ```String```. This method returns a ```String``` representing the text of the combined strings.
+
+```
+String s1 = "Hello";
+String s2 = " World!";
+
+String s3 = s1.concat(s2);
+// concatenates strings s1 and s2
+
+System.out.println(s3);
+// prints "Hello World!"
+```
+
+### String Method equals() in Java
+
+In Java, the ```equals()``` string method tests for equality between two ```String```s.
+
+```equals()``` compares the contents of each ```String```. If all of the characters between the two match, the method returns ```true```. If any of the characters do not match, it returns ```false```.
+
+Additionally, if you want to compare two strings without considering upper/lower cases, you can use ```.equalsIgnoreCase()```.
+
+```
+String s1 = "Hello";
+String s2 = "World";
+
+System.out.println(s1.equals("Hello"));
+// prints true
+
+System.out.println(s2.equals("Hello"));
+// prints false 
+
+System.out.println(s2.equalsIgnoreCase("world"));
+// prints true 
+```
+
+### indexOf() String Method in Java
+
+In Java, the ```indexOf()``` string method returns the first occurence of a character or a substring in a ```String```. The character/substring that you want to find the index of goes inside of the ```()```.
+
+If ```indexOf()``` cannot find the character or substring, it will return -1.
+
+```
+String str = "Hello World!";
+
+System.out.println(str.indexOf("l"));
+// prints 2
+
+System.out.println(str.indexOf("Wor"));
+// prints 6
+
+System.out.println(str.indexOf("z"));
+// prints -1
+```
+
+### charAt() String Method in Java
+
+In Java, the ```charAt()``` string method returns the character of a ```String``` at a specified index. The index value is passed inside of the ```()```, and should lie between 0 and ```length()-1```.
+
+```
+String str = "This is a string";
+
+System.out.println(str.charAt(0));
+// prints 'T'
+
+System.out.println(str.charAt(15));
+// prints 'g'
+```
+
+### toUpperCase() and toLowerCase() String Methods
+
+In Java, we can easily convert a ```String``` to upper and lower case with the help of a few string methods:
+
+- ```toUpperCase()``` returns the string value converted to uppercase.
+
+- ```toLowerCase()``` returns the string value converted to lowercase.
+
+```
+String str = "Hello World!";
+
+String uppercase = str.toUpperCase();
+// uppercase = "HELLO WORLD!"
+
+String lowercase = str.toLowerCase();
+// lowercase = "hello world!"
+```
+
+## Inheritance and Polymorphism
+
+### Inheritance in Java
+
+*Inheritance* is an important feature of object-oriented programming in Java. It allows for one class (child class) to inherit the fields and methods of another class (parent class). For instance, we might want a child class ```Dog``` to inherent traits from a more general parent class ```Animal```.
+
+When defining a child class in Java, we use the keyword ```extends``` to inherit from a parent class.
+
+```
+// Parent Class
+class Animal {
+  
+  // Animal class members
+
+}
+
+// Child Class
+class Dog extends Animal {
+  
+  // Dog inherits traits from Animal 
+  
+  // additional Dog class members
+
+}
+```
+
+### Main() method in Java
+
+In simple Java programs, you may work with just one class and one file. However, as your programs become more complex you will work with multiple classes, each of which requires its own file. Only one of these files in the Java package requires a ```main()``` method, and this is the file that will be run in the package.
+
+For example, say we have two files in our Java package for two different classes:
+
+- ```Shape```, the parent class.
+- ```Square```, the child class.
+
+If the Java file containing our ```Shape``` class is the only one with a ```main()``` method, this is the file that will be run for our Java package.
+
+```
+// Shape.java file 
+class Shape {
+  public static void main(String[] args) {
+    Square sq = new Square();
+  }
+}
+
+// Square.java file 
+class Square extends Shape {
+  
+}
+```
+
+### super() in Java
+
+In Java, a child class inherits its parent’s fields and methods, meaning it also inherits the parent’s constructor. Sometimes we may want to modify the constructor, in which case we can use the ```super()``` method, which acts like the parent constructor inside the child class constructor.
+
+Alternatively, we can also completely override a parent class constructor by writing a new constructor for the child class.
+
+```
+// Parent class
+class Animal {
+  String sound;
+  
+  Animal(String snd) {
+    this.sound = snd;
+  }
+}
+
+// Child class
+class Dog extends Animal {
+  
+  // super() method can act like the parent constructor inside the child class constructor.
+  Dog() {
+    super("woof");
+  }
+  
+  // alternatively, we can override the constructor completely by defining a new constructor.
+  Dog() {
+    this.sound = "woof";
+  }
+}
+```
+
+### Protected and Final keywords in Java
+
+When creating classes in Java, sometimes we may want to control child class access to parent class members. We can use the ```protected``` and ```final``` keywords to do just that.
+
+```protected``` keeps a parent class member accessible to its child classes, to files within its own package, and by subclasses of this class in another package.
+
+Adding ```final``` before a parent class method’s access modifier makes it so that any child classes cannot modify that method - it is immutable.
+
+```
+class Student {
+
+  protected double gpa;
+  // any child class of Student can access gpa 
+  
+  
+  final protected boolean isStudent() {
+    
+    return true;
+    
+  }
+  // any child class of Student cannot modify isStudent()
+}
+```
+
+### Polymorphism in Java
+
+Java incorporates the object-oriented programming principle of *polymorphism*.
+
+Polymorphism allows a child class to share the information and behavior of its parent class while also incorporating its own functionality. This allows for the benefits of simplified syntax and reduced cognitive overload for developers.
+
+```
+// Parent class
+class Animal {
+  public void greeting() {
+    System.out.println("The animal greets you.");
+  }
+}
+
+// Child class
+class Cat extends Animal {
+  public void greeting() {
+    System.out.println("The cat meows.");
+  }
+}
+
+class MainClass {
+  public static void main(String[] args) {
+    Animal animal1 = new Animal();  // Animal object
+    Animal cat1 = new Cat();  // Cat object
+    animal1.greeting(); // prints "The animal greets you."
+    cat1.greeting(); // prints "The cat meows."
+  }
+}
+```
+
+## Method Overriding in Java
+
+In Java, we can easily *override* parent class methods in a child class. Overriding a method is useful when we want our child class method to have the same name as a parent class method but behave a bit differently.
+
+In order to override a parent class method in a child class, we need to make sure that the child class method has the following in common with its parent class method:
+
+- Method name
+- Return type
+- Number and type of parameters
+
+Additionally, we should include the ```@Override``` keyword above our child class method to indicate to the compiler that we want to override a method in the parent class.
+
+```
+// Parent class 
+class Animal {
+  public void eating() {
+    System.out.println("The animal is eating.");
+  }
+}
+
+// Child class 
+class Dog extends Animal {
+  // Dog's eating method overrides Animal's eating method
+  @Override
+  public void eating() {
+    System.out.println("The dog is eating.");
+  }
+}
+```
+
+### Child Classes in Arrays and ArrayLists
+
+In Java, polymorphism allows us to put instances of different classes that share a parent class together in an array or ```ArrayList```.
+
+For example, if we have an ```Animal``` parent class with child classes ```Cat```, ```Dog```, and ```Pig``` we can set up an array with instances of each animal and then iterate through the list of animals to perform the same action on each.
+
+```
+// Animal parent class with child classes Cat, Dog, and Pig. 
+Animal cat1, dog1, pig1;
+
+cat1 = new Cat();
+dog1 = new Dog();
+pig1 = new Pig();
+
+// Set up an array with instances of each animal
+Animal[] animals = {cat1, dog1, pig1};
+
+// Iterate through the list of animals and perform the same action with each
+for (Animal animal : animals) {
+  
+  animal.sound();
+  
 }
 ```
 
