@@ -94,3 +94,5 @@
 	BONUS
 
 	There are many more language families you could create and there is a lot more you can do here. Check the hint for some ideas to make your Language Inheritance project even better.
+
+Example solution can be found in the [Language.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/9.%20Inheritance%20and%20Polymorphism/Language%20Families%20Project/Language.java), [Mayan.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/9.%20Inheritance%20and%20Polymorphism/Language%20Families%20Project/Mayan.java), and [SinoTibetan.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/9.%20Inheritance%20and%20Polymorphism/Language%20Families%20Project/SinoTibetan.java) files
