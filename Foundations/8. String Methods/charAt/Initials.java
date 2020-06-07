@@ -3,8 +3,8 @@ public class Initials {
 	public static void main(String[] args) {
     
     // Add a first name and a last name:
-    String firstName = "Sonny";  
-    String lastName = "Li";
+    String firstName = "Kelli";  
+    String lastName = "Davis";
     
     // What are the initials?
     System.out.println(firstName.charAt(0));
