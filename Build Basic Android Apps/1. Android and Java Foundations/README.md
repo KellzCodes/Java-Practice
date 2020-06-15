@@ -63,9 +63,7 @@ When developing for Android, it’s important to have an appreciation for the va
 
 Click the video below for more info:
 
-<iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=nsGOV8kUmd0&feature=emb_logo">
-</iframe>
+[![Android Devices](http://img.youtube.com/vi/nsGOV8kUmd0/0.jpg)](http://www.youtube.com/watch?v=nsGOV8kUmd0 "Android Devices")
 
 ### Review
 
@@ -90,3 +88,12 @@ IDEs are useful because they provide a whole array of functionality on top of ju
 
 Android apps are developed using either the Java or Kotlin programming languages, along with Extensible Markup Language (XML). In order to build an app, developers use the Android Software Development Kit (Android SDK), a collection of software libraries and functionality that gives developers a way to build user interfaces, handle user input, and ultimately create the apps people use every day.
 
+Click the video below for more info:
+
+[![Developing for Android](http://img.youtube.com/vi/9Mc-QwLov_E/0.jpg)](http://www.youtube.com/watch?v=9Mc-QwLov_E "Developing for Android")
+
+### Review:
+- The Android Software Development Kit (Android SDK) is a collection of software libraries and functionality that allows developers to write code that will live comfortably on an Android Device.
+- Android Studio is an Integrated Development Environment (IDE) created by Google which is used to develop Android apps.
+- Android apps are written using the Java or Kotlin programming languages along with Extensible Markup Language (XML).
+- Emulators are virtual Android devices developers can test their apps on.
