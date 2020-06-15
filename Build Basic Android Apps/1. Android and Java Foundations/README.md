@@ -43,7 +43,7 @@ Android is the name of a mobile operating system that is owned and currently mai
 
 The Android Operating System is free and open-source software, which means that any individual or organization can use it without paying Google. For this reason, Android has become the most dominant and fastest-growing operating system in the world.
 
-<img src="hhttps://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/1.%20Android%20and%20Java%20Foundations/pics/android_growth2.png" alt="android_growth" width="500"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/1.%20Android%20and%20Java%20Foundations/pics/android_growth2.png" alt="android_growth" width="500"/>
 
 Currently, Android runs on more than one hundred million smartphones in 190+ countries. The Google Play Store, which is the official Android App Store, has over 3 million officially supported apps.
 
