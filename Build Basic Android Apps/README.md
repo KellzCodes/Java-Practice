@@ -178,7 +178,7 @@ XML stands for Extensible Markup Language and is a markup language (not a progra
 
 An XML document is composed of a series of Elements that are organized in a hierarchical fashion through the use of Tags. A tag is a special syntax that indicates where an element should be placed in a document.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/pics/Extensible_Markup_Language.png" alt="Extensible_Markup_Language" width="500"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/pics/XML_Hierarchal_Structure.png" alt="XML_Hierarchal_Structure" width="500"/>
 
 ### Container Tags
 
