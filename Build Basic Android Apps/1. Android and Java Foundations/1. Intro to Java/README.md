@@ -21,7 +21,7 @@ Programming languages enable humans to write instructions that a computer can pe
 
 One reason people love Java is the Java Virtual Machine, which ensures the same Java code can be run on different operating systems and platforms. Sun Microsystems’ slogan for Java was “write once, run everywhere”.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Intro%20to%20Java/Java%2BModule%2B1-%2BLesson%2B1-JVM%2B-ART%2B408.png" alt="JVM" width="500"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/1.%20Android%20and%20Java%20Foundations/1.%20Intro%20to%20Java/Java%2BModule%2B1-%2BLesson%2B1-JVM%2B-ART%2B408.png" alt="JVM" width="500"/>
 
 Programming languages are composed of *syntax*, the specific instructions which Java understands. We write syntax in files to create *programs*, which are executed by the computer to perform the desired task.
 
@@ -139,7 +139,7 @@ Java is a *compiled* programming language, meaning the code we write in a **.jav
 
 A compiler is a program that translates human-friendly programming languages into other programming languages that computers can execute.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Intro%20to%20Java/Java%2BM1L1-%2BCompilation%2BProcess%2BART%2B409.png" alt="compilation" width="500"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/1.%20Android%20and%20Java%20Foundations/1.%20Intro%20to%20Java/Java%2BM1L1-%2BCompilation%2BProcess%2BART%2B409.png" alt="compilation" width="500"/>
 
 Some applications can automatically compile and run the files for you. It’s important to understand this aspect of Java development so we’ll do it ourselves.
 
@@ -229,7 +229,7 @@ Welcome to my github repo!
 
 A basic program that prints the famous phrase, "Hello World."
 
-1. Open the [HelloWorld.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Intro%20to%20Java/HelloWorld.java) file.
+1. Open the [HelloWorld.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/1.%20Android%20and%20Java%20Foundations/1.%20Intro%20to%20Java/HelloWorld.java) file.
 
 2. Run the code in a text editor see what is printed to the screen.
 
@@ -250,7 +250,7 @@ public class HelloYou {
 
 	For example, if your name were “Maria,” the program would print ```Hello Maria!```.
 
-Example code can be found in the [HelloYou.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Intro%20to%20Java/HelloYou.java) file.
+Example code can be found in the [HelloYou.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/1.%20Android%20and%20Java%20Foundations/1.%20Intro%20to%20Java/HelloYou.java) file.
 
 ## Timeline
 
@@ -300,7 +300,7 @@ public class Timeline {
 
 	You should still see ```You are a fun language!``` printed!
 
-Example code for this program is found in the [Timeline.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Intro%20to%20Java/Timeline.java) file.
+Example code for this program is found in the [Timeline.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/1.%20Android%20and%20Java%20Foundations/1.%20Intro%20to%20Java/Timeline.java) file.
 
 ## Language Facts
 
@@ -331,7 +331,7 @@ public class LanguageFacts {
 
 	**Remember to place a semicolon at the end of the statement!**
 
-Example code can be found in the [LanguageFacts.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Intro%20to%20Java/LanguageFacts.java) file.
+Example code can be found in the [LanguageFacts.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/1.%20Android%20and%20Java%20Foundations/1.%20Intro%20to%20Java/LanguageFacts.java) file.
 
 ## Compiling
 
@@ -402,7 +402,7 @@ Demonstrates knowledge of Hello World lesson
 
 5. Below the comment, write a statement that prints the following: ```My first Java program from scratch!```.
 
-Example code can be found in the [Review.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Intro%20to%20Java/Review.java) file.
+Example code can be found in the [Review.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/1.%20Android%20and%20Java%20Foundations/1.%20Intro%20to%20Java/Review.java) file.
 
 ## Tree
 
@@ -480,4 +480,4 @@ Introduce yourself to users and plant a tree for them!
 
 You can explore other printing methods in the [Java documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#out).
 
-Example code can be found in the [Tree.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Intro%20to%20Java/Tree.java) file.
+Example code can be found in the [Tree.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/1.%20Android%20and%20Java%20Foundations/1.%20Intro%20to%20Java/Tree.java) file.
