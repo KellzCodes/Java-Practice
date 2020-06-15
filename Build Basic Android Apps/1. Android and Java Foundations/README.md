@@ -3,6 +3,7 @@
 
 - [Intro to Android](#Introduction-to-Android)
 - [Android Devices](#Android-Devices)
+- [Developing for Android](#Developing-for-Android)
 
 Have you ever wondered how apps are made for the phone and tablet? Wonder no longer: This Skill Path will teach you how to do it yourself! Welcome!
 
@@ -62,7 +63,9 @@ When developing for Android, it’s important to have an appreciation for the va
 
 Click the video below for more info:
 
-[![Android Devices](http://img.youtube.com/vi/nsGOV8kUmd0/0.jpg)](http://www.youtube.com/watch?v=nsGOV8kUmd0 "Android Devices")
+<iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=nsGOV8kUmd0&feature=emb_logo">
+</iframe>
 
 ### Review
 
@@ -75,3 +78,15 @@ Click the video below for more info:
 - Most Android devices have 3 utility buttons: the home button, app management button and back button.
 
 - The look and feel of apps are determined entirely by the app designer which means just about all apps will look a feel a bit different, regardless of the device.
+
+## Developing for Android
+#### Learn about developing within the Android ecosystem
+
+Developing Apps for Android is the focus of this course, and luckily for us, there is an entire suite of software libraries, specialized text editors and technologies out there designed to make that process easier.
+
+Most Android development is done using a specialized text editor often called an Integrated Development Environment or an [IDE](https://www.codecademy.com/content-items/773eddcee1e6ccc82a9cbafacc789fe4). The IDE used for Android Development is called Android Studio and is maintained by Google.
+
+IDEs are useful because they provide a whole array of functionality on top of just allowing developers to write code. Android Studio, in particular, gives developers several useful features like syntax highlighting, where the code is colored making it easier to read, code autocomplete, and an entire suite of debugging and build tools.
+
+Android apps are developed using either the Java or Kotlin programming languages, along with Extensible Markup Language (XML). In order to build an app, developers use the Android Software Development Kit (Android SDK), a collection of software libraries and functionality that gives developers a way to build user interfaces, handle user input, and ultimately create the apps people use every day.
+
