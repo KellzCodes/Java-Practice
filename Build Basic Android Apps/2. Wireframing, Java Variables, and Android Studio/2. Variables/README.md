@@ -465,7 +465,7 @@ public class Creator {
 
 3. Use the same command to print out ```yearCreated```.
 
-Example code can be found in the [Creator.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Creator.java) file.
+Example code can be found in the [Creator.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/Creator.java) file.
 
 ## Count Comment
 
@@ -497,7 +497,7 @@ public class CountComment {
 
 3. Print out ```numComments```.
 
-Example code can be found in the [CountComment.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/CountComment.java) file.
+Example code can be found in the [CountComment.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/CountComment.java) file.
 
 ## Market Share
 
@@ -517,7 +517,7 @@ public Class MarketShare{
 
 3. Print out ```androidShare``` to the console.
 
-Example code can be found in the [MarketShare.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/MarketShare.java) file.
+Example code can be found in the [MarketShare.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/MarketShare.java) file.
 
 ## Booleans
 
@@ -537,7 +537,7 @@ public class Booleans{
 
 3. Print out your ```intsCanHoldDecimals``` variable.
 
-Example code can be found in the [Booleans.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Booleans.java) file. 
+Example code can be found in the [Booleans.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/Booleans.java) file. 
 
 ## Char
 
@@ -559,7 +559,7 @@ public class Char {
 
 3. Print out your ```expectedGrade``` variable!
 
-Example code can be found in the [Char.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Char.java) file.
+Example code can be found in the [Char.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/Char.java) file.
 
 ## Song
 
@@ -579,7 +579,7 @@ public class Song {
 
 3. Call ```System.out.println()``` to print out ```openingLyrics```.
 
-Example code can be found in the [Song.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Song.java) file.
+Example code can be found in the [Song.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/Song.java) file.
 
 ## Mess
 
@@ -611,7 +611,7 @@ javac Mess.java
 
 4. Compile the file again. Look at how it compiles with no errors now!
 
-Example code can be found in the [Mess.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Mess.java) file.
+Example code can be found in the [Mess.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/Mess.java) file.
 
 ## Bad Names
 
@@ -637,7 +637,7 @@ public class BadNames {
 
 3. Some of these variable names are *illegal*! Change the ones that are preventing the file from compiling.
 
-Example code can be found in the [BadNames.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/BadNames.java) file.
+Example code can be found in the [BadNames.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/BadNames.java) file.
 
 ## My Profile
 
@@ -663,7 +663,7 @@ public class MyProfile {
 
 6. Create a variable called ```lookingForJob``` that holds whether or not you are currently open to job offers.
 
-Example code can be found in the [MyProfile.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/MyProfile.java) file.
+Example code can be found in the [MyProfile.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/MyProfile.java) file.
 
 ## Mad Libs
 
@@ -675,7 +675,7 @@ Mad Libs require:
 
 “Roses are Red” poem example:
 
-![alt text](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/madlibs.svg)
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/madlibs.svg" alt="madlibs" width="500"/>
 
 1. Start with this code:
 
@@ -735,7 +735,7 @@ Date: 2/19/2049
 
 12. Time to read the story! Use ```System.out.println()``` to print the story variable.
 
-Example code can be found in the [MadLibs.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/MadLibs.java) file.
+Example code can be found in the [MadLibs.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/MadLibs.java) file.
 
 ## Guessing Game
 
@@ -756,7 +756,7 @@ public class GuessingGame {
 
     Use ```System.out.println()``` to print the variable that holds a value of ```2```.
 
-Example code can be found in the [GuessingGame.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/GuessingGame.java) file.
+Example code can be found in the [GuessingGame.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/GuessingGame.java) file.
 
 ## Plus and Minus
 
@@ -781,7 +781,7 @@ public class PlusAndMinus {
 
     Then, print the ```numZebrasAfterTrade``` variable!
 
-Example code can be found in the [PlusAndMinus.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/GuessingGame.java) file.
+Example code can be found in the [PlusAndMinus.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/PlusAndMinus.java) file.
 
 ## Mult and Divide
 
@@ -810,7 +810,7 @@ public class MultAndDivide {
 
     Print the ```perPerson``` variable!
 
-Example code can be found in the [MultAndDivide.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/MultAndDivide.java) file.
+Example code can be found in the [MultAndDivide.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/MultAndDivide.java) file.
 
 ## Modulo 
 
@@ -830,7 +830,7 @@ public class Modulo {
 
     Create a variable called ```leftOut``` that holds the modulo of ```students``` and 3. Then, print the variable!
 
-Example code can be found in the [Modulo.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Modulo.java) file.
+Example code can be found in the [Modulo.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/Modulo.java) file.
 
 ## Greater Less Than
 
@@ -854,7 +854,7 @@ public class GreaterLessThan {
 
     Print out whether ```creditsToGraduate``` is less than ```creditsAfterSeminar```.
 
-Example code can be found in the [GreaterLessThan.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/GreaterLessThan.java) file.
+Example code can be found in the [GreaterLessThan.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/GreaterLessThan.java) file.
 
 ## Equal Not Equal
 
@@ -881,7 +881,7 @@ public class EqualNotEqual {
 
 3. Now, create a variable called ```differentLength``` that stores the result of checking whether the two album lengths are **not** the same.
 
-Example code can be found in the [EqualNotEqual.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/EqualNotEqual.java) file.
+Example code can be found in the [EqualNotEqual.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/EqualNotEqual.java) file.
 
 ## Greater Than Equal To
 
@@ -907,7 +907,7 @@ public class GreaterThanEqualTo {
 
     Then, print the ```isChallengeComplete``` variable.
 
-Example code can be found in the [GreaterThanEqualTo.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/GreaterThanEqualTo.java) file.
+Example code can be found in the [GreaterThanEqualTo.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/GreaterThanEqualTo.java) file.
 
 ## Sing
 
@@ -931,7 +931,7 @@ public class Sing {
 
 3. Now, print whether ```line2``` and ```line3``` are equal.
 
-Example code can be found in the [Sing.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Sing.java) file.
+Example code can be found in the [Sing.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/Sing.java) file.
 
 ## Zoo
 
@@ -964,7 +964,7 @@ public class Zoo {
 
 3. Print out the variable ```zooDescription```!
 
-Example code can be found in the [Zoo.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Zoo.java) file.
+Example code can be found in the [Zoo.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/Zoo.java) file.
 
 ## Bank Account
 
@@ -997,7 +997,7 @@ public class BankAccount {
 ```
     with the value of ```amountForEachFriend``` where ```<amountForEachFriend>``` is.
 
-Example code can be found in the [BankAccount.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/BankAccount.java) file.
+Example code can be found in the [BankAccount.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/BankAccount.java) file.
 
 ## Magic
 
@@ -1059,4 +1059,4 @@ public class Magic {
 
     It’s math magic!
 
-Example code can be found in the [Magic.java](https://github.com/keldavis/Java-Practice/blob/master/Foundations/2.%20Variables/Magic.java) file.
+Example code can be found in the [Magic.java](https://github.com/keldavis/Java-Practice/blob/master/Build%20Basic%20Android%20Apps/2.%20Wireframing%2C%20Java%20Variables%2C%20and%20Android%20Studio/2.%20Variables/Magic.java) file.
