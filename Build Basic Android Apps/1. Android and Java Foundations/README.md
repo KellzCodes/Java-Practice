@@ -60,6 +60,8 @@ Because Android is open-source software, hardware manufacturers are able to comb
 
 When developing for Android, it’s important to have an appreciation for the various types of devices out there, and know the common characteristics they all share.
 
+Click the video below for more info:
+
 [![Android Devices](http://img.youtube.com/vi/nsGOV8kUmd0/0.jpg)](http://www.youtube.com/watch?v=nsGOV8kUmd0 "Android Devices")
 
 ### Review
