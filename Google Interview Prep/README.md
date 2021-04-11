@@ -1,5 +1,5 @@
 # How to make progress while studying for coding interviews
-## Article by Sam Gavis-Hughson
+## [Article](https://www.freecodecamp.org/news/how-to-make-progress-while-studying-for-coding-interviews-894c320bfa74/) by Sam Gavis-Hughson
 
 Getting stuck is never fun. Especially when you’re working really hard. And yet, I find that this happens to people preparing for coding interviews all the time.
 
