@@ -124,7 +124,7 @@ A Binary Tree can be traversed in two ways:
 
 **Binary Tree Properties**: 
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/BT-properties.jpg" alt="BT-properties" width="500"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/BT-properties.jpg" alt="BT-properties" width="550"/>
 
 **Examples**: Binary Trees are perfect for the things that form a hierarchy. They are useful in File structures where there is a specific hierarchy associated with files and directories. Another example where Trees are useful is storing hierarchical objects like JavaScript Document Object Model where an HTML page is considered a tree with a nesting of tags as parent child relations. 
 
