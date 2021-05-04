@@ -158,3 +158,30 @@ BST provide moderate access/search (quicker than Linked List and slower than arr
 BST provide moderate insertion/deletion (quicker than Arrays and slower than Linked Lists). 
 
 **Examples**: BSTs are commonly used in search applications where data is constantly moving in/out and needs to printed in sorted order. For example BSTs are used in E-commerce websites where a new product is added or product goes out of stock and all products are listed in sorted order. 
+
+### Binary Heap
+
+A Binary Heap is a Binary Tree with following properties. 
+1. It’s a complete tree (All levels are completely filled except possibly the last level and the last level has all keys as left as possible). This property of Binary Heap makes them suitable to be stored in an array. 
+2. A Binary Heap is either Min Heap or Max Heap. In a Min Binary Heap, the key at root must be minimum among all keys present in Binary Heap. The same property must be recursively true for all nodes in Binary Tree. Max Binary Heap is similar to Min Heap. It is mainly implemented using array. 
+
+```
+Get Minimum in Min Heap: O(1) [Or Get Max in Max Heap]
+Extract Minimum Min Heap: O(Log n) [Or Extract Max in Max Heap]
+Decrease Key in Min Heap: O(Log n)  [Or Decrease Key in Max Heap]
+Insert: O(Log n) 
+Delete: O(Log n)
+```
+
+**Example**: Used in implementing efficient priority-queues, which in turn are used for scheduling processes in operating systems. Priority Queues are also used in Dijikstra’s and Prim’s graph algorithms. 
+
+The Heap data structure can be used to efficiently find the k smallest (or largest) elements in an array, merging k sorted arrays, median of a stream, etc. 
+
+Heap is a special data structure and it cannot be used for searching of a particular element. 
+
+### Hashing
+
+**HashingHash Function**: A function that converts a given big input key to a small practical integer value. The mapped integer value is used as an index in hash table. A good hash function should have following properties 
+1. Efficiently computable. 
+2. Should uniformly distribute the keys (Each table position equally likely for each key) 
+
