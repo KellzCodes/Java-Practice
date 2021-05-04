@@ -123,3 +123,38 @@ A Binary Tree can be traversed in two ways:
 **Breadth First Traversal**: Level Order Traversal 
 
 **Binary Tree Properties**: 
+
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/BT-properties.jpg" alt="BT-properties" width="300"/>
+
+**Examples**: Binary Trees are perfect for the things that form a hierarchy. They are useful in File structures where there is a specific hierarchy associated with files and directories. Another example where Trees are useful is storing hierarchical objects like JavaScript Document Object Model where an HTML page is considered a tree with a nesting of tags as parent child relations. 
+
+### Binary Search Tree
+
+A Binary Search Tree is a Binary Tree with following additional properties: 
+1. The left subtree of a node contains only nodes with keys less than the node’s key. 
+2. The right subtree of a node contains only nodes with keys greater than the node’s key. 
+3. The left and right subtree each must also be a binary search tree. 
+
+Time Complexities: 
+
+```
+Search :  O(h)
+Insertion : O(h)
+Deletion : O(h)
+Extra Space : O(n) for pointers
+
+h: Height of BST
+n: Number of nodes in BST
+
+If Binary Search Tree is Height Balanced, 
+then h = O(Log n) 
+
+Self-Balancing BSTs such as AVL Tree, Red-Black
+Tree and Splay Tree make sure that height of BST 
+remains O(Log n)
+```
+
+BST provide moderate access/search (quicker than Linked List and slower than arrays). 
+BST provide moderate insertion/deletion (quicker than Arrays and slower than Linked Lists). 
+
+**Examples**: BSTs are commonly used in search applications where data is constantly moving in/out and needs to printed in sorted order. For example BSTs are used in E-commerce websites where a new product is added or product goes out of stock and all products are listed in sorted order. 
