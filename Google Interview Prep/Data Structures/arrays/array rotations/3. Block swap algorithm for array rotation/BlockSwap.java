@@ -2,42 +2,42 @@ import java.util.*;
 
 class BlockSwap
 {
-		// Wrapper over the recursive function leftRotateRec()
-		// It left rotates arr[] by d.
-		public static void leftRotate(int arr[], int d,
-													int n)
-		{
-			leftRotateRec(arr, 0, d, n);
-		}
+	// Wrapper over the recursive function leftRotateRec()
+	// It left rotates arr[] by d.
+	public static void leftRotate(int arr[], int d,
+												int n)
+	{
+		leftRotateRec(arr, 0, d, n);
+	}
 
-		public static void leftRotateRec(int arr[], int i,
-									int d, int n)
+	public static void leftRotateRec(int arr[], int i,
+								int d, int n)
+	{
+		/* Return If number of elements to be rotated
+		is zero or equal to array size */
+		if(d == 0 || d == n)
+			return;
+		
+		/*If number of elements to be rotated
+		is exactly half of array size */
+		if(n - d == d)
 		{
-			/* Return If number of elements to be rotated
-			is zero or equal to array size */
-			if(d == 0 || d == n)
-				return;
-			
-			/*If number of elements to be rotated
-			is exactly half of array size */
-			if(n - d == d)
-			{
-				swap(arr, i, n - d + i, d);
-				return;
-			}
-			
-			/* If A is shorter*/
-			if(d < n - d)
-			{
-				swap(arr, i, n - d + i, d);
-				leftRotateRec(arr, i, d, n - d);	
-			}
-			else /* If B is shorter*/
-			{
-				swap(arr, i, d, n - d);
-				leftRotateRec(arr, n - d + i, 2 * d - n, d); /*This is tricky*/
-			}
+			swap(arr, i, n - d + i, d);
+			return;
 		}
+		
+		/* If A is shorter*/
+		if(d < n - d)
+		{
+			swap(arr, i, n - d + i, d);
+			leftRotateRec(arr, i, d, n - d);	
+		}
+		else /* If B is shorter*/
+		{
+			swap(arr, i, d, n - d);
+			leftRotateRec(arr, n - d + i, 2 * d - n, d); /*This is tricky*/
+		}
+	}
 
 	/*UTILITY FUNCTIONS*/
 	/* function to print an array */
