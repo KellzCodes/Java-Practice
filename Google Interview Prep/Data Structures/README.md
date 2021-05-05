@@ -225,7 +225,7 @@ Let us take below example graph two see two representations of graph.
 
 1. Adjacency Matrix Representation of the above graph
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Tree_overview_of_data_structures_3.png" alt="Tree_overview_of_data_structures_3" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Tree_overview_of_data_structures_3.jpg" alt="Tree_overview_of_data_structures_3" width="300"/>
 
 2. Adjacency List Representation of the above Graph
 
