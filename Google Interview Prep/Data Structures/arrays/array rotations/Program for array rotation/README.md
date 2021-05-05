@@ -4,7 +4,7 @@
 
 <img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/simplearray.png" alt="simple_array" width="300"/>
 
-2 rotaions of the above array will make the array below
+2 rotations of the above array will make the array below
 
 <img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/arrayRotation.png" alt="array_rotation" width="300"/>
 
