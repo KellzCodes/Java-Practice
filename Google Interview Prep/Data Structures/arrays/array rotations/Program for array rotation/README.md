@@ -90,9 +90,9 @@ class RotateArray {
 3 4 5 6 7 1 2 
 ```
 
-** Time complexity : O(n * d) **
+**Time complexity : O(n * d)**
 
-** Auxiliary Space : O(1) **
+**Auxiliary Space : O(1)**
 
 ### METHOD 3 (A Juggling Algorithm)
 
@@ -182,11 +182,11 @@ class RotateArray {
 }
 ```
 
-** Output : **
+**Output :**
 
 ```
 3 4 5 6 7 1 2 
 ```
 
-** Time complexity : O(n) **
-** Auxiliary Space : O(1) **
+**Time complexity : O(n)**
+**Auxiliary Space : O(1)**
