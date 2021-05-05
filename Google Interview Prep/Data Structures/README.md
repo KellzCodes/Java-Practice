@@ -304,7 +304,7 @@ An abstract Data type (ADT) is a type (or class) for objects whose behaviour is 
 
 The definition of ADT only mentions what operations are to be performed but not how these operations will be implemented. It does not specify how data will be organized in memory and what algorithms will be used for implementing the operations. It is called “abstract” because it gives an implementation-independent view. The process of providing only the essentials and hiding the details is known as abstraction.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/ADT.jpg" alt="ADT" width="500"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/ADT.jpg" alt="ADT" width="600"/>
 
 The user of a data type does not need to know how that data type is implemented. For example, we have been using Primitive values like int, float, and char only with the knowledge that these data types can operate and be performed on without any idea of how they are implemented. So a user only needs to know what a data type can do, but not how it will be implemented. Think of ADT as a black box which hides the inner structure and design of the data type. Now we’ll define three ADTs namely List ADT, Stack ADT, Queue ADT.
 
@@ -353,7 +353,7 @@ A list contains elements of the same type arranged in sequential order. The foll
 - In Stack ADT, the pointer to data is stored instead of data being stored in each node.
 - The program allocates memory for the data and the address is passed to the stack ADT.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/StackADT.jpg" alt="stack_adt" width="500"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/StackADT.jpg" alt="stack_adt" width="600"/>
 
 - The head node and the data nodes are encapsulated in the ADT. The calling function can only see the pointer to the stack.
 - The stack head structure also contains a pointer to top and count for number of entries currently in stack.
