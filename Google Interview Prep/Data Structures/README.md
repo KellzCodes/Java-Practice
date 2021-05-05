@@ -225,7 +225,7 @@ Let us take below example graph two see two representations of graph.
 
 1. Adjacency Matrix Representation of the above graph
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Tree_overview_of_data_structures_3.jpg" alt="Tree_overview_of_data_structures_3" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Tree_overview_of_data_structures_3.jpg" alt="Tree_overview_of_data_structures_3" width="500"/>
 
 2. Adjacency List Representation of the above Graph
 
@@ -256,7 +256,7 @@ struct trie_node
 };
 ```
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/trie_structure.jpg" alt="trie_structure" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/trie_structure.jpg" alt="trie_structure" width="500"/>
 
 ```
 Insert time : O(M) where M is the length of the string.
@@ -273,7 +273,7 @@ Deletion time : O(M)
 
 This data structure is usually implemented when there are a lot of queries on a set of values. These queries involve minimum, maximum, sum, .. etc on an input range of a given set. Queries also involve updation of values in a given set. Segment Trees are implemented using arrays.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Tree_overview_of_data_structures_4.jpg" alt="Tree_overview_of_data_structures_4" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Tree_overview_of_data_structures_4.jpg" alt="Tree_overview_of_data_structures_4" width="500"/>
 
 ```
 Construction of segment tree : O(N)
@@ -294,7 +294,7 @@ A Suffix Tree is a compressed trie of all suffixes, so the following are very ab
 1. Generate all suffixes of given text.
 2. Consider all suffixes as individual words and build a compressed trie.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Tree_overview_of_data_structures_5.jpg" alt="Tree_overview_of_data_structures_5" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Tree_overview_of_data_structures_5.jpg" alt="Tree_overview_of_data_structures_5" width="500"/>
 
 **Example**: Used to find find all occurrences of the pattern in string. It is also used to find the longest repeated substring (when text doesn’t change often), the longest common substring and the longest palindrome in a string.
 
@@ -304,7 +304,7 @@ An abstract Data type (ADT) is a type (or class) for objects whose behaviour is 
 
 The definition of ADT only mentions what operations are to be performed but not how these operations will be implemented. It does not specify how data will be organized in memory and what algorithms will be used for implementing the operations. It is called “abstract” because it gives an implementation-independent view. The process of providing only the essentials and hiding the details is known as abstraction.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/ADT.jpg" alt="ADT" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/ADT.jpg" alt="ADT" width="500"/>
 
 The user of a data type does not need to know how that data type is implemented. For example, we have been using Primitive values like int, float, and char only with the knowledge that these data types can operate and be performed on without any idea of how they are implemented. So a user only needs to know what a data type can do, but not how it will be implemented. Think of ADT as a black box which hides the inner structure and design of the data type. Now we’ll define three ADTs namely List ADT, Stack ADT, Queue ADT.
 
@@ -312,7 +312,7 @@ The user of a data type does not need to know how that data type is implemented.
 
 - The data is generally stored in a key sequence in a list which has a head structure consisting of count, pointers, and address of compare function needed to compare the data in the list.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/ListADTStructure.png" alt="List_ADT_Structure" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/ListADTStructure.png" alt="List_ADT_Structure" width="500"/>
 
 - The data node contains the pointer to a data structure and a self-referential pointer which points to the next node in the list.
 
@@ -335,7 +335,7 @@ typedef struct
 
 - The List ADT Functions is given below:
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/ListADTFunctions.png" alt="List_ADT_Functions" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/ListADTFunctions.png" alt="List_ADT_Functions" width="500"/>
 
 A list contains elements of the same type arranged in sequential order. The following operations can be performed on the list.
 
@@ -353,7 +353,7 @@ A list contains elements of the same type arranged in sequential order. The foll
 - In Stack ADT, the pointer to data is stored instead of data being stored in each node.
 - The program allocates memory for the data and the address is passed to the stack ADT.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/StackADT.jpg" alt="stack_adt" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/StackADT.jpg" alt="stack_adt" width="500"/>
 
 - The head node and the data nodes are encapsulated in the ADT. The calling function can only see the pointer to the stack.
 - The stack head structure also contains a pointer to top and count for number of entries currently in stack.
@@ -385,7 +385,7 @@ A Stack contains elements of the same type arranged in sequential order. All ope
 
 - The queue abstract data type (ADT) follows the basic design of the stack abstract data type.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/QueueADT.png" alt="queue_adt" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/QueueADT.png" alt="queue_adt" width="500"/>
 
 - Each node contains a void pointer to the data and a link pointer to the next element in the queue. The program’s responsibility is to allocate memory for storing the data.
 
