@@ -29,24 +29,6 @@ Only 1771 contains an even number of digits.
 - 1 <= nums.length <= 500
 - 1 <= nums[i] <= 10^5
 
-```
-    public int findNumbers(int[] nums) {
-        
-        // store number of even digits
-        int numEvenDigits = 0;
-        
-        // iterate nums
-        for (int i = 0; i < nums.length; i += 1) {
-            
-            // convert current element into String
-            String digit = String.valueOf(nums[i]);
-            
-            // increase numEvenDigits if length of String is even number
-            if (digit.length() % 2 == 0) {
-                numEvenDigits += 1;
-            }
-        }
-        
-        return numEvenDigits;
-    }
-```
+### [Click here for the String Solution](https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/Data%20Structures/arrays/algorithms/Find%20Numbers%20with%20Even%20Number%20of%20Digits/StringSolution.java)
+
+### [Click here for the Divide by 10 Solution](https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/Data%20Structures/arrays/algorithms/Find%20Numbers%20with%20Even%20Number%20of%20Digits/DivideBy10Solution.java)
