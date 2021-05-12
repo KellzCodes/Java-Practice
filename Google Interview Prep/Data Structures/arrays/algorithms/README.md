@@ -1,5 +1,6 @@
 # Algorithms
 
+## Introduction
 1. [Given a binary array ```nums```, return the maximum number of consecutive 1's in the array.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/algorithms/Max%20Consecutive%20Ones)
 
 2. [Given an array ```nums``` of integers, return how many of them contain an even number of digits.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/algorithms/Find%20Numbers%20with%20Even%20Number%20of%20Digits)
