@@ -44,3 +44,7 @@ The main problem with not using additional memory is that we might override elem
 
 If we had enough space available, we would be able to accommodate all the elements properly. The new length would be the original length of the array plus the number of zeros. Can we use this information somehow to solve the problem?
 
+## Solution
+
+The problem demands the array to be modified in-place. If ```in-place``` was not a constraint we might have just copied the elements from a source array to a destination array.
+
