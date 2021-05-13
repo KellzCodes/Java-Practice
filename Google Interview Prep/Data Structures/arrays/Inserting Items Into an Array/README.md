@@ -25,7 +25,7 @@ Inserting a new element into an Array can take many forms:
 
 At any point in time, we know the index of the last element of the Array, as we've kept track of it in our ```length``` variable. All we need to do for inserting an element at the end is to assign the new element to one index past the current last element.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Array_Insertion_1.png" alt="Array_Insertion_1" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Array_Insertion_1.png" alt="Array_Insertion_1" width="500"/>
 
 This is pretty much the same as we've already seen. Here's the code to make a new Array that can hold up to ```6``` items, and then add items into the first ```3``` three indexes.
 
@@ -90,7 +90,7 @@ Index 5 contains 0.
 
 To insert an element at the start of an Array, we'll need to shift all other elements in the Array to the right by one index to create space for the new element. This is a very costly operation, since each of the existing elements has to be shifted one step to the right. The need to shift everything implies that this is not a constant time operation. In fact, the time taken for insertion at the beginning of an Array will be proportional to the length of the Array. In terms of time complexity analysis, this is a linear time complexity: *O(N)*, where *N* is the length of the Array.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Array_Insertion_2.png" alt="Array_Insertion_2" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/Array_Insertion_2.png" alt="Array_Insertion_2" width="500"/>
 
 Here's what this looks like in code.
 
