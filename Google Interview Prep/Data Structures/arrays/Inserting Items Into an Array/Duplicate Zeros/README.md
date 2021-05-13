@@ -48,7 +48,7 @@ If we had enough space available, we would be able to accommodate all the elemen
 
 The problem demands the array to be modified in-place. If ```in-place``` was not a constraint we might have just copied the elements from a source array to a destination array.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/1089_Duplicate_Zeros_1.png" alt="duplicate_zeros_1" width="500"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/1089_Duplicate_Zeros_1.png" alt="duplicate_zeros_1" width="600"/>
 
 Notice, how we copied zero twice.
 
