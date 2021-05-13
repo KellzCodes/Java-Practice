@@ -13,7 +13,7 @@ In this folder, we'll be starting with inserting items into an array.
 
 Try these problems. If you are unsure where to start, check out the tutorial below.
 
-[Given a fixed length array arr of integers, duplicate each occurrence of zero, shifting the remaining elements to the right.]()
+[Given a fixed length array arr of integers, duplicate each occurrence of zero, shifting the remaining elements to the right.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/2.%20Inserting%20Items%20Into%20an%20Array/Duplicate%20Zeros)
 
 Inserting a new element into an Array can take many forms:
 
