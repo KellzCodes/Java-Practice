@@ -1,6 +1,6 @@
 # Inserting Items Into an Array
 
-In the [Introduction folder](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/Introduction), we looked at what Arrays are, and the basic programming constructs of Arrays in Java. 
+In the [Introduction folder](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/1.%20Introduction), we looked at what Arrays are, and the basic programming constructs of Arrays in Java. 
 
 We're now going to use these basic constructs to implement three key operations for Arrays:
 - Inserting items.
