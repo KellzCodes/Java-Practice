@@ -94,3 +94,9 @@ class Solution {
     }
 }
 ```
+
+**Complexity Analysis**
+
+Time Complexity: *O(N)*, where *N* is the length of A.
+
+Space Complexity: *O(N)* if you take output into account and *O(1)* otherwise.
