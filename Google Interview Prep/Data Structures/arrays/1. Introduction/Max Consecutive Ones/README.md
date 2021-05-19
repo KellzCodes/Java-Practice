@@ -54,7 +54,7 @@ The intuition is pretty simple. We keep a count of the number of 1's encountered
 
 4. Return the maximum in the end.
 
-<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/485_Max_Consecutive_Ones_1.png" alt="Max_Consecutive_Ones_1" width="300"/>
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/485_Max_Consecutive_Ones_1.png" alt="Max_Consecutive_Ones_1" width="500"/>
 
 In the above diagram we found out that the maximum number of consecutive 1's is 3. There were two breaks in the count we encountered while iterating the array. Every time the break i.e. 0 was encountered we had to reset the count of 1 to zero.
 
