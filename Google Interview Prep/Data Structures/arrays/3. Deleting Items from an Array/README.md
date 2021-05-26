@@ -3,7 +3,9 @@
 
 Here's a couple of programming problems for you to try. You should try to solve them without making a new Array. Do this by using the deletion techniques we've investigated below.
 
+[Given an array nums and a value val, remove all instances of that value in-place and return the new length.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/3.%20Deleting%20Items%20from%20an%20Array/Remove%20Element)
 
+[Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/3.%20Deleting%20Items%20from%20an%20Array/Remove%20Duplicates%20from%20Sorted%20Array%20%20Solution)
 
 Deletion in an Array works in a very similar manner to insertion, and has the same three different cases:
 
