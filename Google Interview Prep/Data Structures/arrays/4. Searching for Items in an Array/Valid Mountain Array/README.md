@@ -36,3 +36,27 @@ More formally check if there exists two indices ```i``` and ```j``` such that :
 
 - ```2 <= arr.length <= 500```
 - ```-10^3 <= arr[i] <= 10^3```
+
+#### Hints
+
+- Loop from ```i = 0``` to ```arr.length```, maintaining in a hashTable the array elements from ```[0, i - 1]```.
+- On each step of the loop check if we have seen the element ```2 * arr[i]``` so far or ```arr[i] / 2``` was seen if ```arr[i] % 2 == 0```.
+
+## Solution
+
+HashSet provides *O(1)* lookup, so it is ideal for this question. For each number in the array we check, if we have already seen it's half or it's double.
+
+**NOTE**: When checking half, we need to ensure that the current number is even, or else we will get wrong anwer like in the case of 3 and 7 being in the input. Here for 7, 7/2 would give 3 (not 3.5) which is present in the HashSet but not what we need.
+
+```
+public boolean checkIfExist(int[] arr) {
+        Set<Integer> seen = new HashSet<>();   
+        for (int i : arr) {
+            // if i is half or 2 times of a number in seen
+            if (seen.contains(2 * i) || i % 2 == 0 && seen.contains(i / 2))
+                return true;
+            seen.add(i);
+        }
+        return false;
+}
+```
