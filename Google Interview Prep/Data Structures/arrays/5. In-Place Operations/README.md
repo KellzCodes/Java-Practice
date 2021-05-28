@@ -3,7 +3,9 @@
 
 We now have a couple of straightforward in-place problems for you to try. Remember, you aren't allowed to create any new Arrays (or any other data structures). If the return type of the question is an Array, then simply return the input Array once you've modified it. If you need additional help, check out the tutorial below.
 
+[Given an array ```arr```, replace every element in that array with the greatest element among the elements to its right, and replace the last element with ```-1```.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Replace%20Elements%20with%20Greatest%20Element%20on%20Right%20Side)
 
+[Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Remove%20Duplicates%20from%20Sorted%20Array)
 
 So, what *are* in-place array operations?
 
@@ -86,4 +88,96 @@ public int[] squareEven(int[] array, int length) {
 ```
 
 An important difference for in-place vs not in-place is that in-place *modifies* the input Array. This means that other functions can *no longer access the original data*, because it has been overwritten.
+
+## A Better Repeated Deletion Algorithm
+
+Let's look at one more example. This time, the result Array is smaller than the input Array! How's this going to work? Let's find out! Here's the problem description:
+> Given a sorted array, remove the duplicates such that each element appears only once.
+
+```
+Input: array = [1, 1, 2]
+Output: [1, 2]
+```
+
+```
+Input: array = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+Output: [0, 1, 2, 3, 4]
+```
+
+You've hopefully already done this question, back when we were looking at deleting items from an Array. In that case, your algorithm might have looked something like this.
+
+```
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        
+        // The initial length is simply the capacity.
+        int length = nums.length;
+        
+        // Assume the last element is always unique.
+        // Then for each element, delete it iff it is
+        // the same as the one after it. Use our deletion
+        // algorithm for deleting from any index.
+        for (int i = length - 2; i >= 0; i--) {
+            if (nums[i] == nums[i + 1]) {
+                // Delete the element at index i, using our standard
+                // deletion algorithm we learned.
+                for (int j = i + 1; j < length; j++) {
+                    nums[j - 1] = nums[j];
+                }
+                // Reduce the length by 1.
+                length--;
+            }
+        }
+        // Return the new length.
+        return length;
+    }
+}
+```
+
+This is actually an in-place algorithm, because it doesn't require any extra space—its space complexity is *O(1)*. However, the time complexity's not so flash, at O(N^2). This is because of the nested loop.
+
+We want to get the algorithm down to an *O(N)* time complexity.
+
+If we don't try to do this in-place, then it's straightforward. We could simply iterate through the Array, adding all unique elements to a new Array. Seeing as the the input Array is sorted, we can easily identify all unique elements, as they are the first element, and then any element that is *different* to the one before it.
+
+![image](https://user-images.githubusercontent.com/19383145/119930711-f2185500-bf4d-11eb-8c95-888d696fd41d.png)
+
+One potential problem is that we actually don't know how long the result Array needs to be. Remember how that must be decided when the Array is created? The best solution for this problem is to do an initial pass, counting the number of unique elements. Then, we can create the result Array and do a second pass to add the elements into it. Here's the code for this approach.
+
+```
+public int[] copyWithRemovedDuplicates(int[] nums) {
+        
+  // Check for edge cases.
+  if (nums == null || nums.length == 0) {
+      return nums;
+  }
+
+  // Count how many unique elements are in the Array.
+  int uniqueNumbers = 0;
+  for (int i = 0; i < nums.length; i++) {
+      // An element should be counted as unique if it's the first
+      // element in the Array, or is different to the one before it.
+      if (i == 0 || nums[i] != nums[i - 1]) {
+          uniqueNumbers++;
+      }
+  }
+
+  // Create a result Array.
+  int[] result = new int[uniqueNumbers];
+
+  // Write the unique elements into the result Array.
+  int positionInResult = 0;
+  for (int i = 0; i < nums.length; i++) {
+    // Same condition as in the previous loop. Except this time, we can write
+    // each unique number into the result Array instead of just counting them.
+      if (i == 0 || nums[i] != nums[i - 1]) {
+          result[positionInResult] = nums[i];
+          positionInResult++;
+      }
+  }
+  return result;
+}
+```
+
+Did you notice the fatal flaw with this approach though? It's the wrong return type! We could copy the result array back into the input array... and then return the length... but this is not what the question wants us to do. We want to instead do the deletions with a space complexity of *O(1)* and a time complexity of *O(N)*.
 
