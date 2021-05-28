@@ -31,3 +31,8 @@ More formally check if there exists two indices ```i``` and ```j``` such that :
 **Output**: ```false```
 
 **Explanation**: In this case does not exist ```N``` and ```M```, such that ```N = 2 * M```
+
+#### Constraints:
+
+- ```2 <= arr.length <= 500```
+- ```-10^3 <= arr[i] <= 10^3```
