@@ -2,7 +2,11 @@
 > Finally, we're going to look at the linear search algorithm—the most basic and versatile array search algorithm.
 > We're going to look at the most important operation of all. More often than not, it comes down to the speed of searching for an element in a data structure that helps programmers make design choices for their codebases.
 
-Like always, there are a couple of problems for you to try for yourself now.
+Like always, there are a couple of problems for you to try for yourself now. If you're having trouble, check out the tutorial below.
+
+[Given an array ```arr``` of integers, check if there exists two integers ```N``` and ```M``` such that ```N``` is the double of ```M``` ( i.e. ```N = 2 * M```).](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/4.%20Searching%20for%20Items%20in%20an%20Array/Check%20If%20N%20and%20Its%20Double%20Exist)
+
+[Given an array of integers ```arr```, return ```true``` if and only if it is a *valid mountain array*.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/4.%20Searching%20for%20Items%20in%20an%20Array/Valid%20Mountain%20Array)
 
 There's more than one way of searching an Array, but for now, we're going to focus on the simplest way. Searching means to find an occurrence of a particular element in the Array and return its position. We might need to search an Array to find out whether or not an element is present in the Array. We might also want to search an Array that is arranged in a specific fashion to determine which index to insert a new element at.
 
