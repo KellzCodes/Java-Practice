@@ -7,6 +7,12 @@ We now have a couple of straightforward in-place problems for you to try. Rememb
 
 [Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Remove%20Duplicates%20from%20Sorted%20Array)
 
+[Given an integer array ```nums```, move all ```0```'s to the end of it while maintaining the relative order of the non-zero elements.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Move%20Zeroes)
+
+[Given an array nums of non-negative integers, return an array consisting of all the even elements of nums, followed by all the odd elements of nums.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Sort%20Array%20By%20Parity)
+
+[Given an array nums and a value val, remove all instances of that value in-place and return the new length.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Remove%20Element)
+
 So, what *are* in-place array operations?
 
 The best way of answering this question is to look at an example.
@@ -181,3 +187,54 @@ public int[] copyWithRemovedDuplicates(int[] nums) {
 
 Did you notice the fatal flaw with this approach though? It's the wrong return type! We could copy the result array back into the input array... and then return the length... but this is not what the question wants us to do. We want to instead do the deletions with a space complexity of *O(1)* and a time complexity of *O(N)*.
 
+Anyway, the algorithm with *O(N)* space is surprisingly similar to the one without. Interestingly, it's simpler though, because it doesn't need to firstly determine the size of the output.
+
+![image](https://user-images.githubusercontent.com/19383145/119933388-02caca00-bf52-11eb-901f-8085b86a74e4.png)
+
+Implementing this requires the use of the **two-pointer technique**. This is where we iterate over the Array in two different places at the same time.
+
+1. Read all the elements like we did before, to identify the duplicates. We call this our ```readPointer```.
+2. Keep track of the next position in the front to write the next unique element we've found. We call this our ```writePointer```.
+
+Here's the algorithm in Java code.
+
+```
+public int removeDuplicates(int[] nums) {
+        
+  // Check for edge cases.
+  if (nums == null) {
+      return 0;
+  }
+  
+  // Use the two pointer technique to remove the duplicates in-place.
+  // The first element shouldn't be touched; it's already in its correct place.
+  int writePointer = 1;
+  // Go through each element in the Array.
+  for (int readPointer = 1; readPointer < nums.length; readPointer++) {
+      // If the current element we're reading is *different* to the previous
+      // element...
+      if (nums[readPointer] != nums[readPointer - 1]) {
+          // Copy it into the next position at the front, tracked by writePointer.
+          nums[writePointer] = nums[readPointer];
+          // And we need to now increment writePointer, because the next element
+          // should be written one space over.
+          writePointer++;
+      }
+  }
+  
+  // This turns out to be the correct length value.
+  return writePointer;
+}
+```
+
+You're quite possibly surprised that this even works. How are we not overwriting any elements that we haven't yet looked at?! The key thing to notice is that the condition is such that it is impossible for ```writePointer``` to ever get ahead of the ```readPointer```. This means that we would never overwrite a value that we haven't yet read
+
+This was just a very brief introduction to the very versatile and widely used two-pointer technique. It is one of the main techniques used for in-place Array algorithms. 
+
+### When to Use In-Place Array Operations
+
+It's important to know when to use in-place Array operations—they might not always be the way to go.
+
+For example, if we'll need the original array values again later, then we shouldn't be overwriting them. In these cases, it's best to create a copy to work with, or to simply not use in-place techniques. It's important to be very careful when working with existing code that somebody else has written. If other code is depending on the original Array to work, then you might completely break the program if you modify that Array!
+
+In-place operations are valuable when appropriate because they reduce the space complexity of an algorithm. Instead of requiring *O(N)* space, we can reduce it down to *O(1)*.
