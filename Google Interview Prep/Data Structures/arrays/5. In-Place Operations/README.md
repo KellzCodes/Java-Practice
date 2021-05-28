@@ -5,13 +5,13 @@ We now have a couple of straightforward in-place problems for you to try. Rememb
 
 [Given an array ```arr```, replace every element in that array with the greatest element among the elements to its right, and replace the last element with ```-1```.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Replace%20Elements%20with%20Greatest%20Element%20on%20Right%20Side)
 
-[Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Remove%20Duplicates%20from%20Sorted%20Array)
+[Given a sorted array ```nums```, remove the duplicates in-place such that each element appears only once and returns the new length.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Remove%20Duplicates%20from%20Sorted%20Array)
 
 [Given an integer array ```nums```, move all ```0```'s to the end of it while maintaining the relative order of the non-zero elements.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Move%20Zeroes)
 
-[Given an array nums of non-negative integers, return an array consisting of all the even elements of nums, followed by all the odd elements of nums.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Sort%20Array%20By%20Parity)
+[Given an array ```nums``` of non-negative integers, return an array consisting of all the even elements of ```nums```, followed by all the odd elements of ```nums```.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Sort%20Array%20By%20Parity)
 
-[Given an array nums and a value val, remove all instances of that value in-place and return the new length.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Remove%20Element)
+[Given an array ```nums``` and a value ```val```, remove all instances of that value in-place and return the new length.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/5.%20In-Place%20Operations/Remove%20Element)
 
 So, what *are* in-place array operations?
 
