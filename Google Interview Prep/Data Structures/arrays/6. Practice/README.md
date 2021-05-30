@@ -18,3 +18,5 @@ What other techniques could there be with Arrays, you might be wondering? Well, 
 [Given a binary array ```nums```, return the maximum number of consecutive ```1```'s in the array if you can flip at most one ```0```.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/6.%20Practice/Max%20Consecutive%20Ones%20II)
 
 [Given integer array ```nums```, return the third maximum number in this array. If the third maximum does not exist, return the maximum number.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/6.%20Practice/Third%20Maximum%20Number)
+
+[Given an array ```nums``` of ```n``` integers where ```nums[i]``` is in the range ```[1, n]```, return an array of all the integers in the range ```[1, n]``` that do not appear in ```nums```.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/6.%20Practice/Find%20All%20Numbers%20Disappeared%20in%20an%20Array)
