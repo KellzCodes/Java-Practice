@@ -251,7 +251,8 @@ class Solution {
     }
     
 	// this is basically an insertion sort algorithm which will run in O(k) time instead of O(k * k)
-	// because all the time we are only traversing k elements; first for finding position and then for right shifting from that position
+	// because all the time we are only traversing k elements; first for finding position and then 
+	// for right shifting from that position
 	// see below rightShift() method as well
     private void insert(Integer[] array, int num) {
         int len = array.length;
