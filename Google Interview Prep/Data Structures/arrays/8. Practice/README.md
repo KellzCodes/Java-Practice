@@ -22,3 +22,5 @@ What other techniques could there be with Arrays, you might be wondering? Well, 
 [Given an array ```nums``` of ```n``` integers where ```nums[i]``` is in the range ```[1, n]```, return an array of all the integers in the range ```[1, n]``` that do not appear in ```nums```.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Find%20All%20Numbers%20Disappeared%20in%20an%20Array)
 
 [Given an array of integers ```nums```, calculate the **pivot index** of this array.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Find%20Pivot%20Index)
+
+[Determine whether the largest element in the array is **at least twice** as much as every other number in the array. If it is, return the **index** of the *largest element*, or return ```-1``` otherwise.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Largest%20Number%20At%20Least%20Twice%20of%20Others)
