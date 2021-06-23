@@ -4,7 +4,7 @@ Similar to a one-dimensional array, a ```two-dimensional array``` also consists 
 
 ## Basic practice Problems
 
-[Given an ```m x n``` matrix ```mat```, *return an array of all the elements of the array in a diagonal order*.]()
+[Given an ```m x n``` matrix ```mat```, *return an array of all the elements of the array in a diagonal order*.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/7.%202D%20Array/Diagonal%20Traverse)
 
 ## An Example
 
