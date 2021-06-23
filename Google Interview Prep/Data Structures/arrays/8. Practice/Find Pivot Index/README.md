@@ -83,6 +83,7 @@ Space Complexity: *O(1)*, the space used by ```leftsum``` and ```S```.
 
 ### Approach 2: Remix of prefix / easier solution with edge cases
 
+```
 public class PivotIndex {
     public static void main (String[] args){
         int[] nums = {1, 7, 3, 6, 5, 6};
@@ -138,3 +139,4 @@ public class PivotIndex {
     * Time Complexity: This will take O(N) time. N is the number of integers.
     * Space Complexity: This will take O(1) space. */
 }
+```
