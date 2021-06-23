@@ -1,4 +1,4 @@
-class SimulationMethod {
+class DiagonalMethod {
     public int[] findDiagonalOrder(int[][] matrix) {
         
         // Check for empty matrices
