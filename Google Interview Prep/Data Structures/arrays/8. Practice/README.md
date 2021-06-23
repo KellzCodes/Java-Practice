@@ -13,7 +13,7 @@ Let's recap what we looked at in this repo:
 
 What other techniques could there be with Arrays, you might be wondering? Well, wonder no more. Here is a quick taster!
 
-[You are given an integer array heights representing the current order that the students are standing in. Each heights[i] is the height of the ith student in line (0-indexed). Return the number of indices where heights[i] != expected[i].](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Height%20Checker)
+[A school is trying to take an annual photo of all the students. The students are asked to stand in a single file line in non-decreasing order by height. Let this ordering be represented by the integer array ```expected``` where ```expected[i]``` is the expected height of the ```ith``` student in line.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Height%20Checker)
 
 [Given a binary array ```nums```, return the maximum number of consecutive ```1```'s in the array if you can flip at most one ```0```.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Max%20Consecutive%20Ones%20II)
 
