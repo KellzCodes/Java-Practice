@@ -4,7 +4,7 @@ Given an integer ```numRows```, return the first numRows of **Pascal's triangle*
 
 In **Pascal's triangle**, each number is the sum of the two numbers directly above it as shown:
 
-![image](https://user-images.githubusercontent.com/19383145/123183144-e6da1b80-d45e-11eb-888f-a2a303808e37.png)
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/PascalTriangleAnimated2.gif" alt="pascals_Triangle" width="500"/>
 
 **Example 1:**
 > **Input:** numRows = 5
