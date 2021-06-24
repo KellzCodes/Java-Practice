@@ -6,6 +6,8 @@ Similar to a one-dimensional array, a ```two-dimensional array``` also consists 
 
 [Given an ```m x n``` matrix ```mat```, *return an array of all the elements of the array in a diagonal order*.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/7.%202D%20Array/Diagonal%20Traverse)
 
+[Given an ```m x n``` ```matrix```, return *all elements* of the ```matrix``` in *spiral order*.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/7.%202D%20Array/Spiral%20Matrix)
+
 ## An Example
 
 ```
