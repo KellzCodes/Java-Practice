@@ -74,7 +74,8 @@ public class LongestCommonPrefix {
     }
     /*
     * Complexity Analysis
-    * Time Complexity: O(S), where S is the sum of all characters in all strings. The algorithm compares the string S1S1 with the other strings [S2...Sn]. 
+    * Time Complexity: O(S), where S is the sum of all characters in all strings. 
+    * The algorithm compares the string S1S1 with the other strings [S2...Sn]. 
     * There are S character comparisons, where S is the sum of all characters in the input array
     * Space Complexity: O(1)
     * */
