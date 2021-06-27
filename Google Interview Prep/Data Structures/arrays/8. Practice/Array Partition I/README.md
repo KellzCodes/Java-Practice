@@ -10,6 +10,7 @@ Given an integer array ```nums``` of ```2n``` integers, group these integers int
 - Did you observe that- Minimum element gets add into the result in sacrifice of maximum element.
 - Still won't able to find pairs? Sort the array and try to find the pattern.
 
+```
 public class ArrayPartition1 {
     public static void main (String args[]){
         int[] nums = {1,4,3,2};
@@ -34,3 +35,4 @@ public class ArrayPartition1 {
         return sum;
     }
 }
+```
