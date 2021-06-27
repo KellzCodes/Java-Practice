@@ -11,6 +11,8 @@ In **Pascal's triangle**, each number is the sum of the two numbers directly abo
 
 ## Solution
 
+### Approach 1: Brute Force Recursion
+
 **Algorithm**
 
 ![image](https://user-images.githubusercontent.com/19383145/123534595-44cf6300-d6ec-11eb-9ef1-d79dee2dacea.png)
