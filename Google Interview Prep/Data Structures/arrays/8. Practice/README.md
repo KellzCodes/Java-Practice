@@ -26,3 +26,5 @@ What other techniques could there be with Arrays, you might be wondering? Well, 
 [Determine whether the largest element in the array is **at least twice** as much as every other number in the array. If it is, return the **index** of the *largest element*, or return ```-1``` otherwise.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Largest%20Number%20At%20Least%20Twice%20of%20Others)
 
 [Given a **non-empty** array of decimal digits representing a non-negative integer, increment one to the integer.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Plus%20One)
+
+[Given an integer array ```nums``` of ```2n``` integers, group these integers into ```n``` pairs ```(a1, b1), (a2, b2), ..., (an, bn)``` such that the sum of ```min(ai, bi)``` for all ```i``` is **maximized**. Return the *maximized sum*.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Array%20Partition%20I)
