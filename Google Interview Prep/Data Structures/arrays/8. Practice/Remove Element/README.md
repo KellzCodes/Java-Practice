@@ -58,7 +58,7 @@ If all assertions pass, then your solution will be **accepted**.
 - The problem statement clearly asks us to modify the array in-place and it also says that the element beyond the new length of the array can be anything. Given an element, we need to remove all the occurrences of it from the array. We don't technically need to **remove** that element per-say, right?
 - We can move all the occurrences of this element to the end of the array. Use two pointers!
 
-![image](https://user-images.githubusercontent.com/19383145/123532972-ccfb3b80-d6df-11eb-9f24-bf56d164b070.png)
+<img src="https://github.com/keldavis/Java-Practice/blob/master/Google%20Interview%20Prep/pics/hint_remove_element.png" alt="hint_remove_element" width="500"/>
 - Yet another direction of thought is to consider the elements to be removed as non-existent. In a single pass, if we keep copying the visible elements in-place, that should also solve this problem for us.
 - Try two pointers.
 - Did you use the fact that the order of elements can be changed?
