@@ -28,3 +28,5 @@ What other techniques could there be with Arrays, you might be wondering? Well, 
 [Given a **non-empty** array of decimal digits representing a non-negative integer, increment one to the integer.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Plus%20One)
 
 [Given an integer array ```nums``` of ```2n``` integers, group these integers into ```n``` pairs ```(a1, b1), (a2, b2), ..., (an, bn)``` such that the sum of ```min(ai, bi)``` for all ```i``` is **maximized**. Return the *maximized sum*.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Array%20Partition%20I)
+
+[Given an integer array ```nums``` and an integer ```val```, remove all occurrences of ```val``` in ```nums``` [in-place](https://en.wikipedia.org/wiki/In-place_algorithm). The relative order of the elements may be changed.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Remove%20Element)
