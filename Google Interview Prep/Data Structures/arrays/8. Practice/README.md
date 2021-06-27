@@ -32,3 +32,5 @@ What other techniques could there be with Arrays, you might be wondering? Well, 
 [Given an integer array ```nums``` and an integer ```val```, remove all occurrences of ```val``` in ```nums``` in-place. The relative order of the elements may be changed.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Remove%20Element)
 
 [Given an array of positive integers ```nums``` and a positive integer ```target```, return the minimal length of a **contiguous subarray** [numsl, nums<sub>l+1</sub>, ..., nums<sub>r-1</sub>, nums<sub>r</sub>] of which the sum is greater than or equal to target. If there is no such subarray, return ```0``` instead.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Minimum%20Size%20Subarray%20Sum)
+
+[Given an integer ```rowIndex```, return the rowIndex<sup>th</sup> (**0-indexed**) row of the **Pascal's triangle**.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/arrays/8.%20Practice/Pascals%20Triangle%20II)
