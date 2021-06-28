@@ -16,7 +16,7 @@ Try these problems if you want to just dive into practice.
 
 ## First-in-first-out Data Structure
 
-<img src="https://user-images.githubusercontent.com/19383145/123570867-135fa180-d797-11eb-8537-abc16cfdb168.png" alt="duplicate_zeros_5" width="500"/>
+<img src="https://user-images.githubusercontent.com/19383145/123570867-135fa180-d797-11eb-8537-abc16cfdb168.png" alt="FIFO" width="500"/>
 
 In a FIFO data structure, ```the first element added to the queue will be processed first```.
 
@@ -26,15 +26,15 @@ As shown in the picture above, the queue is a typical FIFO data stucture. The in
 
 1. ```Enqueue```: below is an example of how a new element 6 is added to the queue.
 
-![image](https://user-images.githubusercontent.com/19383145/123571091-7f420a00-d797-11eb-9d2f-5456141a3a0f.png)
+<img src="https://user-images.githubusercontent.com/19383145/123571091-7f420a00-d797-11eb-9d2f-5456141a3a0f.png" alt="enqueue1" width="500"/>
 
-![image](https://user-images.githubusercontent.com/19383145/123571101-8701ae80-d797-11eb-983d-5d106f643c01.png)
+<img src="https://user-images.githubusercontent.com/19383145/123571101-8701ae80-d797-11eb-983d-5d106f643c01.png" alt="enqueue2" width="500"/>
 
 2. ```Dequeue```: below is an example of how an element will be removed.
 
-![image](https://user-images.githubusercontent.com/19383145/123571182-b57f8980-d797-11eb-8b98-a6259bb0f4fd.png)
+<img src="https://user-images.githubusercontent.com/19383145/123571182-b57f8980-d797-11eb-8b98-a6259bb0f4fd.png" alt="dequeue1" width="500"/>
 
-![image](https://user-images.githubusercontent.com/19383145/123571199-bc0e0100-d797-11eb-8a82-3474c0e3a63b.png)
+<img src="https://user-images.githubusercontent.com/19383145/123571199-bc0e0100-d797-11eb-8a82-3474c0e3a63b.png" alt="dequeue2" width="500"/>
 
 ## Queue - Implementation
 
