@@ -11,7 +11,7 @@ The goal of this repo is to help you:
 
 ## Practice problems
 Try these problems if you want to just dive into practice. 
-- [Design your implementation of the circular queue. ]()
+- [Design your implementation of the circular queue. ](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/Queue%20and%20Stack/1.%20Queue%20First-in-first-out%20Data%20Structure/Design%20Circular%20Queue)
 
 
 ## First-in-first-out Data Structure
