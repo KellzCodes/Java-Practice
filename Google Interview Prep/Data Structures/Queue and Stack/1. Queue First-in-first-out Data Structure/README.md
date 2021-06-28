@@ -16,7 +16,7 @@ Try these problems if you want to just dive into practice.
 
 ## First-in-first-out Data Structure
 
-![image](https://user-images.githubusercontent.com/19383145/123570867-135fa180-d797-11eb-8537-abc16cfdb168.png)
+<img src="https://user-images.githubusercontent.com/19383145/123570867-135fa180-d797-11eb-8537-abc16cfdb168.png" alt="duplicate_zeros_5" width="500"/>
 
 In a FIFO data structure, ```the first element added to the queue will be processed first```.
 
