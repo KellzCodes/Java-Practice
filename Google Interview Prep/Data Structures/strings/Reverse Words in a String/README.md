@@ -38,6 +38,7 @@ A **word** is defined as a sequence of non-space characters. The **words** in ``
 > **Output:** "bob like even not does Alice"
 
 **Constraints:**
+
 ![image](https://user-images.githubusercontent.com/19383145/123564448-87924900-d787-11eb-88ce-a8596c419abb.png)
 
 **Follow-up:** If the string data type is mutable in your language, can you solve it **in-place** with ```O(1)``` extra space?
