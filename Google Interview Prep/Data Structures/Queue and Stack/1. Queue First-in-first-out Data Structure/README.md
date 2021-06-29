@@ -12,6 +12,7 @@ The goal of this repo is to help you:
 ## Practice problems
 Try these problems if you want to just dive into practice. 
 - [Design your implementation of the circular queue. ](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/Queue%20and%20Stack/1.%20Queue%20First-in-first-out%20Data%20Structure/Design%20Circular%20Queue)
+- [Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.]()
 
 
 ## First-in-first-out Data Structure
@@ -156,3 +157,122 @@ Let's take a look at an example to see how a circular queue works. You should pa
 ![image](https://user-images.githubusercontent.com/19383145/123572242-dcd75600-d799-11eb-8503-9e418b1472f2.png)
 
 Review the animation carefully to figure out the strategy we use to check if a queue is empty or full.
+
+## Circular Queue - Implementation
+
+In a circular queue, we use an ```array``` and two pointers, ```head``` and ```tail```. ```head``` indicates the start position of the queue while ```tail``` indicates the ending position of the queue.
+
+Here we provide the code for your reference:
+
+```
+class MyCircularQueue {
+    
+    private int[] data;
+    private int head;
+    private int tail;
+    private int size;
+
+    /** Initialize your data structure here. Set the size of the queue to be k. */
+    public MyCircularQueue(int k) {
+        data = new int[k];
+        head = -1;
+        tail = -1;
+        size = k;
+    }
+    
+    /** Insert an element into the circular queue. Return true if the operation is successful. */
+    public boolean enQueue(int value) {
+        if (isFull() == true) {
+            return false;
+        }
+        if (isEmpty() == true) {
+            head = 0;
+        }
+        tail = (tail + 1) % size;
+        data[tail] = value;
+        return true;
+    }
+    
+    /** Delete an element from the circular queue. Return true if the operation is successful. */
+    public boolean deQueue() {
+        if (isEmpty() == true) {
+            return false;
+        }
+        if (head == tail) {
+            head = -1;
+            tail = -1;
+            return true;
+        }
+        head = (head + 1) % size;
+        return true;
+    }
+    
+    /** Get the front item from the queue. */
+    public int Front() {
+        if (isEmpty() == true) {
+            return -1;
+        }
+        return data[head];
+    }
+    
+    /** Get the last item from the queue. */
+    public int Rear() {
+        if (isEmpty() == true) {
+            return -1;
+        }
+        return data[tail];
+    }
+    
+    /** Checks whether the circular queue is empty or not. */
+    public boolean isEmpty() {
+        return head == -1;
+    }
+    
+    /** Checks whether the circular queue is full or not. */
+    public boolean isFull() {
+        return ((tail + 1) % size) == head;
+    }
+}
+
+/**
+ * Your MyCircularQueue object will be instantiated and called as such:
+ * MyCircularQueue obj = new MyCircularQueue(k);
+ * boolean param_1 = obj.enQueue(value);
+ * boolean param_2 = obj.deQueue();
+ * int param_3 = obj.Front();
+ * int param_4 = obj.Rear();
+ * boolean param_5 = obj.isEmpty();
+ * boolean param_6 = obj.isFull();
+ */
+```
+
+## Queue - Usage
+
+Most popular languages provide built-in Queue library so you don't have to reinvent the wheel.
+
+As mentioned before, the queue has two important operations, ```enqueue``` and ```dequeue```. Besides, we should be able to ```get the first element``` in a queue since the first element should be processed first.
+
+Below are some examples of using the built-in Queue library and its common operations:
+
+```
+// "static void main" must be defined in a public class.
+public class Main {
+    public static void main(String[] args) {
+        // 1. Initialize a queue.
+        Queue<Integer> q = new LinkedList();
+        // 2. Get the first element - return null if queue is empty.
+        System.out.println("The first element is: " + q.peek());
+        // 3. Push new element.
+        q.offer(5);
+        q.offer(13);
+        q.offer(8);
+        q.offer(6);
+        // 4. Pop an element.
+        q.poll();
+        // 5. Get the first element.
+        System.out.println("The first element is: " + q.peek());
+        // 7. Get the size of the queue.
+        System.out.println("The size is: " + q.size());
+    }
+}
+```
