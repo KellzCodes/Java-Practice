@@ -9,6 +9,6 @@ The goal of this repo is to:
 3. Be able to solve preorder, inorder and postorder traversal ```iteratively```;
 4. Be able to do ```level traversal``` using ```BFS```.
 
-[Given the ```root``` of a binary tree, return *the preorder traversal of its nodes' values.*](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/Binary%20Tree/Traverse%20A%20Tree/Binary%20Tree%20Preorder%20Traversal)
+[Given the ```root``` of a binary tree, return *the preorder traversal of its nodes' values.*](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/Binary%20Tree/Traverse%20A%20Tree/Preorder%20Traversal)
 
-[Given the ```root``` of a binary tree, return *the inorder traversal of its nodes' values*.]()
+[Given the ```root``` of a binary tree, return *the inorder traversal of its nodes' values*.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/Binary%20Tree/Traverse%20A%20Tree/Inorder%20Traversal)
