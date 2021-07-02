@@ -19,7 +19,9 @@ Output: [1]
 Example 4:
 
 ![image](https://user-images.githubusercontent.com/19383145/124210913-45844280-daba-11eb-9c20-ccc301caec79.png)
+
 Input: root = [1,2]
+
 Output: [2,1]
 
 Example 5:
@@ -27,12 +29,13 @@ Example 5:
 ![image](https://user-images.githubusercontent.com/19383145/124211864-db6c9d00-dabb-11eb-9d7a-2b4b85a248c8.png)
 
 Input: root = [1,null,2]
+
 Output: [2,1]
 
 Constraints:
 
-The number of the nodes in the tree is in the range [0, 100].
--100 <= Node.val <= 100
+- The number of the nodes in the tree is in the range [0, 100].
+- ```-100 <= Node.val <= 100```
  
 
 Follow up: Recursive solution is trivial, could you do it iteratively?
