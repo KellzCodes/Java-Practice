@@ -11,4 +11,4 @@ The goal of this repo is to:
 
 [Given the ```root``` of a binary tree, return *the preorder traversal of its nodes' values.*](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/Binary%20Tree/Traverse%20A%20Tree/Binary%20Tree%20Preorder%20Traversal)
 
-[Given the root of a binary tree, return the inorder traversal of its nodes' values.]()
+[Given the ```root``` of a binary tree, return *the inorder traversal of its nodes' values*.]()
