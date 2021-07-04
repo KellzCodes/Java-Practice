@@ -130,7 +130,7 @@ class Solution {
 
 The recursion above could be rewritten in the iteration form.
 
-Let's keep nodes of each tree level in the *queue* structure, which typically orders elements in a FIFO (first-in-first-out) manner. In Java one could use ```LinkedList``` [implementation of the ```Queue``` interface](https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html). In Python using [```Queue``` structure](https://docs.python.org/3/library/queue.html) would be an overkill since it's designed for a safe exchange between multiple threads and hence requires locking which leads to a performance loose. In Python the queue implementation with a fast atomic ```append()``` and ```popleft()``` is deque.
+Let's keep nodes of each tree level in the *queue* structure, which typically orders elements in a FIFO (first-in-first-out) manner. In Java one could use [```LinkedList``` implementation of the ```Queue``` interface](https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html). In Python using [```Queue``` structure](https://docs.python.org/3/library/queue.html) would be an overkill since it's designed for a safe exchange between multiple threads and hence requires locking which leads to a performance loose. In Python the queue implementation with a fast atomic ```append()``` and ```popleft()``` is deque.
 
 The zero level contains only one node ```root```. The algorithm is simple :
 
