@@ -17,6 +17,8 @@ The goal of this repo is to:
 
 [Given the ```root``` of a binary tree, return *the postorder traversal of its nodes' values*.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/Binary%20Tree/Traverse%20A%20Tree/Postorder%20Traversal)
 
+[Given the ```root``` of a binary tree, return the *level order traversal of its nodes' values.* (i.e., from left to right, level by level).](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/Binary%20Tree/Traverse%20A%20Tree/Level%20Order%20Traversal)
+
 ## Binary Tree Traversal - Solution
 
 In this repo, we will provide the recursive solution for the three traversal methods we have mentioned. And talk about the implementation of the iterative solution. Finally, we will discuss the difference between them.
