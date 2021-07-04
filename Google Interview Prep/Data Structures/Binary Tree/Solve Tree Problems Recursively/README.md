@@ -10,7 +10,7 @@ As we know, a tree can be defined recursively as a node(the root node) that incl
 
 Typically, we can solve a tree problem recursively using a top-down approach or using a bottom-up approach.
 
-[Given the ```root``` of a binary tree, return *its maximum depth*.]()
+[Given the ```root``` of a binary tree, return *its maximum depth*.](https://github.com/keldavis/Java-Practice/tree/master/Google%20Interview%20Prep/Data%20Structures/Binary%20Tree/Solve%20Tree%20Problems%20Recursively/Maximum%20Depth)
 
 ### Top down Solution
 
