@@ -150,3 +150,47 @@ class Solution {
 ### Complexity Analysis
 
 ![image](https://user-images.githubusercontent.com/19383145/124372717-713e2e80-dc5a-11eb-9acf-6c191a09dec8.png)
+
+## Level-order Traversal - Introduction
+
+Level-order traversal is to traverse the tree level by level.
+
+```Breadth-First Search``` is an algorithm to traverse or search in data structures like a tree or a graph. The algorithm starts with a root node and visit the node itself first. Then traverse its neighbors, traverse its second level neighbors, traverse its third level neighbors, so on and so forth.
+
+When we do breadth-first search in a tree, the order of the nodes we visited is in level order.
+
+Here is an example of level-order traversal:
+
+![image](https://user-images.githubusercontent.com/19383145/124372754-c1b58c00-dc5a-11eb-9411-804b00aeb1f1.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372759-cc702100-dc5a-11eb-89a1-0105ce7e821f.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372765-d42fc580-dc5a-11eb-9168-c6dc5229ccd5.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372767-dc880080-dc5a-11eb-85c2-b69eec2fc35a.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372770-e4e03b80-dc5a-11eb-94db-9678cf94e257.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372774-ef9ad080-dc5a-11eb-96b6-5557454b9fb1.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372777-f7f30b80-dc5a-11eb-843f-890bde15e4d5.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372781-017c7380-dc5b-11eb-8b55-dbe54e044623.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372783-093c1800-dc5b-11eb-979f-befa97cc1f57.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372788-122ce980-dc5b-11eb-88e1-1b14004b1fa2.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372795-207b0580-dc5b-11eb-8ddf-3115d42b4ada.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372798-2b359a80-dc5b-11eb-9ca2-3f8ed8395e9b.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372807-3a1c4d00-dc5b-11eb-90b9-b705551d9a62.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372813-46080f00-dc5b-11eb-9235-c33f73f26ff6.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372817-51f3d100-dc5b-11eb-91cb-c77d1a929598.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372823-5b7d3900-dc5b-11eb-867b-65b64c57453d.png)
+
+![image](https://user-images.githubusercontent.com/19383145/124372830-6506a100-dc5b-11eb-8262-2d1916e27e9d.png)
