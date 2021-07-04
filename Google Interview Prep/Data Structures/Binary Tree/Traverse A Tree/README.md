@@ -196,3 +196,47 @@ Here is an example of level-order traversal:
 ![image](https://user-images.githubusercontent.com/19383145/124372823-5b7d3900-dc5b-11eb-867b-65b64c57453d.png)
 
 ![image](https://user-images.githubusercontent.com/19383145/124372830-6506a100-dc5b-11eb-8262-2d1916e27e9d.png)
+
+## Binary Tree Level Traversal - Solution
+
+```
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> ans = new ArrayList<>();
+        Queue<TreeNode> q = new LinkedList<>();
+        if (root != null) {
+            q.offer(root);
+        }
+        TreeNode cur;
+        while (!q.isEmpty()) {
+            int size = q.size();
+            List<Integer> subAns = new LinkedList<Integer>();
+            for (int i = 0; i < size; ++i) {        // traverse nodes in the same level
+                cur = q.poll();
+                subAns.add(cur.val);                // visit the root
+                if (cur.left != null) {
+                    q.offer(cur.left);              // push left child to queue if it is not null
+                }
+                if (cur.right != null) {
+                    q.offer(cur.right);             // push right child to queue if it is not null
+                }
+            }
+            ans.add(subAns);
+        }
+        return ans;
+    }
+}
+```
+
+Since each node in the tree will be pushed into the queue exactly once, the time complexity for level-order traversal is ```O(N)```, where ```N``` is the total number of nodes in the tree.
+
+What about the space complexity? We have to maintain a queue to help us to do the traversal. And the size of the queue will be at most ```N``` because each node will be pushed into the queue exactly once. Therefore, the space complexity of level-order traversal is also ```O(N)```.
