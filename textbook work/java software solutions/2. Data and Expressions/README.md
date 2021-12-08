@@ -14,3 +14,7 @@ introduce the concepts of graphical programming, explore the relationship betwee
 ### Precedence among some of the Java operators
 
 ![image](https://user-images.githubusercontent.com/19383145/145282105-dcc71c0e-7986-4353-92e4-4084d16650c4.png)
+
+### some methods for scanner class
+
+![image](https://user-images.githubusercontent.com/19383145/145293239-70c70f56-4445-43c0-98b2-e42c17c97f16.png)
