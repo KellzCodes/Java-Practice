@@ -6,10 +6,10 @@ public class PP1 {
      * */
 
     public static void main(String[] args){
-        System.out.println("Book: Grit\n" +
-                "Author: Angela Duckworth\n" +
-                "Category: Self Help\n" +
-                "Price: $9.68\n" +
-                "total pages: 368");
+        System.out.println("Book: Grit");
+        System.out.println("Author: Angela Duckworth");
+        System.out.println("Category: Self Help");
+        System.out.println("Price: $9.68");
+        System.out.println("total pages: 368");
     }
 }
