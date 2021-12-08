@@ -6,3 +6,11 @@ introduce the concepts of graphical programming, explore the relationship betwee
 ### escape sequences
 
 ![image](https://user-images.githubusercontent.com/19383145/145279467-49aad3e2-b8eb-4455-9d5c-62580eff5bc3.png)
+
+### The Java numeric primitive types
+
+![image](https://user-images.githubusercontent.com/19383145/145281862-2d996274-960b-4841-bede-81ec829a21a3.png)
+
+### Precedence among some of the Java operators
+
+![image](https://user-images.githubusercontent.com/19383145/145282105-dcc71c0e-7986-4353-92e4-4084d16650c4.png)
