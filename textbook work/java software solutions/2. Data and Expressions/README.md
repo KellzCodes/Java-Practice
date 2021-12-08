@@ -18,3 +18,8 @@ introduce the concepts of graphical programming, explore the relationship betwee
 ### some methods for scanner class
 
 ![image](https://user-images.githubusercontent.com/19383145/145293239-70c70f56-4445-43c0-98b2-e42c17c97f16.png)
+
+### Predefined colors in the Color class 
+
+![image](https://user-images.githubusercontent.com/19383145/145308034-505865ba-5651-4222-ac15-a301fe0ae1a4.png)
+
