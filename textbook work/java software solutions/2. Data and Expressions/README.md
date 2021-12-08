@@ -15,6 +15,22 @@ introduce the concepts of graphical programming, explore the relationship betwee
 
 ![image](https://user-images.githubusercontent.com/19383145/145282105-dcc71c0e-7986-4353-92e4-4084d16650c4.png)
 
+### Java widening conversions
+
+![image](https://user-images.githubusercontent.com/19383145/145308271-40fdad13-9fa8-451e-9462-83e95661daf4.png)
+
+- Widening conversions are the safest because they usually do not lose information. They are called widening conversions because they go from one data type to another type that uses an equal or greater amount of space to store the value.
+- All widening conversions that go from an integer type to another integer type, or from a floating point type to another floating point type, preserve the numeric value exactly
+- Although widening conversions do not lose any information about the magnitude of a value, the widening conversions that result in a floating point value can lose precision.
+-  When converting from an int or a long to a float , or from a long to a double , some of the least significant digits may be lost.
+
+### Java narrowing conversions 
+
+![image](https://user-images.githubusercontent.com/19383145/145308814-b64699b9-79bd-40a2-8c8e-cfeace9697bf.png)
+- Narrowing conversions are more likely to lose information than widening conversions are.
+- They often go from one type to a type that uses less space to store a value, and therefore some of the information may be compromised.
+- Narrowing conversions can lose both numeric magnitude and precision. Therefore, in general, they should be avoided. 
+
 ### some methods for scanner class
 
 ![image](https://user-images.githubusercontent.com/19383145/145293239-70c70f56-4445-43c0-98b2-e42c17c97f16.png)
@@ -22,4 +38,8 @@ introduce the concepts of graphical programming, explore the relationship betwee
 ### Predefined colors in the Color class 
 
 ![image](https://user-images.githubusercontent.com/19383145/145308034-505865ba-5651-4222-ac15-a301fe0ae1a4.png)
+
+### A traditional coordinate system and the Java coordinate system
+
+![image](https://user-images.githubusercontent.com/19383145/145309391-3ac9b9ca-64e6-4a33-957b-3e6e2ea0f1a4.png)
 
