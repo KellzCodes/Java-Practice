@@ -43,3 +43,10 @@ introduce the concepts of graphical programming, explore the relationship betwee
 
 ![image](https://user-images.githubusercontent.com/19383145/145309391-3ac9b9ca-64e6-4a33-957b-3e6e2ea0f1a4.png)
 
+### Increment and Decrement Operators
+- The increment and decrement operators can be applied after the variable (such as ```count++``` or ```count--``` ), creating what is called the postfix form of the operator. 
+- They can also be applied before the variable (such as ```++count``` or ```--count```), in what is called the prefix form. 
+- When used alone in a statement, the prefix and postfix forms are functionally equivalent. That is, it doesn’t matter if you write ```count++``` or ```++count```.
+- When the increment or decrement operator is used in a larger expression, it can yield different results depending on the form used.
+  - For example, if the variable count currently contains the value 15, the following statement assigns the value 15 to total and the value 16 to count:  ```total = count++;```
+  - the following statement assigns the value 16 to both total and count: ```total = ++count;```
