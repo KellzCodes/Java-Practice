@@ -1,4 +1,4 @@
-# java software solutions 8th edition
+# java software solutions 9th edition
 
 - True object-orientation. A text that really teaches a solid object-oriented approach must use what we call object-speak. That is, all processing should be discussed in object-oriented terms. That does not mean, however, that the first program a student sees must discuss the writing of multiple classes and methods. A student should learn to use objects before learning to write
 them. This text uses a natural progression that culminates in the ability to design real object-oriented solutions.
